@@ -1,21 +1,19 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efAutoDBUpdate", "efAutoDBUpdate.csproj", "{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Debug.ActiveCfg = Debug|.NET
-		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Debug.Build.0 = Debug|.NET
-		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Release.ActiveCfg = Release|.NET
-		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Release.Build.0 = Release|.NET
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
