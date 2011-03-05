@@ -1,27 +1,25 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efOfficeTalk", "efOfficeTalk.csproj", "{3D670A5A-9505-4A78-97D5-50FBAC812A3B}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		AdoptionList = AdoptionList
-		Debug = Debug
-		PSVM = PSVM
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AdoptionList|Any CPU = AdoptionList|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		PSVM|Any CPU = PSVM|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.AdoptionList.ActiveCfg = AdoptionList|.NET
-		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.AdoptionList.Build.0 = AdoptionList|.NET
-		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.Debug.ActiveCfg = Debug|.NET
-		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.Debug.Build.0 = Debug|.NET
-		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.PSVM.ActiveCfg = PSVM|.NET
-		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.PSVM.Build.0 = PSVM|.NET
-		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.Release.ActiveCfg = Release|.NET
-		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.Release.Build.0 = Release|.NET
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.AdoptionList|Any CPU.ActiveCfg = AdoptionList|Any CPU
+		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.AdoptionList|Any CPU.Build.0 = AdoptionList|Any CPU
+		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.PSVM|Any CPU.ActiveCfg = PSVM|Any CPU
+		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.PSVM|Any CPU.Build.0 = PSVM|Any CPU
+		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D670A5A-9505-4A78-97D5-50FBAC812A3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
