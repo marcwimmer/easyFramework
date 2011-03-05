@@ -1,21 +1,19 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efCache", "efCache.csproj", "{B4FB3F70-273A-4AA6-A01B-655C0F354534}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{B4FB3F70-273A-4AA6-A01B-655C0F354534}.Debug.ActiveCfg = Debug|.NET
-		{B4FB3F70-273A-4AA6-A01B-655C0F354534}.Debug.Build.0 = Debug|.NET
-		{B4FB3F70-273A-4AA6-A01B-655C0F354534}.Release.ActiveCfg = Release|.NET
-		{B4FB3F70-273A-4AA6-A01B-655C0F354534}.Release.Build.0 = Release|.NET
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4FB3F70-273A-4AA6-A01B-655C0F354534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FB3F70-273A-4AA6-A01B-655C0F354534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FB3F70-273A-4AA6-A01B-655C0F354534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FB3F70-273A-4AA6-A01B-655C0F354534}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
