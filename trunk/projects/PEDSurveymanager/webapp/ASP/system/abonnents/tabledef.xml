@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<table name="tsAbonnents" inserted="abo_inserted" updated="abo_updated" insertedby="abo_insertedby"
+	updatedby="abo_updatedby">
+	<field primarykey="1">
+		<name>abo_id</name>
+		<type>int</type>
+		<desc>Abonnenten-ID</desc>
+	</field>
+	<field>
+		<name>abo_name</name>
+		<type>string</type>
+		<size>128</size>
+		<desc>Abonnenten-Name</desc>
+	</field>
+	<field>
+		<name>abo_host</name>
+		<type>string</type>
+		<desc>Host</desc>
+		<size>128</size>
+	</field>
+	<field>
+		<name>abo_inserted</name>
+		<type>date</type>
+		<desc>Eingefügt</desc>
+	</field>
+	<field>
+		<name>abo_updated</name>
+		<type>date</type>
+		<desc>Bearbeitet</desc>
+	</field>
+	<field>
+		<name>abo_insertedBy</name>
+		<type>string</type>
+		<desc>Eingefügt von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>abo_updatedBy</name>
+		<type>string</type>
+		<desc>Bearbeitet von</desc>
+		<size>255</size>
+	</field>
+</table>

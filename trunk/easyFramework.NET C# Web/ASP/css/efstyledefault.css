@@ -1,0 +1,247 @@
+BODY
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: arial,sans-serif;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+P 
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: arial,sans-serif;
+}
+H1 
+{
+    FONT-SIZE: 16px;
+    FONT-FAMILY: arial,sans-serif;
+}
+H2
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: arial,sans-serif;
+}
+INPUT
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: arial,sans-serif
+}
+INPUT.navButton
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: arial,sans-serif
+}
+INPUT.cmdButton
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    MARGIN: 2px;
+    WIDTH: 80px;
+    FONT-FAMILY: arial,sans-serif
+}
+INPUT.txtLabelField
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BORDER-LEFT: 0px;
+    BORDER-BOTTOM: 0px;
+    BACKGROUND-COLOR: #dcdcdc
+}
+
+INPUT.txtLabelFieldBackground
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BORDER-LEFT: 0px;
+    BORDER-BOTTOM: 0px;
+    BACKGROUND-COLOR: #AAC4E6
+}
+
+TEXTAREA
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: arial,sans-serif
+}
+SELECT
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: arial,sans-serif
+}
+BUTTON
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: arial,sans-serif
+}
+BUTTON.cmdButton
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    MARGIN: 2px;
+    WIDTH: 80px;
+    FONT-FAMILY: arial,sans-serif
+}
+BUTTON.cmdButtonDouble
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    MARGIN: 2px;
+    WIDTH: 120px;
+    FONT-FAMILY: arial,sans-serif
+}
+BUTTON.cmdButtonTriple
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    MARGIN: 2px;
+    WIDTH: 160px;
+    FONT-FAMILY: arial,sans-serif
+}
+BUTTON.cmdButtonSmall
+{
+    WIDTH: 20px;
+    
+}
+DIV.clsContextMenu
+{
+    BORDER-RIGHT: buttonhighlight 2px outset;
+    BORDER-TOP: buttonhighlight 2px outset;
+    Z-INDEX: 100;
+    LEFT: 0px;
+    VISIBILITY: hidden;
+    BORDER-LEFT: buttonhighlight 2px outset;
+    BORDER-BOTTOM: buttonhighlight 2px outset;
+    POSITION: absolute;
+    TOP: 0px;
+    BACKGROUND-COLOR: buttonface
+}
+A.clsContextMenuItem
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 10px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2px;
+    WIDTH: 100%;
+    CURSOR: default;
+    COLOR: black;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: arial,sans-serif;
+    TEXT-DECORATION: none
+}
+A.clsContextMenuItem:hover
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 10px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2px;
+    WIDTH: 100%;
+    CURSOR: default;
+    COLOR: white;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: arial,sans-serif;
+    BACKGROUND-COLOR: #426faa;
+    TEXT-DECORATION: none
+}
+A.clsContextMenuItemHover
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 10px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    PADDING-BOTTOM: 2px;
+    WIDTH: 100%;
+    CURSOR: default;
+    COLOR: white;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: arial,sans-serif;
+    BACKGROUND-COLOR: #426faa;
+    TEXT-DECORATION: none
+}
+TABLE.tblText
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: arial,sans-serif
+}
+SPAN.clsDescription
+{
+    FONT-SIZE: 8pt;
+    LEFT: 10px;
+    COLOR: #426faa;
+    FONT-FAMILY: arial,sans-serif;
+    POSITION: relative;
+    TOP: 8px;
+    BACKGROUND-COLOR: white
+}
+A.clsUnderline
+{
+    TEXT-DECORATION: underline
+}
+IMG.clsImageButton
+{
+    BORDER-LEFT: white 1px solid
+}
+TD.clsLinkField
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: arial,sans-serif;
+    BACKGROUND-COLOR: white
+}
+DIV.clsContainer
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: arial,sans-serif;
+    BACKGROUND-COLOR: white;
+    height:100%;
+	overflow-x:auto;
+	overflow-y:scroll;
+}
+DIV.clsLabel
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: arial,sans-serif
+}
+TD.clsLightGradient
+{
+	background-color: #DCDCDC;
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#c4dafa,endColorStr=#a0bff5);
+}
+TD.clsLightGradientSel
+{
+	background-color: #DCDCDC;
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ffdf9a,endColorStr=#ffa74e);
+}
+TD.clsDarkGradient
+{
+	background-color: gray;
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#5987D6,endColorStr=#033893);
+}
+TD.clsDarkGradientHead
+{
+	background-color: #5987D6;
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#5987D6,endColorStr=#033893);
+    FONT-SIZE: 18px;
+    COLOR: #FFFFFF;
+    FONT-FAMILY: arial,sans-serif;
+    height: 100%;
+}
+TD.clsLightGradientHead
+{
+	background-color: #C4DAFA;
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#c4dafa,endColorStr=#a0bff5);
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: arial,sans-serif;
+    height: 100%;
+}
+TD.clsLightGradientSelHead
+{
+	background-color: #FFDF9A;
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ffdf9a,endColorStr=#ffa74e);
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: arial,sans-serif;
+    height: 100%;
+}

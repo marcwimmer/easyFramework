@@ -1,0 +1,85 @@
+<math>
+  <msubsup>
+    <mrow>
+      <mo>{</mo>
+      <mo>∫</mo>
+      <mfrac>
+        <mrow>
+          <msubsup>
+            <mrow>
+              <mo>∫</mo>
+              <mo>∫</mo>
+              <mo>∫</mo>
+              <mo>(</mo>
+              <mi mathsize="big">X</mi>
+              <mfrac>
+                <mi>top</mi>
+                <msubsup>
+                  <mi>bottom</mi>
+                  <mi>subscript</mi>
+                  <mi>superscript</mi>
+                </msubsup>
+              </mfrac>
+              <mo>)</mo>
+            </mrow>
+            <mi>subscript</mi>
+            <mi>superscript</mi>
+          </msubsup>
+          <mo>(</mo>
+          <mi mathsize="big">X</mi>
+          <mfrac>
+            <mrow>
+              <mo>(</mo>
+              <mi mathsize="big">X</mi>
+              <mfrac>
+                <mrow>
+                  <mo>(</mo>
+                  <mi mathsize="big">X</mi>
+                  <mfrac>
+                    <mrow>
+                      <mo>(</mo>
+                      <mi mathsize="big">X</mi>
+                      <mfrac>
+                        <mi>top</mi>
+                        <mrow>
+                          <mo>(</mo>
+                          <mi mathsize="big">X</mi>
+                          <mfrac>
+                            <mi>top</mi>
+                            <mi>bottom</mi>
+                          </mfrac>
+                          <mo>)</mo>
+                        </mrow>
+                      </mfrac>
+                      <mo>)</mo>
+                    </mrow>
+                    <mi>bottom</mi>
+                  </mfrac>
+                  <mo>)</mo>
+                </mrow>
+                <mi>bottom</mi>
+              </mfrac>
+              <mo>)</mo>
+            </mrow>
+            <mi>bottom</mi>
+          </mfrac>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mo>{</mo>
+          <mo>∫</mo>
+          <mo>∫</mo>
+          <mo>∫</mo>
+          <mfrac>
+            <mi mathsize="big">Numerator</mi>
+            <mi mathsize="big">Denominator</mi>
+          </mfrac>
+          <mo>}</mo>
+        </mrow>
+      </mfrac>
+      <mo>}</mo>
+    </mrow>
+    <mi>subscript</mi>
+    <mi>superscript</mi>
+  </msubsup>
+</math>

@@ -1,0 +1,32 @@
+<VisualStudioProject>
+  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="{A9758B86-992F-49E8-97AE-A574D1FDAD0B}">
+    <Build>
+      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="efDistribution" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" PreBuildEvent="" PostBuildEvent="" RootNamespace="easyFramework.Tasks.Distribution" RunPostBuildEvent="OnBuildSuccess" StartupObject="">
+        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="..\..\..\easyFramework.NET C# Web\bin\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="System" AssemblyName="System" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.dll" Private="False" />
+        <Reference Name="System.Data" AssemblyName="System.Data" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.Data.dll" Private="False" />
+        <Reference Name="System.XML" AssemblyName="System.Xml" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.XML.dll" Private="False" />
+        <Reference Name="efClientInfo" AssemblyName="efClientInfo" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efClientInfo.dll" Private="False" />
+        <Reference Name="efToolLib" AssemblyName="efToolLib" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll" Private="False" />
+        <Reference Name="efXml" AssemblyName="efXml" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll" Private="False" />
+        <Reference Name="efEnvironment" AssemblyName="efEnvironment" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEnvironment.dll" Private="False" />
+        <Reference Name="efEntities" AssemblyName="efEntities" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntities.dll" Private="False" />
+        <Reference Name="efICSharpZLibWrapper" AssemblyName="efICSharpZLibWrapper" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efICSharpZLibWrapper.dll" Private="False" />
+        <Reference Name="efEntityLoader" AssemblyName="efEntityLoader" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntityLoader.dll" Private="False" />
+        <Reference Name="efRecordset" AssemblyName="efRecordset" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efRecordset.dll" Private="False" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Christmas.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Envelope.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="EnvelopeMD5MatchException.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Packager.cs" SubType="Code" BuildAction="Compile" />
+      </Include>
+    </Files>
+  </CSHARP>
+</VisualStudioProject>

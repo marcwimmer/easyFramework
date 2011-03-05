@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "psvm", "http://localhost/psvm/psvm.csproj", "{B5ECFD74-D4D7-44B5-AC91-C336EE872835}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{B5ECFD74-D4D7-44B5-AC91-C336EE872835}.Debug.ActiveCfg = Debug|.NET
+		{B5ECFD74-D4D7-44B5-AC91-C336EE872835}.Debug.Build.0 = Debug|.NET
+		{B5ECFD74-D4D7-44B5-AC91-C336EE872835}.Release.ActiveCfg = Release|.NET
+		{B5ECFD74-D4D7-44B5-AC91-C336EE872835}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<build>
+	<options>
+		<!--
+		compiler_exe and compiler_arguments
+		This line is executed to compile the projects.
+		The placeholder %1 is replaced with the project path, given in the @path-attribute of the <project>-element
+		The placeholder %2 is replaced with the filename which holds the compiler output
+		The place
+		-->
+		<compiler_exe>C:\Programme\Microsoft Visual Studio .NET 2003\Common7\IDE\devenv.exe</compiler_exe>
+		<compiler_arguments>"%1" /rebuild %RELEASE /out %2</compiler_arguments>
+		<!-- name of the release, which is to be compiled-->
+		<releasename>Debug</releasename>
+		<!-- into the outputpath the final assemblies are compiled to-->
+		<outputpath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin</outputpath>
+	</options>
+	<compile>
+		<!--
+		These are the projects, which are compiled, calling the command line in <compiler_cmdline>.
+		The order given here is used to compile the projects.
+		-->
+		<project path="Sys\efToolLib\efToolLib.csproj"/>
+		<project path="Sys\efDirectoryWatcher\efDirectoryWatcher.csproj"/>
+		<project path="Sys\efInterfaces\efInterfaces.csproj"/>
+		<project path="Sys\efXml\efXml.csproj"/>
+		<project path="Sys\efRecordset\efRecordset.csproj"/>
+		<project path="Sys\efData\efData.csproj"/>
+		<project path="Sys\efCachedFile\efCachedFile.csproj"/>
+		<project path="Sys\efClientInfo\efClientInfo.csproj"/>
+		<project path="Sys\efDataClientInfo\efDataClientInfo.csproj"/>
+		<project path="Sys\efHelpSystem\efHelpSystem.csproj"/>
+		<project path="Sys\efSecurity\efSecurity.csproj"/>
+		<project path="Sys\efSqlTools\efSqlTools.csproj"/>
+		<project path="Sys\efTableDef\efTableDef.csproj"/>
+		<project path="Sys\efTableDefCached\efTableDefCached.csproj"/>
+		<project path="Sys\efSysEvents\efSysEvents.csproj"/>
+		<project path="Sys\efEntities\efEntities.csproj"/>
+		<project path="Sys\efDomains\efDomains.csproj"/>
+		<project path="Frontend\ASP\efHTMLRenderer\efHTMLRenderer.csproj"/>
+		<project path="Frontend\ASP\efAspTools\efAspTools.csproj"/>
+		<project path="Frontend\ASP\efCache\efCache.csproj"/>
+		<project path="Frontend\ASP\efEntityLoader\efEntityLoader.csproj"/>
+		<project path="Frontend\ASP\efConfig\efConfig.csproj"/>
+		<project path="Frontend\ASP\efImages\efImages.csproj"/>
+		<project path="Frontend\ASP\efMail\efMail.csproj"/>
+		<project path="Frontend\ASP\efLogging\efLogging.csproj"/>
+		<project path="Frontend\ASP\efMIME\efMIME.csproj"/>
+		<project path="Frontend\ASP\efEnvironment\efEnvironment.csproj"/>
+		<project path="Frontend\ASP\efComboBox\efComboBox.csproj"/>
+		<project path="Frontend\ASP\efPopupMenue\efPopupMenue.csproj"/>
+		<project path="Frontend\ASP\efEntityPopupMenue\efEntityPopupMenue.csproj"/>
+		<project path="Frontend\ASP\efXmlDialog\efXmlDialog.csproj"/>
+		<project path="Frontend\ASP\efPage\efPage.csproj"/>
+		<project path="Frontend\ASP\efWebComponents\efWebComponents.csproj"/>
+		<project path="Frontend\ASP\efMultistructureHelper\efMultistructureHelper.csproj"/>
+		<project path="Frontend\ASP\efDialog\efDialog.csproj"/>
+		<project path="AddOns\efICSharpZLibWrapper\efICSharpZLibWrapper.csproj"/>
+		<project path="AddOns\efOfficeTalk\efOfficeTalk.csproj"/>
+		<project path="Sys\efAutoDBUpdate\efAutoDBUpdate.csproj"/>
+		<project path="Tasks\efDistribution\efDistribution.csproj"/>
+		<project path="Frontend\ASP\efWebAppInit\efWebAppInit.csproj"/>
+		<project path="AddOns\MathML\efMathMLWrapper\efMathMLWrapper.csproj"/>
+	</compile>
+	<defaultreferences>
+		
+	</defaultreferences>
+</build>

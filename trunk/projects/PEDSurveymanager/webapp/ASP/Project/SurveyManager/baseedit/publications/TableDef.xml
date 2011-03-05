@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<table name="tdPublications" inserted="pub_inserted" updated="pub_updated" insertedby="pub_insertedby"
+	updatedby="pub_updatedby">
+	<field primarykey="1">
+		<name>pub_id</name>
+		<type>int</type>
+		<desc>Publikations-ID</desc>
+	</field>
+	<field>
+		<name>pub_svy_id</name>
+		<type>int</type>
+		<desc>Survey</desc>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>pub_inserted</name>
+		<type>date</type>
+		<desc>Eingefügt</desc>
+	</field>
+	<field>
+		<name>pub_updated</name>
+		<type>date</type>
+		<desc>Bearbeitet</desc>
+	</field>
+	<field>
+		<name>pub_insertedBy</name>
+		<type>string</type>
+		<desc>Eingefügt von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>pub_updatedBy</name>
+		<type>string</type>
+		<desc>Bearbeitet von</desc>
+		<size>255</size>
+	</field>
+</table>

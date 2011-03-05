@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="1">
+	<efDialogRow>
+		<efDialogField>
+			<DESC>$HOT$T$HOT$yp</DESC>
+			<NAME>ans_aty_id</NAME>
+			<TYPE>DATACOMBO</TYPE>
+			<SRC>AnswerTypes</SRC>
+			<ONCHANGE>
+				mOnSave();
+				mLoadAnswer();
+			</ONCHANGE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField COLSPANFIELD="4">
+			<TYPE>LABEL</TYPE>
+			<VALUE>Freitext</VALUE>
+			<NAME>heading</NAME>
+			<CLASS>surveyedit_heading</CLASS>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<NAME>ans_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>ans_qst_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>ans_resultDbField</NAME>
+			<DESC>$Datenbankfeld</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<NAME>ans_multiline</NAME>
+			<DESC>$Textbox</DESC>
+			<TYPE>CHECKBOX</TYPE>
+			<VALUE>0</VALUE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>ans_lines</NAME>
+			<DESC>Eingabe$zeilen</DESC>
+			<TYPE>NUMBER</TYPE>
+			<VALUE>1</VALUE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<NAME>ans_html_before</NAME>
+			<DESC>HTML (bevor)</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>ans_html_after</NAME>
+			<DESC>HTML (danach)</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>Reihenfolge</DESC>
+			<NAME>ans_index</NAME>
+			<TYPE>NUMBER</TYPE>
+		</efDialogField><efDialogField>
+			<DESC>Freitext Lösungsvorschlag</DESC>
+			<NAME>ans_freetext_suggestion</NAME>
+			<TYPE>TEXTAREA</TYPE>
+			<COLS>50</COLS>
+			<ROWS>3</ROWS>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		
+	</efDialogRow>
+</efDialogPage>

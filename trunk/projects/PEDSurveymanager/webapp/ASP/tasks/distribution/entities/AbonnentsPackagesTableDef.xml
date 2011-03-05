@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<table name="tsAbonnentsPackages" inserted="dst_inserted" updated="dst_updated" insertedby="dst_insertedby"
+	updatedby="dst_updatedby">
+	<field primarykey="1">
+		<name>dst_id</name>
+		<type>int</type>
+		<desc>Package-ID</desc>
+	</field>
+	<field>
+		<name>dst_packagename</name>
+		<type>string</type>
+		<desc>Package-Name</desc>
+		<size>255</size>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>dst_inserted</name>
+		<type>date</type>
+		<desc>Eingefügt</desc>
+	</field>
+	<field>
+		<name>dst_updated</name>
+		<type>date</type>
+		<desc>Bearbeitet</desc>
+	</field>
+	<field>
+		<name>dst_insertedBy</name>
+		<type>string</type>
+		<desc>Eingefügt von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>dst_updatedBy</name>
+		<type>string</type>
+		<desc>Bearbeitet von</desc>
+		<size>255</size>
+	</field>
+</table>

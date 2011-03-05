@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" Src="renderXmlDlg.aspx.cs" Inherits="easyFramework.Project.Default.renderXmlDlg"%>

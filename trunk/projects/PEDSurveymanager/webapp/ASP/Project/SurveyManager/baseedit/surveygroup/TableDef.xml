@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<table name="tdSurveyGroups" inserted="svg_inserted" updated="svg_updated" insertedby="svg_insertedby"
+	updatedby="svg_updatedby">
+	<field primarykey="1">
+		<name>svg_id</name>
+		<type>int</type>
+		<desc>Gruppen-ID</desc>
+	</field>
+	<field>
+		<name>svg_name</name>
+		<type>string</type>
+		<desc>Bezeichnung</desc>
+		<size>80</size>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>svg_css</name>
+		<type>string</type>
+		<size>255</size>
+		<desc>CSS-Datei (URI)</desc>
+		<rules>
+			<maxlen>
+				<value>255</value>
+			</maxlen>
+		</rules>
+	</field>
+	<field>
+		<name>svg_parentid</name>
+		<type>int</type>
+		<desc>Surveygruppe</desc>
+		<size>80</size>
+	</field>
+	<field>
+		<name>svg_inserted</name>
+		<type>date</type>
+		<desc>Eingefügt</desc>
+	</field>
+	<field>
+		<name>svg_updated</name>
+		<type>date</type>
+		<desc>Bearbeitet</desc>
+	</field>
+	<field>
+		<name>svg_insertedBy</name>
+		<type>string</type>
+		<desc>Eingefügt von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>svg_updatedBy</name>
+		<type>string</type>
+		<desc>Bearbeitet von</desc>
+		<size>255</size>
+	</field>
+</table>

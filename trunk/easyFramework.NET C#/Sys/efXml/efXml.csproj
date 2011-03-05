@@ -1,0 +1,26 @@
+<VisualStudioProject>
+  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="{01006A9C-384E-4A86-A2A1-24D798B3F02E}">
+    <Build>
+      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="efXml" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" PreBuildEvent="" PostBuildEvent="" RootNamespace="easyFramework.Sys.Xml" RunPostBuildEvent="OnBuildSuccess" StartupObject="easyFramework.Sys.Xml.(Keine)">
+        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="true" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="..\..\..\easyFramework.NET C# Web\bin\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="Microsoft.VisualBasic" AssemblyName="Microsoft.VisualBasic" />
+        <Reference Name="mscorlib" AssemblyName="mscorlib" />
+        <Reference Name="System" AssemblyName="System" />
+        <Reference Name="System.XML" AssemblyName="System.Xml" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="XmlAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="XmlAttributeList.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="XmlDocument.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="XmlNode.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="XmlNodeList.cs" SubType="Code" BuildAction="Compile" />
+      </Include>
+    </Files>
+  </CSHARP>
+</VisualStudioProject>

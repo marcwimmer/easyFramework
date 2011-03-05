@@ -1,0 +1,57 @@
+DIV.dataTableContainer
+{
+	background-color: #FFFFFF;	
+}
+DIV.dataTable
+{
+	background-color: #FFFFFF;	
+}
+DIV.dataTableInfoText
+{
+	background-color: #FFFFFF;	
+	font-size:8pt;
+}
+DIV.dataTableButtons
+{
+	background-color: #FFFFFF;	
+}
+
+TABLE.dataTable 
+{
+	border-width: 2px;
+	border-style: solid;
+	border-collapse: collapse;
+	background-color: #FFFFFF;
+}
+
+TR.dataRow
+{	
+	cursor: hand;
+}
+TR.dataRowHead
+{	
+	cursor: default;
+}
+
+TD.dataField 
+{	
+	font-size:8pt;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	border-style: solid;
+}
+
+TD.dataHeader
+{	
+	font-size:8pt;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	border-style: solid; 
+	background-color: #CCCCCC
+}
+
+

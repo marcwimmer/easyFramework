@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efSysEvents", "efSysEvents.csproj", "{FAA92B77-DFAB-4138-9EDB-D037144677A7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FAA92B77-DFAB-4138-9EDB-D037144677A7}.Debug.ActiveCfg = Debug|.NET
+		{FAA92B77-DFAB-4138-9EDB-D037144677A7}.Debug.Build.0 = Debug|.NET
+		{FAA92B77-DFAB-4138-9EDB-D037144677A7}.Release.ActiveCfg = Release|.NET
+		{FAA92B77-DFAB-4138-9EDB-D037144677A7}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

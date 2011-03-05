@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<efDialogPage>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>Eingabe 1</DESC>
+			<NAME>Name1</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>Eingabe 2</DESC>
+			<NAME>Name 2</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>Eingabe 3</DESC>
+			<NAME>Name 3</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>Eingabe 4</DESC>
+			<NAME>Name 4</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

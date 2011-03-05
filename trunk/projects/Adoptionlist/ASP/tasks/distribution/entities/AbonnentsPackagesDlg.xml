@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="5">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>dst_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField COLSPANFIELD="1">
+			<DESC>$Package-Name</DESC>
+			<NAME>dst_packagename</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

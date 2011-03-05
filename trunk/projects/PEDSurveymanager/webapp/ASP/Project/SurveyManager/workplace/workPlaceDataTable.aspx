@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" src="workPlaceDataTable.aspx.cs" Inherits="easyFramework.Project.SurveyManager.workPlaceDataTable"%>

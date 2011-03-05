@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efToolLib", "efToolLib.csproj", "{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Adoptionlist = Adoptionlist
+		Debug = Debug
+		Release = Release
+		SurveymanagerNET = SurveymanagerNET
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Adoptionlist.ActiveCfg = Adoptionlist|.NET
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Adoptionlist.Build.0 = Adoptionlist|.NET
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Debug.ActiveCfg = Debug|.NET
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Debug.Build.0 = Debug|.NET
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Release.ActiveCfg = Release|.NET
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Release.Build.0 = Release|.NET
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.SurveymanagerNET.ActiveCfg = SurveymanagerNET|.NET
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.SurveymanagerNET.Build.0 = SurveymanagerNET|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

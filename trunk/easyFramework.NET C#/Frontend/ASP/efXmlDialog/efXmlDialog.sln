@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efXmlDialog", "efXmlDialog.csproj", "{AF6467D8-502B-40B0-AFEE-460B773167A0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		PSVM = PSVM
+		Release = Release
+		SurveyManagerNET = SurveyManagerNET
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{AF6467D8-502B-40B0-AFEE-460B773167A0}.Debug.ActiveCfg = Debug|.NET
+		{AF6467D8-502B-40B0-AFEE-460B773167A0}.Debug.Build.0 = Debug|.NET
+		{AF6467D8-502B-40B0-AFEE-460B773167A0}.PSVM.ActiveCfg = PSVM|.NET
+		{AF6467D8-502B-40B0-AFEE-460B773167A0}.PSVM.Build.0 = PSVM|.NET
+		{AF6467D8-502B-40B0-AFEE-460B773167A0}.Release.ActiveCfg = Release|.NET
+		{AF6467D8-502B-40B0-AFEE-460B773167A0}.Release.Build.0 = Release|.NET
+		{AF6467D8-502B-40B0-AFEE-460B773167A0}.SurveyManagerNET.ActiveCfg = SurveyManagerNET|.NET
+		{AF6467D8-502B-40B0-AFEE-460B773167A0}.SurveyManagerNET.Build.0 = SurveyManagerNET|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--wird im gap-text verwendet-->
+<efDialogPage MULTIROW="0" DIALOGSIZE="1">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>val_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>val_ans_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>Antwort$wert</DESC>
+			<NAME>val_text</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>val_correct</NAME>
+			<TYPE>HIDDEN</TYPE>
+			<VALUE>1</VALUE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>HTML</DESC>
+			<NAME>val_html</NAME>
+			<TYPE>INPUT</TYPE>
+			<ROWS>2</ROWS>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

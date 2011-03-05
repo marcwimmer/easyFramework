@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efDomains", "efDomains.csproj", "{21C2CC4E-E53E-4B64-BF19-0E5B332B1356}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{21C2CC4E-E53E-4B64-BF19-0E5B332B1356}.Debug.ActiveCfg = Debug|.NET
+		{21C2CC4E-E53E-4B64-BF19-0E5B332B1356}.Debug.Build.0 = Debug|.NET
+		{21C2CC4E-E53E-4B64-BF19-0E5B332B1356}.Release.ActiveCfg = Release|.NET
+		{21C2CC4E-E53E-4B64-BF19-0E5B332B1356}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

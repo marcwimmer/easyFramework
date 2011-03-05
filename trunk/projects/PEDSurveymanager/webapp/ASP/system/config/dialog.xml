@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="5">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>cfg_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>cfg_name</NAME>
+			<DESC>Konfig$name</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$Wert</DESC>
+			<NAME>Konfigurationswert</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

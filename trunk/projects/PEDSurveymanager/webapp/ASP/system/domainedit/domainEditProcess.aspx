@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" Src="domainEditProcess.aspx.cs" Inherits="easyFramework.Project.Default.domainEditProcess"%>

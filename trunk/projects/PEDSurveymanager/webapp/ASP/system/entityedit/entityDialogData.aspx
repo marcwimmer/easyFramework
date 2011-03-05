@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" src="entityDialogData.aspx.cs" Inherits="easyFramework.Project.Default.entityDialogData"%>

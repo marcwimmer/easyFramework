@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" Src="memoProcess.aspx.cs" Inherits="easyFramework.Project.Default.memoProcess" CodeBehind="memoProcess.aspx.vb" %>

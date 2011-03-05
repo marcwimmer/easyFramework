@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" Src="storeClientData.aspx.cs" Inherits="easyFramework.Project.Default.storeClientData"%>

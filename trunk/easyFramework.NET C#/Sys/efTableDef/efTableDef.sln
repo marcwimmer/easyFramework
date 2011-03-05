@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efTableDef", "efTableDef.csproj", "{A919EDC2-709E-4356-BF53-AC8B091087F7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Adoptionlist = Adoptionlist
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A919EDC2-709E-4356-BF53-AC8B091087F7}.Adoptionlist.ActiveCfg = Adoptionlist|.NET
+		{A919EDC2-709E-4356-BF53-AC8B091087F7}.Adoptionlist.Build.0 = Adoptionlist|.NET
+		{A919EDC2-709E-4356-BF53-AC8B091087F7}.Debug.ActiveCfg = Debug|.NET
+		{A919EDC2-709E-4356-BF53-AC8B091087F7}.Debug.Build.0 = Debug|.NET
+		{A919EDC2-709E-4356-BF53-AC8B091087F7}.Release.ActiveCfg = Release|.NET
+		{A919EDC2-709E-4356-BF53-AC8B091087F7}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

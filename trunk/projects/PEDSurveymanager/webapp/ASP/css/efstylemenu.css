@@ -1,0 +1,40 @@
+BODY			{margin: 0; border: 0}
+
+#menu           {cursor: default; position: absolute; top: 0; left: 0;
+                 background: #426FAA; border: 0 solid #426FAA;
+                 color: white; z-index: 100;
+                 background-Repeat : repeat-x
+				}
+
+#menu .menu     {background: #81A4D6; border: 0 solid black; 
+                 position: absolute;
+                 background-Repeat : repeat-y;
+                 border-left: 1 solid #black;
+				 border-right: 1 solid black;
+				 border-top: none;
+				 border-bottom: 1 solid black;
+				 }
+
+#menu TD		{font: menu; height: 20;}
+#menu TR		{color:"white";}
+
+
+#menu .root		{border: 0 solid #426FAA; 
+				padding: 1; padding-left: 7; padding-right: 7; margin: 6;
+				color: white;}
+				
+#menu .icon		{text-align: center;}
+
+#menu .disabled	{color:#426FAA; }
+#menu .more		{font-family:arial,sans-serif; font-size: 8pt;
+				width: 20; text-align: right;}
+#menu #handle	{border:1 solid black;
+				padding: 0;
+				margin: 0;
+				cursor: move;}
+
+#outerDiv		{position: absolute; overflow:auto;
+				z-index: -1;
+				height:90%; width:100%;
+				border: 1 solid white;}
+				

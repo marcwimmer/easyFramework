@@ -1,0 +1,32 @@
+<VisualStudioProject>
+  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="{7E6E8943-2068-4980-87CE-E29579D54735}">
+    <Build>
+      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="efEntityPopupMenue" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" RootNamespace="easyFramework.Frontend.ASP.ComplexObjects" StartupObject="easyFramework.Frontend.ASP.ComplexObjects.(Keine)">
+        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverFlowUnderFlow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DefineTrace="true" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="true" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverFlowUnderFlow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DefineTrace="true" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="E:\Projects\easyFramework.NET C# Web\bin" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="Microsoft.VisualBasic" AssemblyName="Microsoft.VisualBasic" />
+        <Reference Name="mscorlib" AssemblyName="mscorlib" />
+        <Reference Name="System" AssemblyName="System" />
+        <Reference Name="efEntities" AssemblyName="efEntities" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntities.dll" Private="False" />
+        <Reference Name="efPopupMenue" AssemblyName="efPopupMenue" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efPopupMenue.dll" Private="False" />
+        <Reference Name="efXml" AssemblyName="efXml" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll" Private="False" />
+        <Reference Name="efData" AssemblyName="efData" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll" Private="False" />
+        <Reference Name="efToolLib" AssemblyName="efToolLib" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll" Private="False" />
+        <Reference Name="efHTMLRenderer" AssemblyName="efHTMLRenderer" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efHTMLRenderer.dll" Private="False" />
+        <Reference Name="efSecurity" AssemblyName="efSecurity" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efSecurity.dll" Private="False" />
+        <Reference Name="System.Web" AssemblyName="System.Web" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.Web.dll" Private="False" />
+        <Reference Name="efDataClientInfo" AssemblyName="efDataClientInfo" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efDataClientInfo.dll" Private="False" />
+        <Reference Name="efRecordset" AssemblyName="efRecordset" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efRecordset.dll" Private="False" />
+        <Reference Name="efClientInfo" AssemblyName="efClientInfo" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efClientInfo.dll" Private="False" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="EntityPopupMenueRenderer.cs" SubType="Code" BuildAction="Compile" />
+      </Include>
+    </Files>
+  </CSHARP>
+</VisualStudioProject>

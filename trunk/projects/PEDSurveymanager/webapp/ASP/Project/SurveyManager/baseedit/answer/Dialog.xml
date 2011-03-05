@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="1">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>ans_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>ans_qst_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$HOT$T$HOT$yp</DESC>
+			<NAME>ans_aty_id</NAME>
+			<TYPE>DATACOMBO</TYPE>
+			<SRC>AnswerTypes</SRC>
+		</efDialogField>
+		<efDialogField>
+			<NAME>ans_resultDbField</NAME>
+			<DESC>$HOT$D$HOT$atenbankfeld</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<NAME>ans_multiline</NAME>
+			<DESC>$HOT$M$HOT$ehrzeilig</DESC>
+			<TYPE>CHECKBOX</TYPE>
+			<VALUE>0</VALUE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>ans_lines</NAME>
+			<DESC>$HOT$Z$HOT$eilen</DESC>
+			<TYPE>NUMBER</TYPE>
+			<VALUE>1</VALUE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField COLSPANFIELD="3">
+			<NAME>ans_gap_txt</NAME>
+			<DESC>$HOT$L$HOT$ückentext</DESC>
+			<TYPE>TEXTAREA</TYPE>
+			<COLS>80</COLS>
+			<ROWS>4</ROWS>
+		</efDialogField>
+		
+	</efDialogRow>
+</efDialogPage>

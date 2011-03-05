@@ -1,0 +1,1 @@
+<%@ Page language="c#" Src="newPackageProcess.aspx.cs" AutoEventWireup="false" Inherits="easyFramework.Project.Default.ASP.tasks.distribution.newPackageProcess" %>

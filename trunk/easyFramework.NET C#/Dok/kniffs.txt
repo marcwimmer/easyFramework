@@ -1,0 +1,56 @@
+Reihenfolge beim Einbinden der JS-Dateien ist wichtig: 
+Standard.js vor Window.js
+
+
+==============================================================================================
+
+Wenn Rekursive Funktionen in Javascript programmiert werden, z.B.: 
+
+function multistruct_internalHide(bWithChildren) {
+	var oDiv = document.getElementById(this.sLevelId + sSubContentSuffix);
+	gHideDiv(oDiv);
+	
+	if (bWithChildren) 
+		var i=0;
+		for (i=0; i < this.aoChildren.length; i++) {
+			this.aoChildren[i].internalHide(bWithChildren);
+		}
+	
+}
+
+
+dann ist es total wichtig, dass die Schleifen-Variable i EXPLIZIT DEKLARIERT wird. Ansonsten wird
+Sie bei jedem Schleifendurchlauf zurückgesetzt und eine Endlosschleife entsteht.
+
+
+==============================================================================================
+Da jetzt on demand javascript eingefügt wird, funktioniert die Eval-Anweisung nur, wenn kurz zuvor
+der Wert nochmal gesetzt wird. (wohl eine Sicherheitseinstellung), z.B.:
+this.contentList[lIndex].sJavascript += "";
+
+
+==============================================================================================
+Wenn die Webseite direkt läuft, oder in einem virtuellen Verzeichnis:
+
+Problem: Request.ApplicationPath liefert "/" zurück, wenn die Webseite direkt in der Webroot läuft.
+Das ist z.B. in folgendem Fall problematisch: 
+
+If rsCurrentLine("mnu_command").sValue <> "" Then
+            sCommand = "gsShowWindow('" & _
+               Request.ApplicationPath & _
+               rsCurrentLine("mnu_command").sValue & "',"
+
+            If rsCurrentLine("mnu_modalwindow").bValue = True Then
+                sCommand += "true"
+            Else
+                sCommand += "false"
+            End If
+            sCommand += ");"
+        End If
+
+
+Fazit: am besten immer oClientInfo.oHttpRequest.sApplicationPath verwenden!, dann ist man auf der sicheren Seite.
+Anmerkung: oClientInfo.oHttpApp.sApplicationPath hört NICHT mit einem Slash auf, also z.B. "", "/SVM"
+
+==============================================================================================
+

@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" Src="helpContentData.aspx.cs" Inherits="easyFramework.Project.Default.helpContentData"%>

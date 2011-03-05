@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="1">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>plc_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$Name</DESC>
+			<NAME>plc_name</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>$Gruppe</DESC>
+			<NAME>plc_svg_id</NAME>
+			<TYPE>INPUT</TYPE>
+			<ENTITY>SurveyGroups</ENTITY>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$Vorlage</DESC>
+			<NAME>plc_template</NAME>
+			<TYPE>CHECKBOX</TYPE>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" Src="usergroups2userProcess.aspx.cs" Inherits="easyFramework.Project.Default.usergroups2userProcess"%>

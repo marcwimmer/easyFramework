@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="1">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>adp_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%">
+			<DESC>Verantwortlicher</DESC>
+			<NAME>adp_responsible_user_id</NAME>
+			<TYPE>INPUT</TYPE>
+			<ENTITY>Users</ENTITY>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%" NOWRAP="1">
+			<NAME>adp_land</NAME>
+			<TYPE>DATACOMBO</TYPE>
+			<DESC>$Land</DESC>
+			<DOMAIN>Land</DOMAIN>
+		</efDialogField>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%" NOWRAP="1">
+			<NAME>adp_plz</NAME>
+			<TYPE>INPUT</TYPE>
+			<DESC>$PLZ</DESC>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%">
+			<NAME>adp_ort</NAME>
+			<DESC>Ort</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%" NOWRAP="1">
+			<NAME>adp_dozent</NAME>
+			<TYPE>INPUT</TYPE>
+			<DESC>$Dozent</DESC>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%" NOWRAP="1">
+			<NAME>adp_autor_titel</NAME>
+			<TYPE>INPUT</TYPE>
+			<DESC>$Autor+Titel</DESC>
+		</efDialogField>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%">
+			<NAME>adp_isbn</NAME>
+			<DESC>ISBN</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%" NOWRAP="1">
+			<NAME>adp_anzahl_studenten</NAME>
+			<TYPE>NUMBER</TYPE>
+			<DESC>Anzahl $Studenten</DESC>
+		</efDialogField>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%">
+			<NAME>adp_name_vorlesung</NAME>
+			<DESC>Name $Vorlesung</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%" NOWRAP="1">
+			<NAME>adp_price_vista_excl_vat</NAME>
+			<TYPE>INPUT</TYPE>
+			<DESC>Preis ohne Mwst.</DESC>
+		</efDialogField>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%">
+			<NAME>adp_bemerkung</NAME>
+			<DESC>Bemerkung</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%" NOWRAP="1">
+			<NAME>adp_buchhandlung</NAME>
+			<TYPE>INPUT</TYPE>
+			<DESC>$Buchhandlung</DESC>
+		</efDialogField>
+		<efDialogField WIDTHLABEL="20%" WIDTHFIELD="30%">
+			<NAME>adp_verkaufte_exemplare</NAME>
+			<DESC>verk. Exemplare</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

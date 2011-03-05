@@ -1,0 +1,2167 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Web"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{7810A125-DDD5-43A0-A47A-C27F9F750B71}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "efWebApp"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Flow"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "easyFramework.Project.Default"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = "easyFramework.Project.Default.(Keine)"
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "trash\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "trash\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "Microsoft.VisualBasic"
+                    AssemblyName = "Microsoft.VisualBasic"
+                />
+                <Reference
+                    Name = "mscorlib"
+                    AssemblyName = "mscorlib"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                />
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\F:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\F:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "Microsoft.Vbe.Interop"
+                    AssemblyName = "Microsoft.Vbe.Interop"
+                    HintPath = "bin\Microsoft.Vbe.Interop.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efAspTools"
+                    AssemblyName = "efAspTools"
+                    HintPath = "bin\efAspTools.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efAutoDBUpdate"
+                    AssemblyName = "efAutoDBUpdate"
+                    HintPath = "bin\efAutoDBUpdate.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efCache"
+                    AssemblyName = "efCache"
+                    HintPath = "bin\efCache.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efCachedFile"
+                    AssemblyName = "efCachedFile"
+                    HintPath = "bin\efCachedFile.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efClientInfo"
+                    AssemblyName = "efClientInfo"
+                    HintPath = "bin\efClientInfo.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efComboBox"
+                    AssemblyName = "efComboBox"
+                    HintPath = "bin\efComboBox.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efData"
+                    AssemblyName = "efData"
+                    HintPath = "bin\efData.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efDataClientInfo"
+                    AssemblyName = "efDataClientInfo"
+                    HintPath = "bin\efDataClientInfo.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efDialog"
+                    AssemblyName = "efDialog"
+                    HintPath = "bin\efDialog.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efDirectoryWatcher"
+                    AssemblyName = "efDirectoryWatcher"
+                    HintPath = "bin\efDirectoryWatcher.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efDomains"
+                    AssemblyName = "efDomains"
+                    HintPath = "bin\efDomains.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efEntities"
+                    AssemblyName = "efEntities"
+                    HintPath = "bin\efEntities.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efEntityLoader"
+                    AssemblyName = "efEntityLoader"
+                    HintPath = "bin\efEntityLoader.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efEntityPopupMenue"
+                    AssemblyName = "efEntityPopupMenue"
+                    HintPath = "bin\efEntityPopupMenue.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efEnvironment"
+                    AssemblyName = "efEnvironment"
+                    HintPath = "bin\efEnvironment.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efHelpSystem"
+                    AssemblyName = "efHelpSystem"
+                    HintPath = "bin\efHelpSystem.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efHTMLRenderer"
+                    AssemblyName = "efHTMLRenderer"
+                    HintPath = "bin\efHTMLRenderer.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efImages"
+                    AssemblyName = "efImages"
+                    HintPath = "bin\efImages.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efInterfaces"
+                    AssemblyName = "efInterfaces"
+                    HintPath = "bin\efInterfaces.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efLogging"
+                    AssemblyName = "efLogging"
+                    HintPath = "bin\efLogging.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efMail"
+                    AssemblyName = "efMail"
+                    HintPath = "bin\efMail.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efMIME"
+                    AssemblyName = "efMIME"
+                    HintPath = "bin\efMIME.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efMultiStructureHelper"
+                    AssemblyName = "efMultiStructureHelper"
+                    HintPath = "bin\efMultiStructureHelper.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efOfficeTalk"
+                    AssemblyName = "efOfficeTalk"
+                    HintPath = "bin\efOfficeTalk.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efPage"
+                    AssemblyName = "efPage"
+                    HintPath = "bin\efPage.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efPopupMenue"
+                    AssemblyName = "efPopupMenue"
+                    HintPath = "bin\efPopupMenue.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efRecordset"
+                    AssemblyName = "efRecordset"
+                    HintPath = "bin\efRecordset.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efSecurity"
+                    AssemblyName = "efSecurity"
+                    HintPath = "bin\efSecurity.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efSqlTools"
+                    AssemblyName = "efSqlTools"
+                    HintPath = "bin\efSqlTools.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efSysEvents"
+                    AssemblyName = "efSysEvents"
+                    HintPath = "bin\efSysEvents.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efTableDef"
+                    AssemblyName = "efTableDef"
+                    HintPath = "bin\efTableDef.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efTableDefCached"
+                    AssemblyName = "efTableDefCached"
+                    HintPath = "bin\efTableDefCached.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efToolLib"
+                    AssemblyName = "efToolLib"
+                    HintPath = "bin\efToolLib.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efWebComponents"
+                    AssemblyName = "efWebComponents"
+                    HintPath = "bin\efWebComponents.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efXml"
+                    AssemblyName = "efXml"
+                    HintPath = "bin\efXml.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efXmlDialog"
+                    AssemblyName = "efXmlDialog"
+                    HintPath = "bin\efXmlDialog.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "FreeTextBox"
+                    AssemblyName = "FreeTextBox"
+                    HintPath = "bin\FreeTextBox.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Interop.MSXML2"
+                    AssemblyName = "Interop.MSXML2"
+                    HintPath = "bin\Interop.MSXML2.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Microsoft.Office.Interop.Excel"
+                    AssemblyName = "Microsoft.Office.Interop.Excel"
+                    HintPath = "bin\Microsoft.Office.Interop.Excel.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "F:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "efConfig"
+                    AssemblyName = "efConfig"
+                    HintPath = "bin\efConfig.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "MSXML2"
+                    Guid = "{F5078F18-C551-11D3-89B9-0000F81FE221}"
+                    VersionMajor = "5"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "efDistribution"
+                    AssemblyName = "efDistribution"
+                    HintPath = "bin\efDistribution.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efWebAppInit"
+                    AssemblyName = "efWebAppInit"
+                    HintPath = "bin\efWebAppInit.dll"
+                    Private = "False"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "default.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "easyFramework.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.cs"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\css\efstyledatatable.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\css\efstyledefault.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\css\efstyledialogtable.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\css\efstylehelp.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\css\efstylemenu.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\css\efstyletabdlg.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\css\efstyletree.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\css\efstyletreeview.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\demo\cssOverview.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\demo\demoTab.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\demo\demoTab.aspx.cs"
+                    DependentUpon = "demoTab.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\demo\demoTab.aspx.resx"
+                    DependentUpon = "demoTab.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\demo\multistructure.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\demo\multistructure.aspx.cs"
+                    DependentUpon = "multistructure.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\demo\multistructure.aspx.resx"
+                    DependentUpon = "multistructure.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\demo\xmlDialog.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\demo\xmlMulti1.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\demo\xmlMulti2.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\demo\xmlMultiStructure.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\arrow_down.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\arrow_first.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\arrow_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\arrow_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\arrow_up.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\arrow_up_dis.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_center.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_delete.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_first.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_first_down.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_last.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_last_down.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_left.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_menu.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_next.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_next_dis.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_next_down.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_prev.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_prev_dis.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_prev_down.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_right.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\button_view.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\clear.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\delete.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\delete_disable.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\details.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\details2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\doc_image.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\doc_sound.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\doc_video.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\excel.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\filter_search.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\filter_tree.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\folder_closed.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\folder_opened.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\groups.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\icon_arrow_scrollDown_yellow.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\icon_arrow_scrollUp_yellow.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\menu_copy.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\menu_cut.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\menu_delete.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\menu_favoritesoptions.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\menu_folder.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\menu_paste.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\menu_print.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\menu_refresh.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\menu_save.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\menu_search.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\menu_tasks.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\msgbox.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\print.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\save.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\task.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\task_open.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treefilter.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treefilter_add.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treefilter_dis.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treefolderclosed_b.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treefolderclosed_g.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treefolderopened_b.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treefolderopened_g.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\users.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\users1.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\word.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\startup\startscreen.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\clear.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\ComponentExpand.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\ComponentNoExpand.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\f.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\fminus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\folder.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\folderopen.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\fplus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\i.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\Item.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\Item.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\L.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\Lminus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\Lplus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\minus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\plus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\r.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\Rminus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\Rplus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\t.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\TextExpand.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\TextNoExpand.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\Tminus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\images\treeview\Tplus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efClientData.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efDataTable.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efDlgParams.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efIESpecials.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efMultiStructure.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efOnlineHelp.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efOptionDialog.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efPagedXmlDialog.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efPopupMenue.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efServerProcess.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efStandard.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efTabDialog.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efTreeview.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\js\efWindow.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\main\main.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\main\main.aspx.cs"
+                    DependentUpon = "main.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\main\main.aspx.resx"
+                    DependentUpon = "main.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\main\main.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\main\MainMenuData.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\main\MainMenuData.aspx.cs"
+                    DependentUpon = "MainMenuData.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\main\MainMenuData.aspx.resx"
+                    DependentUpon = "MainMenuData.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <Folder RelPath = "ASP\Project\" />
+                <File
+                    RelPath = "ASP\system\defaultheader.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\abonnents\dialog.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\abonnents\tabledef.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\appconfig\AppConfig.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\appconfig\AppConfig.aspx.cs"
+                    DependentUpon = "AppConfig.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\appconfig\AppConfig.aspx.resx"
+                    DependentUpon = "AppConfig.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\browsercheck\certifiedbrowsers\certifiedBrowsers.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\browsercheck\certifiedbrowsers\certifiedBrowsers.aspx.cs"
+                    DependentUpon = "certifiedBrowsers.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\browsercheck\certifiedbrowsers\certifiedBrowsers.aspx.resx"
+                    DependentUpon = "certifiedBrowsers.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\clientinfoData\getClientData.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\clientinfoData\getClientData.aspx.cs"
+                    DependentUpon = "getClientData.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\clientinfoData\getClientData.aspx.resx"
+                    DependentUpon = "getClientData.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\clientinfoData\storeClientData.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\clientinfoData\storeClientData.aspx.cs"
+                    DependentUpon = "storeClientData.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\clientinfoData\storeClientData.aspx.resx"
+                    DependentUpon = "storeClientData.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\config\dialog.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\config\tabledef.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\devaid\default.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\devaid\default.aspx.cs"
+                    DependentUpon = "default.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\devaid\default.aspx.resx"
+                    DependentUpon = "default.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\devaid\executeDBUpdate.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\devaid\executeDBUpdate.aspx.cs"
+                    DependentUpon = "executeDBUpdate.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\devaid\executeDBUpdate.aspx.resx"
+                    DependentUpon = "executeDBUpdate.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\domainedit\domainEdit.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\domainedit\domainEdit.aspx.cs"
+                    DependentUpon = "domainEdit.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\domainedit\domainEdit.aspx.resx"
+                    DependentUpon = "domainEdit.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\domainedit\domainEditProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\domainedit\domainEditProcess.aspx.cs"
+                    DependentUpon = "domainEditProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\domainedit\domainEditProcess.aspx.resx"
+                    DependentUpon = "domainEditProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\entities\UserGroups.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entities\UserGroupsTableDef.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entities\Users.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entities\UsersTableDef.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entityDialogLoad\entityDialogLoad.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entityDialogLoad\entityDialogLoad.aspx.cs"
+                    DependentUpon = "entityDialogLoad.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\entityDialogLoad\entityDialogLoad.aspx.resx"
+                    DependentUpon = "entityDialogLoad.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\entityDataTable.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\entityDataTable.aspx.cs"
+                    DependentUpon = "entityDataTable.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\entityDataTable.aspx.resx"
+                    DependentUpon = "entityDataTable.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\entityDialogData.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\entityDialogData.aspx.cs"
+                    DependentUpon = "entityDialogData.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\entityDialogData.aspx.resx"
+                    DependentUpon = "entityDialogData.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\entityEdit.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\entityEdit.aspx.cs"
+                    DependentUpon = "entityEdit.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\entityEdit.aspx.resx"
+                    DependentUpon = "entityEdit.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\EntityProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\EntityProcess.aspx.cs"
+                    DependentUpon = "EntityProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\entityedit\EntityProcess.aspx.resx"
+                    DependentUpon = "EntityProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\entitysearch\entitysearch.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entitysearch\entitysearch.aspx.cs"
+                    DependentUpon = "entitysearch.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\entitysearch\entitysearch.aspx.resx"
+                    DependentUpon = "entitysearch.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\entitysearch\entitySearchDataTable.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entitysearch\entitySearchDataTable.aspx.cs"
+                    DependentUpon = "entitySearchDataTable.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\entitysearch\entitySearchDataTable.aspx.resx"
+                    DependentUpon = "entitySearchDataTable.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\entitySearchSelectField\entitySearchSelectField.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\entitySearchSelectField\entitySearchSelectField.aspx.cs"
+                    DependentUpon = "entitySearchSelectField.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\entitySearchSelectField\entitySearchSelectField.aspx.resx"
+                    DependentUpon = "entitySearchSelectField.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\errorpages\error.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\errorpages\error.aspx.cs"
+                    DependentUpon = "error.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\errorpages\error.aspx.resx"
+                    DependentUpon = "error.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\FreeTextBox-MainScript.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\FreeTextBox-ToolbarItemsScript.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\mode.design.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\mode.html.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\normal.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\s.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\separator.horizontal.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\separator.vertical.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\toolbar.horizontal.background.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\toolbar.horizontal.end.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\toolbar.horizontal.start.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\toolbar.vertical.background.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\toolbar.vertical.end.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\toolbar.vertical.start.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\images\toolbarbutton.background.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\Languages\de-de.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\Languages\en-en.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\Languages\es-ES.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\Languages\fr-FR.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\Languages\ja-JP.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\Languages\ko-kr.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\Languages\Languages.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\Languages\nl-NL.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\Languages\pt-pt.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\Languages\zh-cn.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\office2000\mode.design.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\office2000\mode.html.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\office2000\normal.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\office2000\normal.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\office2000\s.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\office2000\separator.horizontal.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\office2000\toolbar.horizontal.end.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\office2000\toolbar.horizontal.start.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\officexp\mode.design.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\officexp\mode.html.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\officexp\normal.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\officexp\normal.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\officexp\s.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\officexp\separator.horizontal.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\officexp\toolbar.horizontal.end.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\freeTextBox\officexp\toolbar.horizontal.start.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\help\help.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\help\help.aspx.cs"
+                    DependentUpon = "help.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\help\help.aspx.resx"
+                    DependentUpon = "help.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\help\helpContentData.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\help\helpContentData.aspx.cs"
+                    DependentUpon = "helpContentData.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\help\helpContentData.aspx.resx"
+                    DependentUpon = "helpContentData.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\help\searchData.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\help\searchData.aspx.cs"
+                    DependentUpon = "searchData.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\help\searchData.aspx.resx"
+                    DependentUpon = "searchData.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\help\TocData.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\help\TocData.aspx.cs"
+                    DependentUpon = "TocData.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\help\TocData.aspx.resx"
+                    DependentUpon = "TocData.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\log\clearLogProcess.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\log\clearLogProcess.aspx.cs"
+                    DependentUpon = "clearLogProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\log\clearLogProcess.aspx.resx"
+                    DependentUpon = "clearLogProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\log\log.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\log\log.aspx.cs"
+                    DependentUpon = "log.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\log\log.aspx.resx"
+                    DependentUpon = "log.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\log\logDataTable.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\log\logDataTable.aspx.cs"
+                    DependentUpon = "logDataTable.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\log\logDataTable.aspx.resx"
+                    DependentUpon = "logDataTable.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\login\Login.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\login\Login.aspx.cs"
+                    DependentUpon = "Login.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\login\Login.aspx.resx"
+                    DependentUpon = "Login.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\login\loginDlg.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\login\loginProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\login\loginProcess.aspx.cs"
+                    DependentUpon = "loginProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\login\loginProcess.aspx.resx"
+                    DependentUpon = "loginProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\memoedit\memoDialog.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\memoedit\memoDialogTextarea.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\memoedit\memoEdit.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\memoedit\memoEdit.aspx.cs"
+                    DependentUpon = "memoEdit.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\memoedit\memoEdit.aspx.resx"
+                    DependentUpon = "memoEdit.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\memoedit\memoProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\memoedit\memoProcess.aspx.cs"
+                    DependentUpon = "memoProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\memoedit\memoProcess.aspx.resx"
+                    DependentUpon = "memoProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\ondemandrender\newbuttonOptions.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\ondemandrender\newbuttonOptions.aspx.cs"
+                    DependentUpon = "newbuttonOptions.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\ondemandrender\newbuttonOptions.aspx.resx"
+                    DependentUpon = "newbuttonOptions.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\ondemandrender\renderAllLevelForReload.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\ondemandrender\renderAllLevelForReload.aspx.cs"
+                    DependentUpon = "renderAllLevelForReload.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\ondemandrender\renderAllLevelForReload.aspx.resx"
+                    DependentUpon = "renderAllLevelForReload.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\ondemandrender\renderLevel.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\ondemandrender\renderLevel.aspx.cs"
+                    DependentUpon = "renderLevel.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\ondemandrender\renderLevel.aspx.resx"
+                    DependentUpon = "renderLevel.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\storing\storeDialogData.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\storing\storeDialogData.aspx.cs"
+                    DependentUpon = "storeDialogData.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\storing\storeDialogData.aspx.resx"
+                    DependentUpon = "storeDialogData.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\storing\storeProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\storing\storeProcess.aspx.cs"
+                    DependentUpon = "storeProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\multistructure\storing\storeProcess.aspx.resx"
+                    DependentUpon = "storeProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\optiondialog\optionDialog.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\optiondialog\optionDialog.aspx.cs"
+                    DependentUpon = "optionDialog.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\optiondialog\optionDialog.aspx.resx"
+                    DependentUpon = "optionDialog.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\startuppage\startup.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityPopups\usergroups2entityPopups.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityPopups\usergroups2entityPopups.aspx.cs"
+                    DependentUpon = "usergroups2entityPopups.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityPopups\usergroups2entityPopups.aspx.resx"
+                    DependentUpon = "usergroups2entityPopups.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityPopups\usergroups2entityPopupsProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityPopups\usergroups2entityPopupsProcess.aspx.cs"
+                    DependentUpon = "usergroups2entityPopupsProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityPopups\usergroups2entityPopupsProcess.aspx.resx"
+                    DependentUpon = "usergroups2entityPopupsProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityTabs\usergroups2entityTabs.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityTabs\usergroups2entityTabs.aspx.cs"
+                    DependentUpon = "usergroups2entityTabs.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityTabs\usergroups2entityTabs.aspx.resx"
+                    DependentUpon = "usergroups2entityTabs.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityTabs\usergroups2entityTabsProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityTabs\usergroups2entityTabsProcess.aspx.cs"
+                    DependentUpon = "usergroups2entityTabsProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2entityTabs\usergroups2entityTabsProcess.aspx.resx"
+                    DependentUpon = "usergroups2entityTabsProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2menue\usergroups2menue.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2menue\usergroups2menue.aspx.cs"
+                    DependentUpon = "usergroups2menue.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2menue\usergroups2menue.aspx.resx"
+                    DependentUpon = "usergroups2menue.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2menue\usergroups2menueProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2menue\usergroups2menueProcess.aspx.cs"
+                    DependentUpon = "usergroups2menueProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2menue\usergroups2menueProcess.aspx.resx"
+                    DependentUpon = "usergroups2menueProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2policies\usergroups2policies.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2policies\usergroups2policies.aspx.cs"
+                    DependentUpon = "usergroups2policies.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2policies\usergroups2policies.aspx.resx"
+                    DependentUpon = "usergroups2policies.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2policies\usergroups2policiesProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2policies\usergroups2policiesProcess.aspx.cs"
+                    DependentUpon = "usergroups2policiesProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2policies\usergroups2policiesProcess.aspx.resx"
+                    DependentUpon = "usergroups2policiesProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2user\usergroups2user.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2user\usergroups2user.aspx.cs"
+                    DependentUpon = "usergroups2user.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2user\usergroups2user.aspx.resx"
+                    DependentUpon = "usergroups2user.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2user\usergroups2userProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2user\usergroups2userProcess.aspx.cs"
+                    DependentUpon = "usergroups2userProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\usergroups2user\usergroups2userProcess.aspx.resx"
+                    DependentUpon = "usergroups2userProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\userpreferences\readme.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityPopups\users2entityPopups.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityPopups\users2entityPopups.aspx.cs"
+                    DependentUpon = "users2entityPopups.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityPopups\users2entityPopups.aspx.resx"
+                    DependentUpon = "users2entityPopups.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityPopups\users2entityPopupsProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityPopups\users2entityPopupsProcess.aspx.cs"
+                    DependentUpon = "users2entityPopupsProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityPopups\users2entityPopupsProcess.aspx.resx"
+                    DependentUpon = "users2entityPopupsProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityTabs\users2entityTabs.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityTabs\users2entityTabs.aspx.cs"
+                    DependentUpon = "users2entityTabs.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityTabs\users2entityTabs.aspx.resx"
+                    DependentUpon = "users2entityTabs.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityTabs\users2entityTabsProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityTabs\users2entityTabsProcess.aspx.cs"
+                    DependentUpon = "users2entityTabsProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\users2entityTabs\users2entityTabsProcess.aspx.resx"
+                    DependentUpon = "users2entityTabsProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\users2menue\users2menue.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\users2menue\users2menue.aspx.cs"
+                    DependentUpon = "users2menue.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\users2menue\users2menue.aspx.resx"
+                    DependentUpon = "users2menue.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\users2menue\users2menueProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\users2menue\users2menueProcess.aspx.cs"
+                    DependentUpon = "users2menueProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\users2menue\users2menueProcess.aspx.resx"
+                    DependentUpon = "users2menueProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\users2policies\users2policies.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\users2policies\users2policies.aspx.cs"
+                    DependentUpon = "users2policies.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\users2policies\users2policies.aspx.resx"
+                    DependentUpon = "users2policies.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\users2policies\users2policiesProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\users2policies\users2policiesProcess.aspx.cs"
+                    DependentUpon = "users2policiesProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\users2policies\users2policiesProcess.aspx.resx"
+                    DependentUpon = "users2policiesProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\users2usergroup\users2usergroup.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\users2usergroup\users2usergroup.aspx.cs"
+                    DependentUpon = "users2usergroup.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\users2usergroup\users2usergroup.aspx.resx"
+                    DependentUpon = "users2usergroup.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\users2usergroup\users2usergroupProcess.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\users2usergroup\users2usergroupProcess.aspx.cs"
+                    DependentUpon = "users2usergroupProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\users2usergroup\users2usergroupProcess.aspx.resx"
+                    DependentUpon = "users2usergroupProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\system\xmldlgrenderer\renderXmlDlg.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\system\xmldlgrenderer\renderXmlDlg.aspx.cs"
+                    DependentUpon = "renderXmlDlg.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\system\xmldlgrenderer\renderXmlDlg.aspx.resx"
+                    DependentUpon = "renderXmlDlg.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\FileList.xml"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\newPackageDlg.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\newPackageDlg.aspx.cs"
+                    DependentUpon = "newPackageDlg.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\newPackageDlg.aspx.resx"
+                    DependentUpon = "newPackageDlg.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\newPackageDlg.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\newPackageProcess.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\newPackageProcess.aspx.cs"
+                    DependentUpon = "newPackageProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\newPackageProcess.aspx.resx"
+                    DependentUpon = "newPackageProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\process.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\process.aspx.cs"
+                    DependentUpon = "process.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\process.aspx.resx"
+                    DependentUpon = "process.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\processDlg.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\processDlg.aspx.cs"
+                    DependentUpon = "processDlg.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\processDlg.aspx.resx"
+                    DependentUpon = "processDlg.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\receiveProcess.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\receiveProcess.aspx.cs"
+                    DependentUpon = "receiveProcess.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\receiveProcess.aspx.resx"
+                    DependentUpon = "receiveProcess.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\entities\AbonnentsPackagesDlg.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\entities\AbonnentsPackagesTableDef.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\tabs\tab_abonennten.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\tabs\tab_abonennten.aspx.cs"
+                    DependentUpon = "tab_abonennten.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ASP\tasks\distribution\tabs\tab_abonennten.aspx.resx"
+                    DependentUpon = "tab_abonennten.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <Folder RelPath = "bin\" />
+                <File
+                    RelPath = "DB\__EFBASE _init db 0001.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DB\__EFBASE _init db 0002.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DB\__EFBASE _init db 0003.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DB\__EFBASE _init db 0004.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DB\__EFBASE _init db 0005.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DB\__EFBASE _init db 0006.sql"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DB\__EFBASE default Values 0001.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DB\__EFBASE default Values 0002.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DB\__EFBASE default Values 0003.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DB\__EFBASE default Values 0004.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DB\__EFBASE default Values 0005.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DB\__EFBASE default Values 0006.sql"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "DB\__EFBASE default Values 0007.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DB\__EFBASE default Values 0008.sql"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Help\help.xml"
+                    BuildAction = "Content"
+                />
+                <Folder RelPath = "tempFolder\" />
+                <File
+                    RelPath = "templates\dialogs\simple.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "templates\sourcecode\efClass1.vb.template"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "templates\vsmacros\easyFramework\easyFramework.vsmacros"
+                    BuildAction = "None"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

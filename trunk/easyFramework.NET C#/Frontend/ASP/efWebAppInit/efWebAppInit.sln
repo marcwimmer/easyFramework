@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efWebAppInit", "efWebAppInit.csproj", "{F6A477D5-5B99-4454-9749-654D7EEC2370}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		SurveyManagerNET = SurveyManagerNET
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F6A477D5-5B99-4454-9749-654D7EEC2370}.Debug.ActiveCfg = Debug|.NET
+		{F6A477D5-5B99-4454-9749-654D7EEC2370}.Debug.Build.0 = Debug|.NET
+		{F6A477D5-5B99-4454-9749-654D7EEC2370}.Release.ActiveCfg = Release|.NET
+		{F6A477D5-5B99-4454-9749-654D7EEC2370}.Release.Build.0 = Release|.NET
+		{F6A477D5-5B99-4454-9749-654D7EEC2370}.SurveyManagerNET.ActiveCfg = SurveyManagerNET|.NET
+		{F6A477D5-5B99-4454-9749-654D7EEC2370}.SurveyManagerNET.Build.0 = SurveyManagerNET|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,273 @@
+<HTML>
+	<HEAD>
+		<title>cssOverview</title>
+		<link rel="stylesheet" href="../css/efstyledefault.css">
+		<link rel="stylesheet" href="../css/efstyledialogtable.css">
+	</HEAD>
+	<body>
+		<hr>
+		bordertable with dialogtable in the border-table:<br>
+		<br>
+		<table class="borderTable">
+			<tr>
+				<td>
+					<table class="dialogTable" ID="Table1">
+						<tr>
+							<td class="dlgField">
+								Class dlgField
+							</td>
+							<td class="entryField">
+								<input type="text" ID="Text1" NAME="Text1">
+							</td>
+							<td class="entryField">
+								it follows: input txtLabelField
+							</td>
+							<td class="entryField">
+								<input type="text" class="txtLabelField" ID="Text2" NAME="Text2" value="testadsf">
+							</td>
+							<td class="entryField">
+								it follows: input txtLabelFieldBackground
+							</td>
+							<td class="entryField">
+								<input type="text" class="txtLabelFieldBackground" ID="Text11" NAME="Text2" value="testadsf">
+							</td>
+						</tr>
+						<tr>
+							<td class="dlgField">
+								test
+							</td>
+							<td class="entryField">
+								<input type="text" ID="Text3" NAME="Text3">
+							</td>
+							<td class="dlgField">
+								test
+							</td>
+							<td class="entryField">
+								<input type="text" ID="Text4" NAME="Text4">
+							</td>
+							<td class="dlgField">
+								test
+							</td>
+							<td class="entryField">
+								<input type="text" ID="Text12" NAME="Text4">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="dialogTable" ID="Table2">
+						<tr>
+							<td class="dlgField">
+								Class dlgField
+							</td>
+							<td class="entryField">
+								<input type="text" ID="Text5" NAME="Text1">
+							</td>
+							<td class="entryField">
+								it follows: input txtLabelField
+							</td>
+							<td class="entryField">
+								<input type="text" class="txtLabelField" ID="Text6" NAME="Text2" value="testadsf">
+							</td>
+							<td class="entryField">
+								it follows: input txtLabelFieldBackground
+							</td>
+							<td class="entryField">
+								<input type="text" class="txtLabelFieldBackground" ID="Text7" NAME="Text2" value="testadsf">
+							</td>
+						</tr>
+						<tr>
+							<td class="dlgField">
+								test
+							</td>
+							<td class="entryField">
+								<input type="text" ID="Text13" NAME="Text3">
+							</td>
+							<td class="dlgField">
+								test
+							</td>
+							<td class="entryField">
+								<input type="text" ID="Text14" NAME="Text4">
+							</td>
+							<td class="dlgField">
+								test
+							</td>
+							<td class="entryField">
+								<input type="text" ID="Text15" NAME="Text4">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<hr>
+		<hr>
+		Infotable:
+		<table class="borderTable">
+			<tr>
+				<td>
+					<table class="infoTable" ID="Table3" width="400">
+						<tr class="infoCaption">
+							<td class="infoCaptionCenter" colspan="4">
+								Es folgt eine Auswertung der Serverstatistik der letzten Woche:
+							</td>
+						</tr>
+						<tr>
+							<td class="descField">
+								Auslastung
+							</td>
+							<td class="infoField">
+								82,2%
+							</td>
+							<td class="descField">
+								Anzahl Besucher
+							</td>
+							<td class="infoField">
+								2,424
+							</td>
+						</tr>
+						<tr>
+							<td class="descField">
+								Stromverbrauch
+							</td>
+							<td class="infoField">
+								22,2%
+							</td>
+							<td class="descField">
+								Kosten
+							</td>
+							<td class="infoField">
+								24.422 €
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table width="400">
+						<tr class="infoCaption">
+							<td class="infoCaptionCenter" colspan="4">
+								Es folgt eine Auswertung der Serverstatistik der vorletzten Woche:
+							</td>
+						</tr>
+						<tr>
+							<td class="descField">
+								Auslastung
+							</td>
+							<td class="infoField">
+								82,2%
+							</td>
+							<td class="descField">
+								Anzahl Besucher
+							</td>
+							<td class="infoField">
+								2,424
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<hr>
+		<br>
+		<br>
+		<button onclick="&#13;&#10;&#9;&#9;&#9;ctxMenue.style.width=250; &#13;&#10;&#9;&#9;&#9;ctxMenue.style.height=250;&#13;&#10;&#9;&#9;&#9;ctxMenue.style.visibility='visible'"
+			type="button">show kontext menue</button>
+		<div id="ctxMenue" class="clsContextMenu" onclick="this.style.visibility='hidden'">
+			<a href="#" class="clsContextMenuItem">click here, to close</a> <a href="#" class="clsContextMenuItem">
+				click here, to close</a> <a href="#" class="clsContextMenuItem">click here, to 
+				close</a> <a href="#" class="clsContextMenuItem">click here, to close</a> <a href="#" class="clsContextMenuItem">
+				click here, to close</a> <a href="#" class="clsContextMenuItem">click here, to 
+				close</a> <a href="#" class="clsContextMenuItemHover">click here, to close</a>
+			<a href="#" class="clsContextMenuItem">click here, to close</a> <a href="#" class="clsContextMenuItem">
+				click here, to close</a>
+		</div>
+		<hr>
+		<span class="clsDescription">Tooltip: Span class clsDescription</span>
+		<hr>
+		<A href="#" class="clsUnderline">A with class clsUnderline</A>
+		<hr>
+		Table with different formatted standard TD-classes:
+		<br>
+		<br>
+		<table>
+			<tr>
+				<td class="clsDarkGradient">clsDarkGradient</td>
+			</tr>
+			<tr>
+				<td class="clsLightGradient">clsLightGradient</td>
+			</tr>
+			<tr>
+				<td class="clsLightGradientSel">clsLightGradientSel</td>
+			</tr>
+			<tr>
+				<td class="clsLinkField">clsLinkField</td>
+			</tr>
+		</table>
+		<br>
+		<hr>
+		<table ID="Table4" width="500">
+			<tr>
+				<td class="clsDarkGradientHead">Arbeitsplatzbereich (clsDarkGradient)</td>
+			</tr>
+			<tr>
+				<td class="dlgField">
+					you´ve got a lot work to do, I'll show you the ares of work:
+					<br>
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td class="clsLightGradientHead">eCommerce-Stuff (clsLightGradientHead)</td>
+			</tr>
+			<tr>
+				<td class="dlgField">
+					<ul>
+						<li>
+						Edit Products
+						<li>
+						Report Sales to boss
+						<li>
+							do a lot of extra work...</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="clsLightGradientHead">bookholding-Stuff (clsLightGradientHead)</td>
+			</tr>
+			<tr>
+				<td class="dlgField">
+					<ul>
+						<li>
+						Edit Products
+						<li>
+						Report Sales to boss
+						<li>
+							do a lot of extra work...</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="clsLightGradientSelHead">real-important stuff (clsLightGradientSel)</td>
+			</tr>
+			<tr>								  
+				<td class="dlgField">
+					go into holidays....
+				</td>
+			</tr>
+		</table>
+		<hr>
+		Buttons:<br>
+		<button ID="Button1" type="button">Button</button> <button class="cmdButton" ID="Button2" type="button">
+			cmdButton</button> <button class="cmdButtonDouble" ID="Button3" type="button">cmdButtonDouble</button>
+		<button class="cmdButtonTriple" ID="Button4" type="button">cmdButtonTriple</button>
+		<button class="cmdButtonSmall" ID="Button5" type="button">...</button> <button class="cmdButtonDouble" ID="Button6" type="button">
+			cmdButton</button>
+	</body>
+</HTML>

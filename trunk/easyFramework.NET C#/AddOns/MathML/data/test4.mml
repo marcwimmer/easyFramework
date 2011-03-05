@@ -1,0 +1,62 @@
+<math>
+	<mrow>
+		<mo>(</mo>
+		<mfrac>
+			<mrow>
+				<mo>(</mo>
+				<mi mathsize="big">X</mi>
+					<mfrac>
+						<mi>top</mi>
+						<mi>bottom</mi>
+					</mfrac>
+				<mo>)</mo>
+				<mo>(</mo>
+				<mi mathsize="big">X</mi>
+					<mfrac>
+						<mrow>
+							<mo>(</mo>
+							<mi mathsize="big">X</mi>
+							<mfrac>
+								<mrow>
+									<mo>(</mo>
+									<mi mathsize="big">X</mi>
+									<mfrac>
+										<mrow>
+											<mo>(</mo>
+											<mi mathsize="big">X</mi>
+											<mfrac>
+												<mi>top</mi>
+												<mrow>
+													<mo>(</mo>
+													<mi mathsize="big">X</mi>
+													<mfrac>
+														<mi>top</mi>
+														<mi>bottom</mi>
+													</mfrac>
+													<mo>)</mo>
+												</mrow>
+											</mfrac>
+											<mo>)</mo>
+										</mrow>
+										<mi>bottom</mi>
+									</mfrac>
+									<mo>)</mo>
+								</mrow>
+								<mi>bottom</mi>
+							</mfrac>
+							<mo>)</mo>
+						</mrow>
+						<mi>bottom</mi>
+					</mfrac>
+				<mo>)</mo>				
+			</mrow>
+			<mrow>
+				<mfrac>
+					<mi mathsize="big">Numerator</mi>
+					<mi mathsize="big">Denominator</mi>
+				</mfrac>
+			</mrow>
+		</mfrac>
+		<mo>)</mo>
+	</mrow>
+</math>

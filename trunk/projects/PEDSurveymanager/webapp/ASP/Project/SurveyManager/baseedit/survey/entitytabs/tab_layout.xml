@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="1">
+	<efDialogRow>
+		<efDialogField>
+			<DESC>Anzahl $Spalten</DESC>
+			<NAME>svy_layout_columns</NAME>
+			<TYPE>NUMBER</TYPE>
+		</efDialogField>
+		<efDialogField NOWRAP="true">
+			<DESC>Spaltenbeschreibung links</DESC>
+			<NAME>svy_layout_description_on_the_left</NAME>
+			<TYPE>CHECKBOX</TYPE>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

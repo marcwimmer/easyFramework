@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="1">
+	<efDialogRow>
+		<efDialogField>
+			<DESC>$Gutschein aktivieren</DESC>
+			<NAME>svy_coupon</NAME>
+			<TYPE>CHECKBOX</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>$Preis</DESC>
+			<NAME>svy_coupon_price</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<!--efDialogField>
+			<DESC>$Produktreihe</DESC>
+			<NAME>svy_coupon_product_series</NAME>
+			<TYPE>DATACOMBON</TYPE>
+			<DOMAIN>Produktreihe</DOMAIN>
+		</efDialogField-->
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>eMail $Absender</DESC>
+			<NAME>svy_coupon_email_sender</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>Quelle in DB</DESC>
+			<NAME>svy_coupon_source</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>ausdruckbar</DESC>
+			<NAME>svy_coupon_bprintable</NAME>
+			<TYPE>CHECKBOX</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>Download-URL</DESC>
+			<NAME>svy_coupon_downloadURL</NAME>
+			<TYPE>DATACOMBON</TYPE>
+			<DOMAIN>Coupon_Download_URLs</DOMAIN>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

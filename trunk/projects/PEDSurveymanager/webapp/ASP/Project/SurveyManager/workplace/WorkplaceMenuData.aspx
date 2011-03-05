@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" src="WorkplaceMenuData.aspx.cs" Inherits="easyFramework.Project.SurveyManager.WorkplaceMenuData" %>

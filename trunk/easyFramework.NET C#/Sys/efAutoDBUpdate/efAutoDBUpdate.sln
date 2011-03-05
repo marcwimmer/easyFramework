@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efAutoDBUpdate", "efAutoDBUpdate.csproj", "{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Debug.ActiveCfg = Debug|.NET
+		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Debug.Build.0 = Debug|.NET
+		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Release.ActiveCfg = Release|.NET
+		{16F64D2A-67F7-4DE8-91E1-E095ACB5CD5B}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

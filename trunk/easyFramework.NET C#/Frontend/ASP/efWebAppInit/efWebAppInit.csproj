@@ -1,0 +1,62 @@
+<VisualStudioProject>
+  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="{F6A477D5-5B99-4454-9749-654D7EEC2370}">
+    <Build>
+      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="efWebAppInit" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" PreBuildEvent="" PostBuildEvent="" RootNamespace="efWebAppInit" RunPostBuildEvent="OnBuildSuccess" StartupObject="">
+        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="bin\Release\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="SurveyManagerNET" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="..\..\..\..\..\surveymanagerNET\WebApp\bin\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="System" AssemblyName="System" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.dll" Private="False" />
+        <Reference Name="System.Data" AssemblyName="System.Data" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.Data.dll" Private="False" />
+        <Reference Name="System.XML" AssemblyName="System.Xml" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.XML.dll" Private="False" />
+        <Reference Name="System.Web" AssemblyName="System.Web" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.Web.dll" Private="False" />
+        <Reference Name="efXmlDialog" AssemblyName="efXmlDialog" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXmlDialog.dll" Private="False" />
+        <Reference Name="efAutoDBUpdate" AssemblyName="efAutoDBUpdate" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efAutoDBUpdate.dll" Private="False" />
+        <Reference Name="efCache" AssemblyName="efCache" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efCache.dll" Private="False" />
+        <Reference Name="efCachedFile" AssemblyName="efCachedFile" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efCachedFile.dll" Private="False" />
+        <Reference Name="efClientInfo" AssemblyName="efClientInfo" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efClientInfo.dll" Private="False" />
+        <Reference Name="efComboBox" AssemblyName="efComboBox" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efComboBox.dll" Private="False" />
+        <Reference Name="efConfig" AssemblyName="efConfig" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efConfig.dll" Private="False" />
+        <Reference Name="efData" AssemblyName="efData" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll" Private="False" />
+        <Reference Name="efDataClientInfo" AssemblyName="efDataClientInfo" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efDataClientInfo.dll" Private="False" />
+        <Reference Name="efDialog" AssemblyName="efDialog" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efDialog.dll" Private="False" />
+        <Reference Name="efDirectoryWatcher" AssemblyName="efDirectoryWatcher" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efDirectoryWatcher.dll" Private="False" />
+        <Reference Name="efDistribution" AssemblyName="efDistribution" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efDistribution.dll" Private="False" />
+        <Reference Name="efDomains" AssemblyName="efDomains" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efDomains.dll" Private="False" />
+        <Reference Name="efEntities" AssemblyName="efEntities" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntities.dll" Private="False" />
+        <Reference Name="efEntityLoader" AssemblyName="efEntityLoader" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntityLoader.dll" Private="False" />
+        <Reference Name="efEntityPopupMenue" AssemblyName="efEntityPopupMenue" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntityPopupMenue.dll" Private="False" />
+        <Reference Name="efEnvironment" AssemblyName="efEnvironment" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEnvironment.dll" Private="False" />
+        <Reference Name="efHelpSystem" AssemblyName="efHelpSystem" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efHelpSystem.dll" Private="False" />
+        <Reference Name="efHTMLRenderer" AssemblyName="efHTMLRenderer" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efHTMLRenderer.dll" Private="False" />
+        <Reference Name="efICSharpZLibWrapper" AssemblyName="efICSharpZLibWrapper" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efICSharpZLibWrapper.dll" Private="False" />
+        <Reference Name="efImages" AssemblyName="efImages" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efImages.dll" Private="False" />
+        <Reference Name="efInterfaces" AssemblyName="efInterfaces" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efInterfaces.dll" Private="False" />
+        <Reference Name="efLogging" AssemblyName="efLogging" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efLogging.dll" Private="False" />
+        <Reference Name="efMail" AssemblyName="efMail" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efMail.dll" Private="False" />
+        <Reference Name="efMIME" AssemblyName="efMIME" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efMIME.dll" Private="False" />
+        <Reference Name="efMultiStructureHelper" AssemblyName="efMultiStructureHelper" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efMultiStructureHelper.dll" Private="False" />
+        <Reference Name="efOfficeTalk" AssemblyName="efOfficeTalk" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efOfficeTalk.dll" Private="False" />
+        <Reference Name="efPage" AssemblyName="efPage" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efPage.dll" Private="False" />
+        <Reference Name="efPopupMenue" AssemblyName="efPopupMenue" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efPopupMenue.dll" Private="False" />
+        <Reference Name="efRecordset" AssemblyName="efRecordset" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efRecordset.dll" Private="False" />
+        <Reference Name="efSecurity" AssemblyName="efSecurity" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efSecurity.dll" Private="False" />
+        <Reference Name="efSqlTools" AssemblyName="efSqlTools" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efSqlTools.dll" Private="False" />
+        <Reference Name="efSysEvents" AssemblyName="efSysEvents" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efSysEvents.dll" Private="False" />
+        <Reference Name="efTableDef" AssemblyName="efTableDef" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efTableDef.dll" Private="False" />
+        <Reference Name="efTableDefCached" AssemblyName="efTableDefCached" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efTableDefCached.dll" Private="False" />
+        <Reference Name="efToolLib" AssemblyName="efToolLib" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll" Private="False" />
+        <Reference Name="efWebComponents" AssemblyName="efWebComponents" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efWebComponents.dll" Private="False" />
+        <Reference Name="efXml" AssemblyName="efXml" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll" Private="False" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AppEventHandler.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WebAppInit.cs" SubType="Code" BuildAction="Compile" />
+      </Include>
+    </Files>
+  </CSHARP>
+</VisualStudioProject>

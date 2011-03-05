@@ -1,0 +1,9 @@
+SCC = This is a source code control file
+
+[Adoptionlist.sln]
+SCC_Aux_Path = http://localhost/VaultService|:12
+SCC_Project_Name = $/Adoptionlist
+
+[Adoptionlist.vbproj]
+SCC_Aux_Path = http://localhost/VaultService|:12
+SCC_Project_Name = $/Adoptionlist

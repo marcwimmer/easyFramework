@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="10">
+	<efDialogRow>
+		<efDialogField>
+			<DESC>Klicken Sie auf die Schaltfläche "Paket!", um ein neues Paket zu erstellen, durch das bestehende easyFramework-Installation upgedatet werden können.</DESC>
+			<NAME>info</NAME>
+			<TYPE>BUTTON</TYPE>
+			<VALUE>Paket!</VALUE>
+			<BUTTONTYPE>Submit</BUTTONTYPE>
+		</efDialogField>
+		
+	</efDialogRow>
+
+
+</efDialogPage>

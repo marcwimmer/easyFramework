@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<help>
+	<chapter>
+		<heading>easyFramework 1</heading>
+		<body>Hallods Das ist ein Beispiel für eine online-Hilfe für das easyFramework.
+		
+		<img src="/help/startscreen.jpg"></img>
+		<a href="TEST">This is a test!</a>
+		</body>
+	</chapter>
+	<chapter>
+		<heading>Benutzerverwaltung</heading>
+		<body>Die Benutzerverwaltung ist ein Thema für sich, und wird daher ausführlich behandelt.</body>
+	</chapter>
+	<chapter>
+		<heading>Demonstration 1</heading>
+		<body>Der Text der darin steht und beschreibt.</body>
+		<chapter>
+			<heading>Demonstration 1.1</heading>
+			<body>Der Text der darin steht und beschreibt.</body>
+			<chapter>
+				<heading>Demonstration 1.1.1</heading>
+				<body>Der Text der darin steht und beschreibt.</body>
+				<chapter>
+					<link>
+						<entity>Users</entity>
+					</link>
+					<heading>Demonstration 1.1.1.1</heading>
+					<body>Der Text der darin steht und beschreibt.</body>
+					<chapter>
+						<customid>TEST</customid>
+						<heading>Demonstration 1.1.1.1.1</heading>
+						<body>Der Text der darin steht und beschreibt.</body>
+					</chapter>
+				</chapter>
+			</chapter>
+		</chapter>
+	</chapter>
+</help>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<table name="tdAdoptions" inserted="adp_inserted" updated="adp_updated" insertedby="adp_insertedby"
+	updatedby="adp_updatedby">
+	<field primarykey="1">
+		<name>adp_id</name>
+		<type>int</type>
+		<desc>Adoption-ID</desc>
+	</field>
+	<field>
+		<name>adp_semester</name>
+		<type>string</type>
+		<size>50</size>
+		<desc>Semester</desc>
+	</field>
+	<field>
+		<name>adp_responsible_user_id</name>
+		<type>string</type>
+		<size>255</size>
+		<desc>Verantwortlicher</desc>
+		<rules>
+			<mandatory>
+				<msg>Bitte geben Sie einen Verantwortlichen an!</msg>
+			</mandatory>
+		</rules>
+	</field>
+	<lookup>
+		<name>adp_responsible_user_value</name>
+		<sql>SELECT LTRIM(ISNULL(usr_firstname, '') + ' ' + ISNULL(usr_lastname, '')) FROM tsUsers WHERE usr_id = adp_responsible_user_id</sql>
+		<type>string</type>
+		<size>25</size>
+		<desc>Verantwortlicher</desc>
+	</lookup>
+	<field>
+		<name>adp_plz</name>
+		<type>string</type>
+		<desc>PLZ</desc>
+		<size>50</size>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>adp_ort</name>
+		<type>string</type>
+		<size>64</size>
+		<desc>Ort</desc>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>adp_dozent</name>
+		<type>string</type>
+		<size>128</size>
+		<desc>Dozent</desc>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>adp_autor_titel</name>
+		<type>string</type>
+		<size>128</size>
+		<desc>Autor+Titel</desc>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>adp_isbn</name>
+		<type>string</type>
+		<size>64</size>
+		<desc>ISBN</desc>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>adp_anzahl_studenten</name>
+		<type>string</type>
+		<size>128</size>
+		<desc>Anzahl Studenten</desc>
+	</field>
+	<field>
+		<name>adp_name_vorlesung</name>
+		<type>string</type>
+		<size>128</size>
+		<desc>Name Vorlesung</desc>
+	</field>
+	<field>
+		<name>adp_preis_brutto_dt</name>
+		<type>string</type>
+		<desc>Preis Brutto dt.</desc>
+		<size>64</size>
+	</field>
+	<field>
+		<name>adp_preis_netto_dt</name>
+		<type>string</type>
+		<desc>Preis Netto dt.</desc>
+		<size>64</size>
+	</field>
+	<field>
+		<name>adp_preis_netto_vista</name>
+		<type>string</type>
+		<desc>Preis Netto VISTA</desc>
+		<size>64</size>
+	</field>
+	<field>
+		<name>adp_preis_amazon</name>
+		<type>string</type>
+		<desc>Preis Amazon</desc>
+		<size>64</size>
+	</field>
+	<field>
+		<name>adp_preis_informit</name>
+		<type>string</type>
+		<desc>Preis InformIT</desc>
+		<size>64</size>
+	</field>
+	<field>
+		<name>adp_verkaufsmenge_geplant</name>
+		<type>string</type>
+		<desc>Verkaufsmenge geplant</desc>
+		<size>64</size>
+	</field>
+	<field>
+		<name>adp_umsatz_geplant</name>
+		<type>string</type>
+		<desc>Umsatz geplant</desc>
+		<size>64</size>
+	</field>	
+	<field>
+		<name>adp_bemerkung</name>
+		<type>string</type>
+		<size>2048</size>
+		<desc>Bemerkung</desc>
+	</field>
+	<field>
+		<name>adp_buchhandlung</name>
+		<type>string</type>
+		<size>128</size>
+		<desc>Buchhandlung</desc>
+	</field>
+	<field>
+		<name>adp_land</name>
+		<type>string</type>
+		<size>64</size>
+		<desc>Land</desc>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>adp_verkaufte_exemplare</name>
+		<type>string</type>
+		<desc>verk. Exemplare</desc>
+		<size>64</size>
+	</field>
+	<field>
+		<name>adp_inserted</name>
+		<type>date</type>
+		<desc>Eingefügt</desc>
+	</field>
+	<field>
+		<name>adp_updated</name>
+		<type>date</type>
+		<desc>Bearbeitet</desc>
+	</field>
+	<field>
+		<name>adp_insertedBy</name>
+		<type>string</type>
+		<desc>Eingefügt von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>adp_updatedBy</name>
+		<type>string</type>
+		<desc>Bearbeitet von</desc>
+		<size>255</size>
+	</field>
+</table>

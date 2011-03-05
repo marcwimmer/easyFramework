@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efHelpSystem", "efHelpSystem.csproj", "{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Debug.ActiveCfg = Debug|.NET
+		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Debug.Build.0 = Debug|.NET
+		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Release.ActiveCfg = Release|.NET
+		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

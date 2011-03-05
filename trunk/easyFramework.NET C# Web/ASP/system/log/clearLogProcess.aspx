@@ -1,0 +1,1 @@
+<%@ Page language="cs" Src="clearLogProcess.aspx.cs" AutoEventWireup="false" Inherits="easyFramework.Project.Default.ASP.system.log.clearLogProcess" %>

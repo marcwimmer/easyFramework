@@ -1,0 +1,67 @@
+'================================================================================
+' Project:      easyFramework
+' Copyright:    Promain Software-Betreuung GmbH
+' Component:    Class1.vb
+'--------------------------------------------------------------------------------
+' Purpose:      for doing a special job about something
+'--------------------------------------------------------------------------------
+' Created:      14.03.04 M.Wimmer (mwimmer@promain-software.de)
+'--------------------------------------------------------------------------------
+' Changed:		14.03.04 Andy Tropschug
+'================================================================================
+Option Explicit On 
+Option Strict On
+
+'================================================================================
+'Const
+'================================================================================
+Private Const As String efsResetMethod = "gResetUser"
+
+'================================================================================
+'Imports
+'================================================================================
+Imports easyFramework.Sys.Data
+Imports easyFramework.Sys.Xml
+
+'================================================================================
+'Module variables:
+'================================================================================
+Private msUser As String
+
+
+'================================================================================
+'Public Methods:
+'================================================================================
+
+'================================================================================
+' Method:       gbTransferData
+'--------------------------------------------------------------------------------
+' Purpose:      creates the export-file and exports the data
+'--------------------------------------------------------------------------------
+' Parameter:    oClientInfo         - ClientInfo
+'               sXmlCustomerList    - retrieved by gsGetCustomerList e.g.
+'--------------------------------------------------------------------------------
+' Changed:		
+'================================================================================
+Function goTransferData(ByVal oClientInfo As ClientInfo, _
+    ByVal sMandantNr As String, _
+    ByVal sKostenkreis As String) As myfactory.Sys.Xml.XmlDocument
+
+    
+    Dim otnKostenstellen As New SBSFibu.Tsenit.tnKostenstellenFile(sMandantNr)
+
+    Dim oKostenkreis As SBSFibu.Tsenit.tnKostenkreis = _
+        otnKostenstellen.AddKostenkreis(sKostenkreis)
+
+    
+    Loop
+
+    'create output-file:
+    Return otnKostenstellen.renderToXml
+
+End Function
+
+
+'================================================================================
+'Public Methods:
+'================================================================================

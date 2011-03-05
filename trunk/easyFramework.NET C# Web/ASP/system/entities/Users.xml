@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="5">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>usr_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField COLSPANFIELD="1">
+			<DESC>$Login</DESC>
+			<NAME>usr_login</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>$Vorname</DESC>
+			<NAME>usr_firstname</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$Nachname</DESC>
+			<NAME>usr_lastname</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>$Passwort</DESC>
+			<NAME>usr_password</NAME>
+			<TYPE>PASSWORD</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>Zusatzasdsa</DESC>
+			<NAME>usr_zusatz</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

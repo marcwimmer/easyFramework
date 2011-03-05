@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" Src="newbuttonOptions.aspx.cs" Inherits="easyFramework.Project.Default.newbuttonOptions"%>

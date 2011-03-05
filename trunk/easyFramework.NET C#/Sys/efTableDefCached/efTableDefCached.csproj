@@ -1,0 +1,27 @@
+<VisualStudioProject>
+  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="{11F8A1FE-5EBB-4492-A825-BF418A377E46}">
+    <Build>
+      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="efTableDefCached" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" RootNamespace="easyFramework.Sys.Data.Table" StartupObject="easyFramework.Sys.Data.Table.(Keine)">
+        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverFlowUnderFlow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DefineTrace="true" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="true" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverFlowUnderFlow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DefineTrace="true" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="E:\Projects\easyFramework.NET C# Web\bin" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="Microsoft.VisualBasic" AssemblyName="Microsoft.VisualBasic" />
+        <Reference Name="mscorlib" AssemblyName="mscorlib" />
+        <Reference Name="System" AssemblyName="System" />
+        <Reference Name="efTableDef" AssemblyName="efTableDef" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efTableDef.dll" Private="False" />
+        <Reference Name="efToolLib" AssemblyName="efToolLib" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll" Private="False" />
+        <Reference Name="efXml" AssemblyName="efXml" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll" Private="False" />
+        <Reference Name="efCachedFile" AssemblyName="efCachedFile" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efCachedFile.dll" Private="False" />
+        <Reference Name="efData" AssemblyName="efData" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll" Private="False" />
+        <Reference Name="efInterfaces" AssemblyName="efInterfaces" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efInterfaces.dll" Private="False" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efTableDefCached.cs" SubType="Code" BuildAction="Compile" />
+      </Include>
+    </Files>
+  </CSHARP>
+</VisualStudioProject>

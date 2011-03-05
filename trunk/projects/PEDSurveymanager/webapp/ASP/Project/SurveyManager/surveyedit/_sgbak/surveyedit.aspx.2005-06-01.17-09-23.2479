@@ -1,0 +1,215 @@
+<%@ Page Language="cs" AutoEventWireup="false" src="surveyedit.aspx.cs" Inherits="easyFramework.Project.SurveyManager.surveyedit" %>
+<%@ Register TagPrefix="mul" Namespace="easyFramework.Frontend.ASP.ComplexObjects" Assembly="efMultiStructureHelper" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<HTML>
+	<HEAD>
+		<ef:efpageheader id="EfPageHeader1" runat="server"></ef:efpageheader><ef:efscriptlinks id="EfScriptLinks1" runat="server"></ef:efscriptlinks>
+		<script language="javascript">
+		
+		var svy_id = ""; 		
+		var sEntityType = "";
+		var sEntityId = "";
+		var sLastTreeview = "";
+		var sLastQst_id = "";
+		var sLastAns_id = "";
+		
+		function mOnLoad() {
+		
+			//gWindowMaximize();	
+			gResizeTo(1000, 600);
+			svy_id = getSearchParam("svy_id");
+			
+		}
+		
+		function mOnSave() {
+			 
+			efStatus("Daten werden gespeichert...");
+		
+			var sDlgData = gsXMLDlgOutput(document.forms["frmMain"], "", true);
+			sDlgData = sDlgData.replace("<DIALOGOUTPUT>", "<DIALOGOUTPUT><entity>" + sEntityType + "</entity>");
+			sDlgData = sDlgData.replace("<DIALOGOUTPUT>", "<DIALOGOUTPUT><entityId>" + sEntityId + "</entityId>");
+			
+			var sResult = gsCallServerMethod("../../../system/entityedit/EntityProcess.aspx", sDlgData);
+			
+			if (sResult.substring(0, 7) == "SUCCESS") {
+				
+				efStatus("erfolgreich gespeichert");
+
+				reloadTreeview(sLastTreeview, null, true)
+			}
+			else {
+				efStatus("Fehler!");
+				alert(sResult);
+			}
+		}
+					
+		function mOnAbort() {
+		
+			window.close();
+		}
+		
+		function mOnMenuItemSurveyGroupClick(sGroup) {
+			goFindDataTable("EfDataTable1").reload("<svg_id>"+ sGroup +"</svg_id>");
+			
+		}
+					
+		function mOnPreview() {
+		
+			gsShowWindow("../preview/preview.aspx?svy_id="+svy_id, false);
+				
+		}		
+		
+		function msOnAfterAskToSave() {
+			//saved after paging:
+			var sDlgData = gsXMLDlgOutput(document.forms["frmMain"], "", true);
+			
+			var sResult = gsCallServerMethod("../../../system/multistructure/storing/storeProcess.aspx", sDlgData);
+			
+			if (sResult == "SUCCESS") {
+				
+			}
+			else {
+				alert(sResult);
+			}
+		
+		}
+		
+		function mLoadQuestion(qst_id) {
+			//in Answer-Treeview alle Antworten laden:
+			var sParams = "<qst_id>" + qst_id + "</qst_id>";
+			sEntityId = qst_id;
+			sEntityType = "questions";
+			reloadTreeview("efMenuTree_Answers", sParams);
+			sLastTreeview = "efMenuTree_Questions";
+			sLastQst_id = qst_id;
+			sLastAns_id = ""; //reset
+			
+			//Frage in Xml-Dialog laden:
+			var oDiv = document.getElementById("editDialog");
+			var sXmlDialogDefinitionFile = "/ASP/Project/SurveyManager/baseedit/question/Dialog.xml";
+			var sXmlDialogDataPage = "../../../system/entityedit/entityDialogData.aspx";
+			var sXmlFormName = "frmMain";
+			var sXmlDialogId = "editDialog";
+			var sXmlDataParams = sParams + "<entity>" + sEntityType + "</entity><entityId>" + sEntityId + "</entityId>";
+			gXmlDialog2Div(oDiv, sXmlDialogDefinitionFile, sXmlDialogDataPage, sXmlFormName, sXmlDialogId, sXmlDataParams)
+			gXmlDialogFetchData(sXmlDialogId, sXmlDataParams);
+		}
+		
+		
+		function mLoadAnswer(ans_id) {
+			//in AnswerValue-Treeview alle Antwortwerten laden:
+			var sParams = "<ans_id>" + ans_id + "</ans_id>";
+			sEntityId = ans_id;
+			sEntityType = "answers";
+			reloadTreeview("efMenuTree_AnswerValues", sParams);
+			sLastTreeview = "efMenuTree_Answers";
+			sLastAns_id = ans_id;
+			
+			//Frage in Xml-Dialog laden:
+			var oDiv = document.getElementById("editDialog");
+			var sXmlDialogDefinitionFile = "/ASP/Project/SurveyManager/baseedit/answer/Dialog.xml";
+			var sXmlDialogDataPage = "../../../system/entityedit/entityDialogData.aspx";
+			var sXmlFormName = "frmMain";
+			var sXmlDialogId = "editDialog";
+			var sXmlDataParams = sParams + "<entity>" + sEntityType + "</entity><entityId>" + sEntityId + "</entityId>";
+			gXmlDialog2Div(oDiv, sXmlDialogDefinitionFile, sXmlDialogDataPage, sXmlFormName, sXmlDialogId, sXmlDataParams)
+			gXmlDialogFetchData(sXmlDialogId, sXmlDataParams);
+		}
+		
+		function mAddQuestion() {
+		
+			var sType = "QUESTION";
+			var sParentId = svy_id;
+			var sParams = "type=" + sType + "&parentid=" + sParentId;
+			var sResult = gsCallServerMethod("insertElementProcess.aspx?" + sParams, "");
+			if (sResult != "OK") { efMsgBox(sResult, "ERROR"); return; }
+			reloadTreeview("efMenuTree_Questions", "<svy_id>" + svy_id + "</svy_id>");
+					
+		}
+		
+		function mAddAnswer() {
+		
+			var sType = "ANSWER";
+			var sParentId = sLastQst_id;
+			var sParams = "type=" + sType + "&parentid=" + sParentId;
+			var sResult = gsCallServerMethod("insertElementProcess.aspx?" + sParams, "");
+			if (sResult != "OK") { efMsgBox(sResult, "ERROR"); return; }
+			//reloadTreeview("efMenuTree_Answers", "<qst_id>" + sLastQst_id + "</qst_id>");
+					
+		}		
+
+		function mAddAnswerValue() {
+		
+			var sType = "ANSWERVALUE";
+			var sParentId = sLastAns_id;
+			var sParams = "type=" + sType + "&parentid=" + sParentId;
+			var sResult = gsCallServerMethod("insertElementProcess.aspx?" + sParams, "");
+			if (sResult != "OK") { efMsgBox(sResult, "ERROR"); return; }
+			reloadTreeview("efMenuTree_AnswerValues", "<ans_id>" + sLastAns_id + "</ans_id>");
+		
+		}		
+		</script>
+		<!--#include file="../../../system/defaultheader.aspx"-->
+	</HEAD>
+	<body onload="mOnLoad();">
+		
+		
+		<!--Fragen-->
+		<div style="LEFT:0px; OVERFLOW:hidden; WIDTH:50%; POSITION:absolute; TOP:0px; HEIGHT:5%">
+			<h1>Fragen</h1>
+		</div>
+		<ef:efTreeview id="efMenuTree_Questions" runat="server" enBorderStyle="efRidge"
+			Width="50%" Height="50%" sBorderWidth="thin" BorderStyle="Groove" Left="0%" Top="5%" BorderWidth="3px" sOverflow="Scroll"></ef:efTreeview>
+		<div style="LEFT:0px; OVERFLOW:hidden; Width:50%; POSITION:absolute;TOP:55%; HEIGHT:5%">
+			<ef:efButton id="EfButton_AddQuestion" runat="server" sText="Neue Frage" sOnClick="mAddQuestion();"></ef:efButton>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<ef:efButton id="EfButton_DeleteQuestion" runat="server" sText="x" sOnClick="mDeleteQuestion();"></ef:efButton>
+		</div>
+
+		<!--Antworten-->
+		<div style="LEFT:50%; OVERFLOW:hidden; WIDTH:30%; POSITION:absolute; TOP:0px; HEIGHT:5%">
+			<h1>Antworten</h1>
+		</div>
+		<ef:efTreeview id="efMenuTree_Answers" runat="server" enBorderStyle="efRidge"
+			Width="30%" Height="50%" sBorderWidth="thin" BorderStyle="Groove" Left="50%" Top="5%" BorderWidth="3px"></ef:efTreeview>
+		<div style="LEFT:50%; OVERFLOW:hidden; Width:30%; POSITION:absolute;TOP:55%; HEIGHT:5%">
+			<ef:efButton id="EfButton_AddAnswer" runat="server" sText="Neue Antwort" sOnClick="mAddAnswer();"></ef:efButton>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<ef:efButton id="EfButton_DeleteAnswer" runat="server" sText="x" sOnClick="mDeleteQuestion();"></ef:efButton>
+		</div>
+		
+		<!--Antwortwerte-->
+		<div style="LEFT:80%; OVERFLOW:hidden; WIDTH:20%; POSITION:absolute; TOP:0px; HEIGHT:5%">
+			<h1>Antwortwerte</h1>
+		</div>
+		<ef:efTreeview id="efMenuTree_AnswerValues" runat="server" enBorderStyle="efRidge"
+			Width="20%" Height="50%" sBorderWidth="thin" BorderStyle="Groove" Left="80%" Top="5%" BorderWidth="3px"></ef:efTreeview>
+		<div style="LEFT:80%; OVERFLOW:hidden; Width:20%; POSITION:absolute;TOP:55%; HEIGHT:5%">
+			<ef:efButton id="EfButton_AddAnswerValue" runat="server" sText="Neuer Wert" sOnClick="mAddAnswerValue();"></ef:efButton>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<ef:efButton id="EfButton_DeleteAnswerValue" runat="server" sText="x" sOnClick="mDeleteQuestion();"></ef:efButton>
+		</div>
+
+					
+		<!--editier-Dialog (XML-Dialog-->
+		<form name="frmMain" id="frmMain">
+			<div id="editDialogSpace" style="background: #AAC4E6; LEFT:0px; OVERFLOW:hidden; WIDTH:100%; POSITION:absolute; TOP:60%; HEIGHT:1%">
+			
+			</div>
+			<div id="editDialog" style="background: #AAC4E6; LEFT:0px; OVERFLOW:hidden; WIDTH:100%; POSITION:absolute; TOP:61%; HEIGHT:34%">
+			bitte auf einen Eintrag klicken!
+			</div>
+			<div id="editDialogBtn" style="background: #AAC4E6; LEFT:0px; OVERFLOW:hidden; WIDTH:100%; POSITION:absolute; TOP: 95%; HEIGHT: 5%" align="right">
+				<ef:efButton id="EfButton1" runat="server" sText="$Speichern" sOnClick="mOnSave();"></ef:efButton>
+				<ef:efButton id="EfButton2" runat="server" sText="S$chließen" sOnClick="mOnAbort();"></ef:efButton>
+				<ef:efButton id="EfButton3" runat="server" sText="$Preview" sOnClick="mOnPreview();"></ef:efButton>			
+			</div>
+				
+			
+		</form>
+		
+		
+		
+		
+	</body>
+</HTML>

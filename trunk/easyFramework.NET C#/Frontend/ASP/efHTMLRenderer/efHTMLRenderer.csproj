@@ -1,0 +1,48 @@
+<VisualStudioProject>
+  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="{06DB707B-394D-4C63-9B8A-524B6CC36DE1}">
+    <Build>
+      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="efHTMLRenderer" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" PreBuildEvent="" PostBuildEvent="" RootNamespace="easyFramework.Frontend.ASP.HTMLRenderer" RunPostBuildEvent="OnBuildSuccess" StartupObject="easyFramework.Frontend.ASP.HTMLRenderer.(Keine)">
+        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="true" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="..\..\..\..\easyFramework.NET C# Web\bin\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+        <Config Name="Surveymanager" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="true" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="..\..\..\..\easyFramework.NET C# Web\bin\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="Microsoft.VisualBasic" AssemblyName="Microsoft.VisualBasic" />
+        <Reference Name="mscorlib" AssemblyName="mscorlib" />
+        <Reference Name="System.Web" AssemblyName="System.Web" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.Web.dll" Private="False" />
+        <Reference Name="System.Drawing" AssemblyName="System.Drawing" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.Drawing.dll" Private="False" />
+        <Reference Name="System.Windows.Forms" AssemblyName="System.Windows.Forms" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.Windows.Forms.dll" Private="False" />
+        <Reference Name="System" AssemblyName="System" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.dll" Private="False" />
+        <Reference Name="efXml" AssemblyName="efXml" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll" Private="False" />
+        <Reference Name="efToolLib" AssemblyName="efToolLib" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll" Private="False" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efAttribute.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlA.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlBr.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlButton.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlConsts.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlDiv.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlelement.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlForm.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlHr.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlImage.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlInput.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlLabel.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlScript.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlSelect.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlSpan.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlSpan.resx" DependentUpon="efHtmlSpan.cs" BuildAction="EmbeddedResource" />
+        <File RelPath="efHtmlTable.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlTd.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlTextarea.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlTextNode.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlTr.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="efHtmlUnparsedHtml.cs" SubType="Code" BuildAction="Compile" />
+      </Include>
+    </Files>
+  </CSHARP>
+</VisualStudioProject>

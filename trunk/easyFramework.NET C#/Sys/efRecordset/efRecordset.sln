@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efRecordset", "efRecordset.csproj", "{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		SurveyManagerNET = SurveyManagerNET
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}.Debug.ActiveCfg = Debug|.NET
+		{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}.Debug.Build.0 = Debug|.NET
+		{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}.Release.ActiveCfg = Release|.NET
+		{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}.Release.Build.0 = Release|.NET
+		{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}.SurveyManagerNET.ActiveCfg = SurveyManagerNET|.NET
+		{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}.SurveyManagerNET.Build.0 = SurveyManagerNET|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

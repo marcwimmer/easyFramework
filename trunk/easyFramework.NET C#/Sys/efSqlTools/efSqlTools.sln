@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efSqlTools", "efSqlTools.csproj", "{F67A4B07-AC77-4E01-8879-7B1D649E0842}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F67A4B07-AC77-4E01-8879-7B1D649E0842}.Debug.ActiveCfg = Debug|.NET
+		{F67A4B07-AC77-4E01-8879-7B1D649E0842}.Debug.Build.0 = Debug|.NET
+		{F67A4B07-AC77-4E01-8879-7B1D649E0842}.Release.ActiveCfg = Release|.NET
+		{F67A4B07-AC77-4E01-8879-7B1D649E0842}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

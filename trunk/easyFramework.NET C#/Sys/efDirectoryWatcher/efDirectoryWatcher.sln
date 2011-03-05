@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efDirectoryWatcher", "efDirectoryWatcher.csproj", "{313ED8A5-44C1-422C-8876-760976C0ABFC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{313ED8A5-44C1-422C-8876-760976C0ABFC}.Debug.ActiveCfg = Debug|.NET
+		{313ED8A5-44C1-422C-8876-760976C0ABFC}.Debug.Build.0 = Debug|.NET
+		{313ED8A5-44C1-422C-8876-760976C0ABFC}.Release.ActiveCfg = Release|.NET
+		{313ED8A5-44C1-422C-8876-760976C0ABFC}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

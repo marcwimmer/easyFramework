@@ -1,0 +1,226 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{8B0B0FA2-D069-4E16-A69D-BD24306C2DBA}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "PearsonSVMBL"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "On"
+                RootNamespace = "easyFramework.Project.Surveymanager.Pearson"
+                StartupObject = "easyFramework.Project.Surveymanager.Pearson.(Keine)"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "..\webapp\bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "..\webapp\bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "svmBusinessTasks"
+                    AssemblyName = "svmBusinessTasks"
+                    HintPath = "..\webapp\bin\svmBusinessTasks.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efClientInfo"
+                    AssemblyName = "efClientInfo"
+                    HintPath = "..\webapp\bin\efClientInfo.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efData"
+                    AssemblyName = "efData"
+                    HintPath = "..\webapp\bin\efData.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efDataClientInfo"
+                    AssemblyName = "efDataClientInfo"
+                    HintPath = "..\webapp\bin\efDataClientInfo.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efDialog"
+                    AssemblyName = "efDialog"
+                    HintPath = "..\webapp\bin\efDialog.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efEntities"
+                    AssemblyName = "efEntities"
+                    HintPath = "..\webapp\bin\efEntities.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efEntityLoader"
+                    AssemblyName = "efEntityLoader"
+                    HintPath = "..\webapp\bin\efEntityLoader.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efEnvironment"
+                    AssemblyName = "efEnvironment"
+                    HintPath = "..\webapp\bin\efEnvironment.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efOfficeTalk"
+                    AssemblyName = "efOfficeTalk"
+                    HintPath = "..\webapp\bin\efOfficeTalk.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efPage"
+                    AssemblyName = "efPage"
+                    HintPath = "..\webapp\bin\efPage.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efPopupMenue"
+                    AssemblyName = "efPopupMenue"
+                    HintPath = "..\webapp\bin\efPopupMenue.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efRecordset"
+                    AssemblyName = "efRecordset"
+                    HintPath = "..\webapp\bin\efRecordset.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efSecurity"
+                    AssemblyName = "efSecurity"
+                    HintPath = "..\webapp\bin\efSecurity.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efSqlTools"
+                    AssemblyName = "efSqlTools"
+                    HintPath = "..\webapp\bin\efSqlTools.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efSysEvents"
+                    AssemblyName = "efSysEvents"
+                    HintPath = "..\webapp\bin\efSysEvents.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efTableDef"
+                    AssemblyName = "efTableDef"
+                    HintPath = "..\webapp\bin\efTableDef.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efTableDefCached"
+                    AssemblyName = "efTableDefCached"
+                    HintPath = "..\webapp\bin\efTableDefCached.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efToolLib"
+                    AssemblyName = "efToolLib"
+                    HintPath = "..\webapp\bin\efToolLib.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "efXml"
+                    AssemblyName = "efXml"
+                    HintPath = "..\webapp\bin\efXml.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "WebsiteBL"
+                    AssemblyName = "WebsiteBL"
+                    HintPath = "..\webapp\bin\WebsiteBL.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "Gutscheinlogik"
+                    AssemblyName = "Gutscheinlogik"
+                    HintPath = "..\webapp\bin\Gutscheinlogik.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    HintPath = "F:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.dll"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "System" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CouponHandler.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OnApplicationStart.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OnSubmission.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

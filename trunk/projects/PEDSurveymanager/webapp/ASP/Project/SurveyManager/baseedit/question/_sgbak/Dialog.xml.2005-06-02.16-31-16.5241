@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="1">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>qst_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>qst_svy_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField COLSPANFIELD="3">
+			<DESC>$Frage</DESC>
+			<NAME>qst_text</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>HTML (oberhalb)</DESC>
+			<NAME>qst_html_before</NAME>
+			<TYPE>INPUT</TYPE>
+			<ROWS>2</ROWS>
+		</efDialogField>
+		<efDialogField>
+			<DESC>HTML (unterhalb)</DESC>
+			<NAME>qst_html_after</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>Beschriftung links</DESC>
+			<NAME>qst_layout_description_on_the_left</NAME>
+			<TYPE>LISTCOMBO</TYPE>
+			<SRC>Vererbt;Ja;Nein</SRC>
+			<DATA>0;1;2</DATA>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>Reihenfolge</DESC>
+			<NAME>qst_index</NAME>
+			<TYPE>NUMBER</TYPE>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="1">
+	<efDialogRow>
+		<efDialogField>
+			<DESC>$Newsletter aktivieren</DESC>
+			<NAME>svy_newsletter_active</NAME>
+			<TYPE>CHECKBOX</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$Newsletterliste</DESC>
+			<NAME>svy_newsletter_list</NAME>
+			<TYPE>DATACOMBON</TYPE>
+			<DOMAIN>Newsletterlists</DOMAIN>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField COLSPANFIELD="4">
+			<DESC>Achtung:</DESC>
+			<NAME>svy_newsletter_label</NAME>
+			<TYPE>LABEL</TYPE>
+			<VALUE><font color="red"><b>Achtung:</b></font><br/>
+			Es werden Felder mit folgenden Datenbanknamen benötigt: 
+			<ul>
+				<li>Speakto</li>
+				<li>Firstname</li>
+				<li>Lastname</li>
+				<li>email</li>
+				<li>NewsletterJaNein</li>
+			</ul>
+			<br></br>
+			Das Feld "NewsletterJaNein" muss eine Einzelauswahlantwort, die mit folgenden Buchstaben jeweils beginnt:<br></br>
+			Für Ja: <b>Ja</b><br></br>
+			Für Nein: <b>Nein</b>
+			</VALUE>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>
