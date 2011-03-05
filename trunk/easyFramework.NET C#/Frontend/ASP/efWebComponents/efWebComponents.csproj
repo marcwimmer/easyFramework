@@ -1,55 +1,246 @@
-<VisualStudioProject>
-  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="{E7ADA8C2-3E4C-43EF-B83A-586D045A7490}">
-    <Build>
-      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="efWebComponents" AssemblyOriginatorKeyFile="" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" PreBuildEvent="" PostBuildEvent="" RootNamespace="easyFramework.Frontend.ASP.WebComponents" RunPostBuildEvent="OnBuildSuccess" StartupObject="easyFramework.Frontend.ASP.WebComponents.(Keine)">
-        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="true" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
-        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="..\..\..\..\easyFramework.NET C# Web\bin\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
-        <Config Name="SurveyManagerNET" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverflowUnderflow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="true" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="..\..\..\..\..\surveymanagerNET\WebApp\bin\" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
-      </Settings>
-      <References>
-        <Reference Name="Microsoft.VisualBasic" AssemblyName="Microsoft.VisualBasic" />
-        <Reference Name="mscorlib" AssemblyName="mscorlib" />
-        <Reference Name="System" AssemblyName="System" />
-        <Reference Name="System.Drawing" AssemblyName="System.Drawing" />
-        <Reference Name="System.Data" AssemblyName="System.Data" />
-        <Reference Name="System.Web" AssemblyName="System.Web" />
-        <Reference Name="System.Management" AssemblyName="System.Management" />
-        <Reference Name="System.Windows.Forms" AssemblyName="System.Windows.Forms" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.Windows.Forms.dll" Private="False" />
-        <Reference Name="efData" AssemblyName="efData" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll" Private="False" />
-        <Reference Name="efAspTools" AssemblyName="efAspTools" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efAspTools.dll" Private="False" />
-        <Reference Name="efXml" AssemblyName="efXml" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll" Private="False" />
-        <Reference Name="efHTMLRenderer" AssemblyName="efHTMLRenderer" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efHTMLRenderer.dll" Private="False" />
-        <Reference Name="efToolLib" AssemblyName="efToolLib" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll" Private="False" />
-        <Reference Name="efPage" AssemblyName="efPage" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efPage.dll" Private="False" />
-        <Reference Name="efEntities" AssemblyName="efEntities" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntities.dll" Private="False" />
-        <Reference Name="efImages" AssemblyName="efImages" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efImages.dll" Private="False" />
-        <Reference Name="efEnvironment" AssemblyName="efEnvironment" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEnvironment.dll" Private="False" />
-        <Reference Name="efEntityLoader" AssemblyName="efEntityLoader" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntityLoader.dll" Private="False" />
-        <Reference Name="efPopupMenue" AssemblyName="efPopupMenue" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efPopupMenue.dll" Private="False" />
-        <Reference Name="efXmlDialog" AssemblyName="efXmlDialog" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXmlDialog.dll" Private="False" />
-        <Reference Name="efEntityPopupMenue" AssemblyName="efEntityPopupMenue" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntityPopupMenue.dll" Private="False" />
-        <Reference Name="efClientInfo" AssemblyName="efClientInfo" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efClientInfo.dll" Private="False" />
-        <Reference Name="System.XML" AssemblyName="System.Xml" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.XML.dll" Private="False" />
-      </References>
-    </Build>
-    <Files>
-      <Include>
-        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efBaseElement.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efButton.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efDataTable.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efInput.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efLabel.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efPagedXmlDialog.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efPageHeader.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efPopupMenue.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efPopupMenueEntity.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efScriptLinks.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efTab.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efTabDialog.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efTreeview.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="efXmlDialog.cs" SubType="Code" BuildAction="Compile" />
-      </Include>
-    </Files>
-  </CSHARP>
-</VisualStudioProject>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E7ADA8C2-3E4C-43EF-B83A-586D045A7490}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>efWebComponents</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>easyFramework.Frontend.ASP.WebComponents</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>easyFramework.Frontend.ASP.WebComponents.%28Keine%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SurveyManagerNET|AnyCPU' ">
+    <OutputPath>..\..\..\..\..\surveymanagerNET\WebApp\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="efAspTools">
+      <Name>efAspTools</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efAspTools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efClientInfo">
+      <Name>efClientInfo</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efClientInfo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efData">
+      <Name>efData</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efEntities">
+      <Name>efEntities</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efEntityLoader">
+      <Name>efEntityLoader</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntityLoader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efEntityPopupMenue">
+      <Name>efEntityPopupMenue</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntityPopupMenue.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efEnvironment">
+      <Name>efEnvironment</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEnvironment.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efHTMLRenderer">
+      <Name>efHTMLRenderer</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efHTMLRenderer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efImages">
+      <Name>efImages</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efImages.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efPage">
+      <Name>efPage</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efPage.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efPopupMenue">
+      <Name>efPopupMenue</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efPopupMenue.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efToolLib">
+      <Name>efToolLib</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efXml">
+      <Name>efXml</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efXmlDialog">
+      <Name>efXmlDialog</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXmlDialog.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.Windows.Forms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.XML.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efBaseElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efDataTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efInput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efPagedXmlDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efPageHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efPopupMenue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efPopupMenueEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efScriptLinks.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efTabDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efTreeview.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="efXmlDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
