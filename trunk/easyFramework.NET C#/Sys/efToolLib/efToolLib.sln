@@ -1,27 +1,25 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efToolLib", "efToolLib.csproj", "{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Adoptionlist = Adoptionlist
-		Debug = Debug
-		Release = Release
-		SurveymanagerNET = SurveymanagerNET
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Adoptionlist|Any CPU = Adoptionlist|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SurveymanagerNET|Any CPU = SurveymanagerNET|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Adoptionlist.ActiveCfg = Adoptionlist|.NET
-		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Adoptionlist.Build.0 = Adoptionlist|.NET
-		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Debug.ActiveCfg = Debug|.NET
-		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Debug.Build.0 = Debug|.NET
-		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Release.ActiveCfg = Release|.NET
-		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Release.Build.0 = Release|.NET
-		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.SurveymanagerNET.ActiveCfg = SurveymanagerNET|.NET
-		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.SurveymanagerNET.Build.0 = SurveymanagerNET|.NET
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Adoptionlist|Any CPU.ActiveCfg = Adoptionlist|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Adoptionlist|Any CPU.Build.0 = Adoptionlist|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.SurveymanagerNET|Any CPU.ActiveCfg = SurveymanagerNET|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.SurveymanagerNET|Any CPU.Build.0 = SurveymanagerNET|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
