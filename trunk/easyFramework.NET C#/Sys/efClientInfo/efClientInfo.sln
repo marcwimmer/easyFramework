@@ -1,21 +1,19 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efClientInfo", "efClientInfo.csproj", "{B454AA9F-9B37-431D-8665-5F8B5146FDCB}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{B454AA9F-9B37-431D-8665-5F8B5146FDCB}.Debug.ActiveCfg = Debug|.NET
-		{B454AA9F-9B37-431D-8665-5F8B5146FDCB}.Debug.Build.0 = Debug|.NET
-		{B454AA9F-9B37-431D-8665-5F8B5146FDCB}.Release.ActiveCfg = Release|.NET
-		{B454AA9F-9B37-431D-8665-5F8B5146FDCB}.Release.Build.0 = Release|.NET
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B454AA9F-9B37-431D-8665-5F8B5146FDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B454AA9F-9B37-431D-8665-5F8B5146FDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B454AA9F-9B37-431D-8665-5F8B5146FDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B454AA9F-9B37-431D-8665-5F8B5146FDCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
