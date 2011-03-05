@@ -1,21 +1,19 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efMathMLWrapper", "efMathMLWrapper.csproj", "{26E35A86-40FD-4C34-95B2-576917DDEB92}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{26E35A86-40FD-4C34-95B2-576917DDEB92}.Debug.ActiveCfg = Debug|.NET
-		{26E35A86-40FD-4C34-95B2-576917DDEB92}.Debug.Build.0 = Debug|.NET
-		{26E35A86-40FD-4C34-95B2-576917DDEB92}.Release.ActiveCfg = Release|.NET
-		{26E35A86-40FD-4C34-95B2-576917DDEB92}.Release.Build.0 = Release|.NET
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26E35A86-40FD-4C34-95B2-576917DDEB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E35A86-40FD-4C34-95B2-576917DDEB92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E35A86-40FD-4C34-95B2-576917DDEB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E35A86-40FD-4C34-95B2-576917DDEB92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
