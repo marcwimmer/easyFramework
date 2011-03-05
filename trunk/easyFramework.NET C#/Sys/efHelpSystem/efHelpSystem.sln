@@ -1,21 +1,19 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efHelpSystem", "efHelpSystem.csproj", "{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Debug.ActiveCfg = Debug|.NET
-		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Debug.Build.0 = Debug|.NET
-		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Release.ActiveCfg = Release|.NET
-		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Release.Build.0 = Release|.NET
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5032CF36-DD1F-4B1C-A47D-B8BC78D66B6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
