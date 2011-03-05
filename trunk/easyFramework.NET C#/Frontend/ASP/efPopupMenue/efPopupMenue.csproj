@@ -1,25 +1,114 @@
-<VisualStudioProject>
-  <CSHARP ProjectType="Local" ProductVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="{818168CE-6CBF-445D-BD1E-7497E7CA7438}">
-    <Build>
-      <Settings ApplicationIcon="" AssemblyKeyContainerName="" AssemblyName="efPopupMenue" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Library" RootNamespace="easyFramework.Frontend.ASP.ComplexObjects" StartupObject="easyFramework.Frontend.ASP.ComplexObjects.(Keine)">
-        <Config Name="Debug" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverFlowUnderFlow="false" ConfigurationOverrideFile="" DefineConstants="DEBUG;TRACE" DefineTrace="true" DocumentationFile="" DebugSymbols="true" FileAlignment="4096" IncrementalBuild="true" NoStdLib="false" NoWarn="" Optimize="false" OutputPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
-        <Config Name="Release" AllowUnsafeBlocks="false" BaseAddress="285212672" CheckForOverFlowUnderFlow="false" ConfigurationOverrideFile="" DefineConstants="TRACE" DefineTrace="true" DocumentationFile="" DebugSymbols="false" FileAlignment="4096" IncrementalBuild="false" NoStdLib="false" NoWarn="" Optimize="true" OutputPath="E:\Projects\easyFramework.NET C# Web\bin" RegisterForComInterop="false" RemoveIntegerChecks="false" TreatWarningsAsErrors="false" WarningLevel="4" />
-      </Settings>
-      <References>
-        <Reference Name="Microsoft.VisualBasic" AssemblyName="Microsoft.VisualBasic" />
-        <Reference Name="mscorlib" AssemblyName="mscorlib" />
-        <Reference Name="System" AssemblyName="System" />
-        <Reference Name="efToolLib" AssemblyName="efToolLib" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll" Private="False" />
-        <Reference Name="efXml" AssemblyName="efXml" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll" Private="False" />
-        <Reference Name="efHTMLRenderer" AssemblyName="efHTMLRenderer" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efHTMLRenderer.dll" Private="False" />
-        <Reference Name="System.Web" AssemblyName="System.Web" HintPath="D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.Web.dll" Private="False" />
-      </References>
-    </Build>
-    <Files>
-      <Include>
-        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
-        <File RelPath="PopMenueRenderer.cs" SubType="Code" BuildAction="Compile" />
-      </Include>
-    </Files>
-  </CSHARP>
-</VisualStudioProject>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{818168CE-6CBF-445D-BD1E-7497E7CA7438}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>efPopupMenue</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>easyFramework.Frontend.ASP.ComplexObjects</RootNamespace>
+    <StartupObject>easyFramework.Frontend.ASP.ComplexObjects.%28Keine%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverFlowUnderFlow>false</CheckForOverFlowUnderFlow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverFlowUnderFlow>false</CheckForOverFlowUnderFlow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="efHTMLRenderer">
+      <Name>efHTMLRenderer</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efHTMLRenderer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efToolLib">
+      <Name>efToolLib</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efXml">
+      <Name>efXml</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\System.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PopMenueRenderer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
