@@ -1,27 +1,19 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efData", "efData.csproj", "{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Adoptionlist = Adoptionlist
-		Debug = Debug
-		Release = Release
-		Surveymanager = Surveymanager
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Adoptionlist.ActiveCfg = Adoptionlist|.NET
-		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Adoptionlist.Build.0 = Adoptionlist|.NET
-		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Debug.ActiveCfg = Debug|.NET
-		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Debug.Build.0 = Debug|.NET
-		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Release.ActiveCfg = Release|.NET
-		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Release.Build.0 = Release|.NET
-		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Surveymanager.ActiveCfg = Surveymanager|.NET
-		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Surveymanager.Build.0 = Surveymanager|.NET
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
