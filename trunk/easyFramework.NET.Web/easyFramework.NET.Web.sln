@@ -1,18 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "easyFramework.NET.Web", "..\..\..\..\Desktop\easyframework\easyFramework.NET.Web\", "{303AEC31-4B33-4096-8744-7922610A05B9}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "easyFramework.NET.Web", ".", "{303AEC31-4B33-4096-8744-7922610A05B9}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
 		Debug.AspNetCompiler.VirtualPath = "/easyFramework.NET.Web"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\easyframework\easyFramework.NET.Web\"
+		Debug.AspNetCompiler.PhysicalPath = ".\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\easyFramework.NET.Web\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/easyFramework.NET.Web"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Desktop\easyframework\easyFramework.NET.Web\"
+		Release.AspNetCompiler.PhysicalPath = ".\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\easyFramework.NET.Web\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
