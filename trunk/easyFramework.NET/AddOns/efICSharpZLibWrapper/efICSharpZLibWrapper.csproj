@@ -80,7 +80,7 @@
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <Name>ICSharpCode.SharpZipLib</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>..\ICSharpNet\081SharpZipLib\ICSharpCode.SharpZipLib.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System">

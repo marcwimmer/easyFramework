@@ -596,7 +596,7 @@ namespace easyFramework.Sys.ToolLib
 			
 			
          }
-		/*
+		
 		
          //================================================================================
          //Function:  gsGetTemporaryFile
@@ -632,7 +632,7 @@ namespace easyFramework.Sys.ToolLib
 			
          }
 		
-		
+		/*
 		
          //================================================================================
          //Function:  gsValidFilename

@@ -75,12 +75,12 @@
     </Reference>
     <Reference Include="MathML">
       <Name>MathML</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\\bin\MathML.dll</HintPath>
+      <HintPath>..\sourceforge gnumeratorSource\src\bin\MathML.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="MathML.Rendering">
       <Name>MathML.Rendering</Name>
-      <HintPath>..\src\bin\MathML.Rendering.dll</HintPath>
+      <HintPath>..\sourceforge gnumeratorSource\src\bin\MathML.Rendering.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System">
