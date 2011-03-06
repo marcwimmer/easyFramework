@@ -21,9 +21,10 @@
     <StartupObject>easyFramework.Frontend.ASP.AspTools.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -93,11 +94,6 @@
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efHelpSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="efLogging">
-      <Name>efLogging</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efLogging.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efSecurity">
       <Name>efSecurity</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efSecurity.dll</HintPath>
@@ -135,6 +131,12 @@
     <Compile Include="Environment.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\efLogging\efLogging.csproj">
+      <Project>{5D5B0EA4-7D2D-462D-89EA-A2DEB7363F1F}</Project>
+      <Name>efLogging</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

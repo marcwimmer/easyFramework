@@ -21,9 +21,10 @@
     <StartupObject>easyFramework.Frontend.ASP.Dialog.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -83,11 +84,6 @@
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="efEnvironment">
-      <Name>efEnvironment</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEnvironment.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efToolLib">
       <Name>efToolLib</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
@@ -125,6 +121,16 @@
     <Compile Include="efPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\efConfig\efConfig.csproj">
+      <Project>{15E04F4C-DDD0-4712-812B-826EAA4CD1F2}</Project>
+      <Name>efConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efEnvironment\efEnvironment.csproj">
+      <Project>{FC8E09AC-7661-42C8-94FC-CE2D10AE3F66}</Project>
+      <Name>efEnvironment</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

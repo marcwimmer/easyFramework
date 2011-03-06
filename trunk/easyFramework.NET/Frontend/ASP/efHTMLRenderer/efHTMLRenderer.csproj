@@ -21,10 +21,11 @@
     <StartupObject>easyFramework.Frontend.ASP.HTMLRenderer.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -90,19 +91,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="efToolLib">
-      <Name>efToolLib</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efXml">
-      <Name>efXml</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Microsoft.VisualBasic">
-      <Name>Microsoft.VisualBasic</Name>
-    </Reference>
     <Reference Include="mscorlib">
       <Name>mscorlib</Name>
     </Reference>
@@ -197,6 +185,12 @@
     <EmbeddedResource Include="efHtmlSpan.resx">
       <DependentUpon>efHtmlSpan.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Sys\efToolLib\efToolLib.csproj">
+      <Project>{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}</Project>
+      <Name>efToolLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -305,16 +305,16 @@ namespace easyFramework.Sys.ToolLib
             }
         }
 
-        public static int InStr2(string String1, string String2)
+        public static int InStr(string String1, string String2)
         {
             if (String.IsNullOrEmpty(String1))
-                return -1;
+                return 0;
             if (String.IsNullOrEmpty(String2))
-                return -1;
-            return String1.IndexOf(String2);
+                return 0;
+            return String1.IndexOf(String2) + 1; //1-basiert
         }
 
-        public static int InStr(int StartPos, string String1, string String2)
+        public static int InStr2(int StartPos, string String1, string String2)
         {
             if (String.IsNullOrEmpty(String1))
                 return -1;
@@ -322,7 +322,7 @@ namespace easyFramework.Sys.ToolLib
                 return -1;
             if (StartPos >= String1.Length)
                 return -1;
-            return String1.Substring(StartPos).IndexOf(String2) + StartPos;
+            return String1.Substring(StartPos).IndexOf(String2) + StartPos + 1; //1-basiert
         }
 
         public static object IIf(bool Expression, object TruePart, object FalsePart)
@@ -367,11 +367,11 @@ namespace easyFramework.Sys.ToolLib
 
             if (lCount == -1)
             {
-                return sString.Substring(lPos);
+                return sString.Substring(lPos + 1);
             }
             else
             {
-                return sString.Substring(lPos, lCount);
+                return sString.Substring(lPos + 1, lCount);
             }
 
 
@@ -456,7 +456,7 @@ namespace easyFramework.Sys.ToolLib
             {
                 return null;
             }
-            else if (InStr2(sString, sSeperator) == -1)
+            else if (InStr(sString, sSeperator) == 0)
             {
                 string[] asResult = ((string[])(Array.CreateInstance(typeof(string), 1)));
                 asResult[0] = sString;

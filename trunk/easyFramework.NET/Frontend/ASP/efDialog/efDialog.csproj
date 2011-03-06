@@ -21,7 +21,7 @@
     <StartupObject>easyFramework.Frontend.ASP.Dialog.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
     <PublishUrl>publish\</PublishUrl>
@@ -39,6 +39,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -103,9 +104,6 @@
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Microsoft.VisualBasic">
-      <Name>Microsoft.VisualBasic</Name>
-    </Reference>
     <Reference Include="mscorlib">
       <Name>mscorlib</Name>
     </Reference>
@@ -150,6 +148,30 @@
     <ProjectReference Include="..\efAspTools\efAspTools.csproj">
       <Project>{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}</Project>
       <Name>efAspTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efConfig\efConfig.csproj">
+      <Project>{15E04F4C-DDD0-4712-812B-826EAA4CD1F2}</Project>
+      <Name>efConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efEnvironment\efEnvironment.csproj">
+      <Project>{FC8E09AC-7661-42C8-94FC-CE2D10AE3F66}</Project>
+      <Name>efEnvironment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efLogging\efLogging.csproj">
+      <Project>{5D5B0EA4-7D2D-462D-89EA-A2DEB7363F1F}</Project>
+      <Name>efLogging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efMIME\efMIME.csproj">
+      <Project>{095EB455-CA46-46E5-8AF1-A9B6C07022D1}</Project>
+      <Name>efMIME</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efPage\efPage.csproj">
+      <Project>{BEA0A97A-1B6A-4A54-9047-216FF30C7271}</Project>
+      <Name>efPage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efWebComponents\efWebComponents.csproj">
+      <Project>{E7ADA8C2-3E4C-43EF-B83A-586D045A7490}</Project>
+      <Name>efWebComponents</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -19,9 +19,10 @@
     <StartupObject>easyFramework.Frontend.ASP.ComplexObjects.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -82,9 +83,6 @@
       <Name>efXml</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll</HintPath>
       <Private>False</Private>
-    </Reference>
-    <Reference Include="Microsoft.VisualBasic">
-      <Name>Microsoft.VisualBasic</Name>
     </Reference>
     <Reference Include="mscorlib">
       <Name>mscorlib</Name>

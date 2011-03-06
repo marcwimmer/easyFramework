@@ -21,9 +21,10 @@
     <StartupObject />
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -130,6 +131,16 @@
     <Compile Include="Packager.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Frontend\ASP\efAspTools\efAspTools.csproj">
+      <Project>{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}</Project>
+      <Name>efAspTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Frontend\ASP\efEntityLoader\efEntityLoader.csproj">
+      <Project>{1C0429D4-6497-47EC-9A67-2F8D57ECFBFF}</Project>
+      <Name>efEntityLoader</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

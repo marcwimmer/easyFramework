@@ -73,7 +73,7 @@ namespace easyFramework.Sys.Data
         //--------------------------------------------------------------------------------'
         public static string SQLField(string sValue)
         {
-            if (Functions.InStr2(sValue, "[") == -1)
+            if (Functions.InStr(sValue, "[") == 0)
             {
                 return "[" + sValue + "]";
             }

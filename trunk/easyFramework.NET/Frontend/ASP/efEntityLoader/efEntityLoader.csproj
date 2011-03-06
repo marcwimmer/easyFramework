@@ -90,9 +90,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Sys\efCachedFile\efCachedFile.csproj">
+      <Project>{0543177B-BF4C-4206-A044-687D0464AEA0}</Project>
+      <Name>efCachedFile</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Sys\efClientInfo\efClientInfo.csproj">
       <Project>{B454AA9F-9B37-431D-8665-5F8B5146FDCB}</Project>
       <Name>efClientInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efDataClientInfo\efDataClientInfo.csproj">
+      <Project>{4B6B75CA-480B-4927-841F-7833546C6364}</Project>
+      <Name>efDataClientInfo</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Sys\efData\efData.csproj">
       <Project>{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}</Project>
@@ -102,9 +110,17 @@
       <Project>{A4D83A04-35B0-488E-83EC-4460047ACCE5}</Project>
       <Name>efEntities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efInterfaces\efInterfaces.csproj">
+      <Project>{18A2A3BE-684D-4480-AE65-471BA211A582}</Project>
+      <Name>efInterfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Sys\efRecordset\efRecordset.csproj">
       <Project>{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}</Project>
       <Name>efRecordset</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efTableDefCached\efTableDefCached.csproj">
+      <Project>{11F8A1FE-5EBB-4492-A825-BF418A377E46}</Project>
+      <Name>efTableDefCached</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Sys\efTableDef\efTableDef.csproj">
       <Project>{A919EDC2-709E-4356-BF53-AC8B091087F7}</Project>

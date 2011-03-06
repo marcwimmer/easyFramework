@@ -106,6 +106,10 @@
       <Project>{A4D83A04-35B0-488E-83EC-4460047ACCE5}</Project>
       <Name>efEntities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efRecordset\efRecordset.csproj">
+      <Project>{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}</Project>
+      <Name>efRecordset</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Sys\efToolLib\efToolLib.csproj">
       <Project>{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}</Project>
       <Name>efToolLib</Name>
@@ -117,6 +121,10 @@
     <ProjectReference Include="..\efAspTools\efAspTools.csproj">
       <Project>{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}</Project>
       <Name>efAspTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efEntityLoader\efEntityLoader.csproj">
+      <Project>{1C0429D4-6497-47EC-9A67-2F8D57ECFBFF}</Project>
+      <Name>efEntityLoader</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

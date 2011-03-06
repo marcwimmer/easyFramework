@@ -21,9 +21,10 @@
     <StartupObject>easyFramework.Frontend.ASP.WebComponents.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -196,10 +197,6 @@
     <ProjectReference Include="..\efAspTools\efAspTools.csproj">
       <Project>{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}</Project>
       <Name>efAspTools</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\efDialog\efDialog.csproj">
-      <Project>{F8BDDE2D-AE94-4EA4-96CC-E2DD7DBB823E}</Project>
-      <Name>efDialog</Name>
     </ProjectReference>
     <ProjectReference Include="..\efEntityLoader\efEntityLoader.csproj">
       <Project>{1C0429D4-6497-47EC-9A67-2F8D57ECFBFF}</Project>

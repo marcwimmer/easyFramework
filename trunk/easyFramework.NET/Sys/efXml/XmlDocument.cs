@@ -103,7 +103,7 @@ namespace easyFramework.Sys.Xml
 		public XmlDocument(string sXml) 
 		{
 	
-			if (Functions.InStr2(Functions.LCase(Functions.Left(sXml, 100)), "encoding=\"") == -1)
+			if (Functions.InStr(Functions.LCase(Functions.Left(sXml, 100)), "encoding=\"") == 0)
 			{
 				sXml = "<?xml version=\"1.0\" encoding=\"" + efDefaultEncoding + "\" ?>" + sXml;
 		
