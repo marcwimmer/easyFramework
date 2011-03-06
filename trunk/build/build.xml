@@ -1,12 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="easyframework" default="build_dlls" basedir="..">
+  <property name="ef_dir" value="easyFramework.NET"/>
+  <property name="ef_sys_dir" value="${ef_dir}/sys"/>
+  <property name="ef_frontend_dir" value="${ef_dir}/frontend"/>
+  <property name="ef_addons_dir" value="${ef_dir}/addons"/>
+  <property name="ef_tasks_dir" value="${ef_dir}/tasks"/>
   <property name="build.dir" value="./tmp"/>
+  <property name="nant.settings.currentframework" value="net-2.0" />
   <target name="build_dlls">
     <mkdir dir="${build.dir}" />
-    <csc target="exe" output="bin\HelloWorld.exe">
+    <csc target="library" output="${build.dir}\efSys.dll">
       <sources>
-        <includes name="HelloWorld.cs"/>
+        <include name="${ef_sys_dir}/**/*.cs"/>
+        <exclude name="${ef_sys_dir}/**/assemblyinfo.cs" />
+        <include name="${ef_sys_dir}/assemblyinfo.cs" />
       </sources>
+    </csc>
+    <csc target="library" output="${build.dir}\efFrontend.dll">
+      <sources>
+        <include name="${ef_frontend_dir}/**/*.cs" />
+        <exclude name="${ef_frontend_dir}/**/assemblyinfo.cs" />
+        <include name="${ef_frontend_dir}/assemblyinfo.cs" />
+      </sources>
+      <references>
+        <include name="${build.dir}/*.dll" />
+      </references>
+    </csc>
+    <csc target="library" output="${build.dir}\efTasks.dll">
+      <sources>
+        <include name="${ef_tasks_dir}/**/*.cs" />
+        <exclude name="${ef_tasks_dir}/**/assemblyinfo.cs" />
+        <include name="${ef_tasks_dir}/assemblyinfo.cs" />
+      </sources>
+    </csc>
+    <csc target="library" output="${build.dir}\efAddons.dll">
+      <sources>
+        <include name="${ef_addons_dir}/**/*.cs" />
+        <exclude name="${ef_addons_dir}/**/assemblyinfo.cs" />
+        <include name="${ef_addons_dir}/assemblyinfo.cs" />
+      </sources>
+      <references>
+        <lib>
+          <include name="${ef_addons_dir}/**/*.dll" />
+        </lib>
+      </references>
     </csc>
   </target>
   <target name="clean">
