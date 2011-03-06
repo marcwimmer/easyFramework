@@ -3,7 +3,6 @@ using easyFramework.Sys;
 using easyFramework.Sys.Data;
 using easyFramework.Sys.Xml;
 using easyFramework.Sys.ToolLib;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace easyFramework.Sys.SysEvents
 {
