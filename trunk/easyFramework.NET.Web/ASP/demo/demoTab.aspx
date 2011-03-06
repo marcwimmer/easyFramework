@@ -1,8 +1,8 @@
-<%@ Page Language="vb" AutoEventWireup="false" Src="demoTab.aspx.vb" Inherits="demoTab"%>
+<%@ Page Language="cs" AutoEventWireup="false" Src="demoTab.aspx.cs" Inherits="easyFramework.Project.Default.demoTab"%>
  
 <table>
 	<tr>
 		<td>Zeit:</td>
-		<td><%=now%></td>
+		<td><%=DateTime.Now%></td>
 	</tr>
 </table>

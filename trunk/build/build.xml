@@ -25,7 +25,7 @@
         <include name="${ef_sys_dir}/assemblyinfo.cs" />
       </sources>
     </csc>
-    <csc target="library" output="${build.dir}\efFrontend.dll" warninglevel="3">
+    <csc target="library" output="${build.dir}\efASPFrontend.dll" warninglevel="3">
       <sources>
         <include name="${ef_frontend_dir}/**/*.cs" />
         <exclude name="${ef_frontend_dir}/**/assemblyinfo.cs" />

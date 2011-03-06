@@ -1,5 +1,6 @@
-<%@ Page Language="vb" AutoEventWireup="false" src="multistructure.aspx.vb" Inherits="multistructureDemo"%>
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Page Language="cs" AutoEventWireup="false" src="multistructure.aspx.cs" Inherits="easyFramework.Project.Default.multistructureDemo"%>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.ComplexObjects" Assembly="efASPFrontend" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 

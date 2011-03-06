@@ -1,5 +1,5 @@
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
-<%@ Page Language="vb" AutoEventWireup="false" Codebehind="AppConfig.aspx.vb" Inherits="easyFramework.Project.Default.AppConfig"%>
+<%@ Page Language="cs" AutoEventWireup="false" Codebehind="AppConfig.aspx.cs" Inherits="easyFramework.Project.Default.AppConfig"%>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 	<HEAD>
