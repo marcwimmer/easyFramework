@@ -21,9 +21,10 @@
     <StartupObject>easyFramework.Frontend.ASP.ASPTools.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -68,74 +69,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="efAspTools">
-      <Name>efAspTools</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efAspTools.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efCache">
-      <Name>efCache</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efCache.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efCachedFile">
-      <Name>efCachedFile</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efCachedFile.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efClientInfo">
-      <Name>efClientInfo</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efClientInfo.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efData">
-      <Name>efData</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efDataClientInfo">
-      <Name>efDataClientInfo</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efDataClientInfo.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efEntities">
-      <Name>efEntities</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntities.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efInterfaces">
-      <Name>efInterfaces</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efInterfaces.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efRecordset">
-      <Name>efRecordset</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efRecordset.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efTableDef">
-      <Name>efTableDef</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efTableDef.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efTableDefCached">
-      <Name>efTableDefCached</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efTableDefCached.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efToolLib">
-      <Name>efToolLib</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efXml">
-      <Name>efXml</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Microsoft.VisualBasic">
-      <Name>Microsoft.VisualBasic</Name>
-    </Reference>
     <Reference Include="mscorlib">
       <Name>mscorlib</Name>
     </Reference>
@@ -155,6 +88,40 @@
     <Compile Include="EntityLoader.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Sys\efClientInfo\efClientInfo.csproj">
+      <Project>{B454AA9F-9B37-431D-8665-5F8B5146FDCB}</Project>
+      <Name>efClientInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efData\efData.csproj">
+      <Project>{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}</Project>
+      <Name>efData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efEntities\efEntities.csproj">
+      <Project>{A4D83A04-35B0-488E-83EC-4460047ACCE5}</Project>
+      <Name>efEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efRecordset\efRecordset.csproj">
+      <Project>{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}</Project>
+      <Name>efRecordset</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efTableDef\efTableDef.csproj">
+      <Project>{A919EDC2-709E-4356-BF53-AC8B091087F7}</Project>
+      <Name>efTableDef</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efToolLib\efToolLib.csproj">
+      <Project>{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}</Project>
+      <Name>efToolLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efXml\efXml.csproj">
+      <Project>{01006A9C-384E-4A86-A2A1-24D798B3F02E}</Project>
+      <Name>efXml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efCache\efCache.csproj">
+      <Project>{B4FB3F70-273A-4AA6-A01B-655C0F354534}</Project>
+      <Name>efCache</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

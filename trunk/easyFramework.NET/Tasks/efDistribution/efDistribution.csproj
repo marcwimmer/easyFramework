@@ -78,16 +78,6 @@
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntities.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="efEntityLoader">
-      <Name>efEntityLoader</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntityLoader.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efEnvironment">
-      <Name>efEnvironment</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEnvironment.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efICSharpZLibWrapper">
       <Name>efICSharpZLibWrapper</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efICSharpZLibWrapper.dll</HintPath>

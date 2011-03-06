@@ -203,48 +203,43 @@ namespace easyFramework.Sys.ToolLib
                 return "";
             return sValue.Trim();
         }
-        /* 
+       
        public static DateTime DateAdd(efEnumDateInterval Interval, double Number, DateTime dateValue)
        {
 									
-           DateInterval i;
-
            switch (Interval) 
            {
                case efEnumDateInterval.Day:
-                   i = DateInterval.Day;
+                   return dateValue.AddDays(Number);
                    break;
                case efEnumDateInterval.Month:
-                   i = DateInterval.Month;
-                   break;
+                   if (Math.Round(Convert.ToDecimal(Number)) != Convert.ToDecimal(Number))
+                       throw new Exception("For months only integers are allowed!");
+                   return dateValue.AddMonths(Convert.ToInt32(Number));
                case efEnumDateInterval.Year:
-                   i = DateInterval.Year;
-                   break;
+                   if (Math.Round(Convert.ToDecimal(Number)) != Convert.ToDecimal(Number))
+                       throw new Exception("For years only integers are allowed!");
+
+                   return dateValue.AddYears(Convert.ToInt32(Number));
                case efEnumDateInterval.Hour:
-                   i = DateInterval.Hour;
-                   break;
+                   return dateValue.AddHours(Number);
                case efEnumDateInterval.Minute:
-                   i = DateInterval.Minute;
-                   break;
+                   return dateValue.AddMinutes(Number);
                case efEnumDateInterval.Second:
-                   i = DateInterval.Second;
-                   break;
+                   return dateValue.AddSeconds(Number);
                default:
                    throw new efException("Ungültiges Datumsinterval \"" +	Interval.ToString() + "\".");
 
            }   
-			
-						
-
-           return DateAndTime.DateAdd(i, Number, dateValue);
-			
        }
+        
        public static DateTime DateAdd(string Interval, double Number, DateTime dateValue)
        {
-			
-           return DateAndTime.DateAdd(Interval, Number, dateValue);
+           throw new NotImplementedException();
 			
        }
+
+        /*
        public static long DateDiff(String Interval, DateTime Date1, DateTime Date2, 
            efEnumFirstDayOfWeek FirstDayOfWeek, efEnumFirstWeekOfYear WeekOfYear)
        {
@@ -257,7 +252,8 @@ namespace easyFramework.Sys.ToolLib
            return DateAndTime.DateDiff(Interval, Date1, Date2, 
                fdow, fwoy);
        }
-         * */
+         */
+         
         public static bool IsNumeric(object Expression)
         {
             try

@@ -21,7 +21,7 @@
     <StartupObject>easyFramework.Frontend.ASP.AspTools.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
     <PublishUrl>publish\</PublishUrl>
@@ -39,6 +39,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -155,6 +156,10 @@
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Interop.MSXML2">
+      <HintPath>..\..\..\AddOns\InteropMSXML2\Interop.MSXML2.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic">
       <Name>Microsoft.VisualBasic</Name>
     </Reference>
@@ -191,20 +196,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Sys\efEntities\efEntities.csproj">
-      <Project>{A4D83A04-35B0-488E-83EC-4460047ACCE5}</Project>
-      <Name>efEntities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Sys\efSecurity\efSecurity.csproj">
-      <Project>{3B9CA648-02BA-44DC-869D-E16745831195}</Project>
-      <Name>efSecurity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Sys\efTableDef\efTableDef.csproj">
-      <Project>{A919EDC2-709E-4356-BF53-AC8B091087F7}</Project>
-      <Name>efTableDef</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
@@ -220,6 +211,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Sys\efEntities\efEntities.csproj">
+      <Project>{A4D83A04-35B0-488E-83EC-4460047ACCE5}</Project>
+      <Name>efEntities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
