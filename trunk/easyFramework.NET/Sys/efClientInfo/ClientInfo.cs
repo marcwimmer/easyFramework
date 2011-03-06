@@ -1,6 +1,7 @@
 using System;
 using easyFramework.Sys.Xml;
 using easyFramework.Sys.ToolLib;
+using easyFramework.Sys.Data;
 using System.Data;
 using System.Collections;
 

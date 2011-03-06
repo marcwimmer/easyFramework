@@ -71,7 +71,7 @@
   <ItemGroup>
     <Reference Include="efData">
       <Name>efData</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll</HintPath>
+      <HintPath>..\..\..\easyFramework.NET C# Web\bin\efData.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="efRecordset">

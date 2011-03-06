@@ -69,11 +69,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="efCachedFile">
-      <Name>efCachedFile</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efCachedFile.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efToolLib">
       <Name>efToolLib</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
@@ -103,6 +98,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\efCachedFile\efCachedFile.csproj">
+      <Project>{0543177B-BF4C-4206-A044-687D0464AEA0}</Project>
+      <Name>efCachedFile</Name>
+    </ProjectReference>
     <ProjectReference Include="..\efClientInfo\efClientInfo.csproj">
       <Project>{B454AA9F-9B37-431D-8665-5F8B5146FDCB}</Project>
       <Name>efClientInfo</Name>

@@ -214,6 +214,10 @@
       <Project>{A4D83A04-35B0-488E-83EC-4460047ACCE5}</Project>
       <Name>efEntities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efSysEvents\efSysEvents.csproj">
+      <Project>{FAA92B77-DFAB-4138-9EDB-D037144677A7}</Project>
+      <Name>efSysEvents</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

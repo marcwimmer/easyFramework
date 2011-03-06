@@ -3,6 +3,7 @@ using easyFramework.Sys.ToolLib;
 using easyFramework.Sys.Data;
 using easyFramework.Sys.Xml;
 using easyFramework.Interfaces;
+using easyFramework.Frontend.ASP.ASPTools;
 
 namespace easyFramework.Sys.Data.Table
 {

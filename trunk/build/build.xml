@@ -9,6 +9,14 @@
   <property name="nant.settings.currentframework" value="net-3.5" />
   <target name="build_dlls">
     <mkdir dir="${build.dir}" />
+    <copy todir="${build.dir}" file="${ef_addons_dir}/ICSharpNet/081SharpZipLib/ICSharpCode.SharpZipLib.dll" />
+    <copy todir="${build.dir}" file="${ef_addons_dir}/InteropFreetextbox/FreeTextBox.dll" />
+    <copy todir="${build.dir}" file="${ef_addons_dir}/InteropMicrosoftOffice/Microsoft.Office.Interop.Excel.dll" />
+    <copy todir="${build.dir}" file="${ef_addons_dir}/InteropMicrosoftOffice/Microsoft.Vbe.Interop.dll" />
+    <copy todir="${build.dir}" file="${ef_addons_dir}/InteropMSXML2/Interop.MSXML2.dll" />
+    <copy todir="${build.dir}" file="${ef_addons_dir}/MathML/sourceforge_gnumeratorSource/src/bin/MathML.dll" />
+    <copy todir="${build.dir}" file="${ef_addons_dir}/MathML/sourceforge_gnumeratorSource/src/bin/MathML.Rendering.dll" />
+
     <csc target="library" output="${build.dir}\efSys.dll">
       <sources>
         <include name="${ef_sys_dir}/**/*.cs"/>
@@ -41,7 +49,7 @@
       </sources>
       <references>
         <lib>
-          <include name="${ef_addons_dir}/**/*.dll" />
+          <include name="${build_dir}/*.dll" />
         </lib>
       </references>
     </csc>
@@ -49,5 +57,5 @@
   <target name="clean">
     <delete dir="${build.dir}" failonerror="true"/>
   </target>
- 
+
 </project>

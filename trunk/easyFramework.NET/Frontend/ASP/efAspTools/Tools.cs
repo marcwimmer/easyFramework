@@ -80,7 +80,7 @@ namespace easyFramework.Frontend.ASP.ASPTools
 			}
 			else
 			{
-				if (!(Functions.InStr(sParams, "?ClientID=", 0) > 0 | Functions.InStr(sParams, "&ClientID=", 0) > 0))
+				if (!(Functions.InStr(sParams, "?ClientID=") > 0 | Functions.InStr(sParams, "&ClientID=") > 0))
 				{
 					sParams += "&ClientID=" + oClientInfo.sClientID;
 				}
@@ -158,7 +158,7 @@ namespace easyFramework.Frontend.ASP.ASPTools
 	
 			if (!Functions.IsEmptyString(sFilename))
 			{
-				if (Strings.Left(sFilename, 1) == "/")
+				if (Functions.Left(sFilename, 1) == "/")
 				{
 					return false;
 				}
@@ -394,25 +394,25 @@ namespace easyFramework.Frontend.ASP.ASPTools
 		
 				string sOldFieldName = nlChildNodes[i].sName;
 				string sNewFieldName;
-				if (Strings.LCase(Strings.Left(sOldFieldName, 3)) == "txt")
+                if (Functions.LCase(Functions.Left(sOldFieldName, 3)) == "txt")
 				{
-					sNewFieldName = Strings.Right(sOldFieldName, Strings.Len(sOldFieldName) - 3);
+                    sNewFieldName = Functions.Right(sOldFieldName, Functions.Len(sOldFieldName) - 3);
 				}
-				else if (Strings.LCase(Strings.Left(sOldFieldName, 3)) == "lbl")
+                else if (Functions.LCase(Functions.Left(sOldFieldName, 3)) == "lbl")
 				{
-					sNewFieldName = Strings.Right(sOldFieldName, Strings.Len(sOldFieldName) - 3);
+                    sNewFieldName = Functions.Right(sOldFieldName, Functions.Len(sOldFieldName) - 3);
 				}
-				else if (Strings.LCase(Strings.Left(sOldFieldName, 3)) == "chk")
+                else if (Functions.LCase(Functions.Left(sOldFieldName, 3)) == "chk")
 				{
-					sNewFieldName = Strings.Right(sOldFieldName, Strings.Len(sOldFieldName) - 3);
+                    sNewFieldName = Functions.Right(sOldFieldName, Functions.Len(sOldFieldName) - 3);
 				}
-				else if (Strings.LCase(Strings.Left(sOldFieldName, 3)) == "cmd")
+                else if (Functions.LCase(Functions.Left(sOldFieldName, 3)) == "cmd")
 				{
-					sNewFieldName = Strings.Right(sOldFieldName, Strings.Len(sOldFieldName) - 3);
+                    sNewFieldName = Functions.Right(sOldFieldName, Functions.Len(sOldFieldName) - 3);
 				}
-				else if (Strings.LCase(Strings.Left(sOldFieldName, 3)) == "cbo")
+                else if (Functions.LCase(Functions.Left(sOldFieldName, 3)) == "cbo")
 				{
-					sNewFieldName = Strings.Right(sOldFieldName, Strings.Len(sOldFieldName) - 3);
+                    sNewFieldName = Functions.Right(sOldFieldName, Functions.Len(sOldFieldName) - 3);
 				}
 				else
 				{
@@ -487,15 +487,15 @@ namespace easyFramework.Frontend.ASP.ASPTools
 	
 			string s;
 			s = System.Guid.NewGuid().ToString() + System.Guid.NewGuid().ToString() + System.Guid.NewGuid().ToString();
-			s = Strings.Replace(s, "{", "", 1, -1, 0);
-			s = Strings.Replace(s, "}", "", 1, -1, 0);
-			s = Strings.Replace(s, "-", "", 1, -1, 0);
+            s = Functions.Replace(s, "{", "");
+            s = Functions.Replace(s, "}", "");
+            s = Functions.Replace(s, "-", "");
 	
 			if (bNoNumbers)
 			{
 				for (int i = 0; i <= 9; i++)
 				{
-					s = Strings.Replace(s, DataConversion.gsCStr(i), "", 1, -1, 0);
+                    s = Functions.Replace(s, DataConversion.gsCStr(i), "");
 				}
 			}
 	
@@ -621,7 +621,7 @@ namespace easyFramework.Frontend.ASP.ASPTools
 				//datafields:
 				for (int i = 0; i <= rs.oFields.Count - 1; i++)
 				{
-					if (Strings.LCase(rs.oFields[i].sName) != Strings.LCase(sKeyField))
+                    if (Functions.LCase(rs.oFields[i].sName) != Functions.LCase(sKeyField))
 					{
 						oSBuilder.Append(rs.oFields[i].sValue + "|");
 					}
@@ -655,15 +655,15 @@ namespace easyFramework.Frontend.ASP.ASPTools
 		//--------------------------------------------------------------------------------'
 		public static string sWebToAbsoluteFilename(System.Web.HttpRequest oRequest, string sRelativeFilename, bool bForWeb)
 		{
-	
-			if (Strings.Left(sRelativeFilename, 1) == "/" & oRequest != null)
+
+            if (Functions.Left(sRelativeFilename, 1) == "/" & oRequest != null)
 			{
 				string sAppPath = oRequest.ApplicationPath;
-				if (Strings.Right(sAppPath, 1) == "/")
+                if (Functions.Right(sAppPath, 1) == "/")
 				{
-					sAppPath = Strings.Left(sAppPath, Strings.Len(sAppPath) - 1);
+                    sAppPath = Functions.Left(sAppPath, Functions.Len(sAppPath) - 1);
 				}
-				if (Strings.LCase(Strings.Left(sRelativeFilename, Strings.Len(sAppPath))) != Strings.LCase(sAppPath))
+                if (Functions.LCase(Functions.Left(sRelativeFilename, Functions.Len(sAppPath))) != Functions.LCase(sAppPath))
 				{
 					sRelativeFilename = sAppPath + sRelativeFilename;
 				}
@@ -671,19 +671,19 @@ namespace easyFramework.Frontend.ASP.ASPTools
 			else if (oRequest != null)
 			{
 				string sPath = oRequest.Path;
-				sPath = easyFramework.Sys.ToolLib.Functions.Reverse(Strings.Mid(easyFramework.Sys.ToolLib.Functions.Reverse(sPath), Strings.InStr(easyFramework.Sys.ToolLib.Functions.Reverse(sPath), "/", 0) + 1));
-				while (Strings.Left(sRelativeFilename, 3) == "../")
+                sPath = easyFramework.Sys.ToolLib.Functions.Reverse(Functions.Mid(easyFramework.Sys.ToolLib.Functions.Reverse(sPath), Functions.InStr(Functions.Reverse(sPath), "/") + 1));
+                while (Functions.Left(sRelativeFilename, 3) == "../")
 				{
-					sPath = easyFramework.Sys.ToolLib.Functions.Reverse(Strings.Right(easyFramework.Sys.ToolLib.Functions.Reverse(sPath), Strings.Len(sPath) - Strings.InStr(easyFramework.Sys.ToolLib.Functions.Reverse(sPath), "/", 0)));
-					sRelativeFilename = Strings.Right(sRelativeFilename, Strings.Len(sRelativeFilename) - Strings.Len("../"));
+                    sPath = easyFramework.Sys.ToolLib.Functions.Reverse(Functions.Right(easyFramework.Sys.ToolLib.Functions.Reverse(sPath), Functions.Len(sPath) - Functions.InStr(easyFramework.Sys.ToolLib.Functions.Reverse(sPath), "/")));
+                    sRelativeFilename = Functions.Right(sRelativeFilename, Functions.Len(sRelativeFilename) - Functions.Len("../"));
 				};
 				sRelativeFilename = sPath + "/" + sRelativeFilename;
 		
 			}
-	
-			if (Strings.Left(sRelativeFilename, 2) == "//")
+
+            if (Functions.Left(sRelativeFilename, 2) == "//")
 			{
-				sRelativeFilename = Strings.Right(sRelativeFilename, Strings.Len(sRelativeFilename) - 1);
+                sRelativeFilename = Functions.Right(sRelativeFilename, Functions.Len(sRelativeFilename) - 1);
 			}
 	
 	
