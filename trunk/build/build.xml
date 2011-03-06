@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="easyframework" default="build_dlls" basedir="..">
+  <property name="build.dir" value="./tmp"/>
+  <target name="build_dlls">
+    <mkdir dir="${build.dir}" />
+    <csc target="exe" output="bin\HelloWorld.exe">
+      <sources>
+        <includes name="HelloWorld.cs"/>
+      </sources>
+    </csc>
+  </target>
+  <target name="clean">
+    <delete dir="${build.dir}" failonerror="true"/>
+  </target>
+ 
+</project>
