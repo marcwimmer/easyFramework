@@ -1,4 +1,4 @@
-<%@ Page language="c#" Src="default.aspx.cs" AutoEventWireup="false" Inherits="easyFramework.Project.Default.ASP.system.devaid._default" CodeBehind="default.aspx.cs" %>
+<%@ Page language="c#" Src="default.aspx.cs" AutoEventWireup="false" Inherits="easyFramework.Project.Default.ASP.system.DevAidDefault" CodeBehind="default.aspx.cs" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
 <HTML>
 	<HEAD>

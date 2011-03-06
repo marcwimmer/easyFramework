@@ -1,6 +1,6 @@
 <%@ Page Language="cs" AutoEventWireup="false" src="entitySearch.aspx.cs" Inherits="easyFramework.Project.Default.entitySearch" %>
 <%@ import namespace="easyFramework.Frontend.ASP.ASPTools"%>
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <HTML>
 	<HEAD>
 		<ef:efpageheader id="EfPageHeader1" runat="server"></ef:efpageheader><ef:efscriptlinks id="EfScriptLinks1" runat="server"></ef:efscriptlinks>
@@ -54,7 +54,7 @@
 		}
 							
 		</script>
-		<!--#include file="../defaultheader.aspx"-->
+		<!--#include file="../defaultheader.aspx.inc"-->
 	</HEAD>
 	<BODY onload="mOnLoad()">
 		<form name="frmMain" onsubmit="mOnOk(); return false;">

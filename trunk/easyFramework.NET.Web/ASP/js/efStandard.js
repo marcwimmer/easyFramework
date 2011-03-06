@@ -476,7 +476,7 @@ var sWebPageRoot = "not initialized";
 function gsGetWebPageRoot() {
 
 	if (sWebPageRoot == "not initialized") 
-		alert("sWebPageRoot isn't initialized yet - include the defaultHeader.aspx and don't use gsGetWebPageRoot for public consts.");
+		alert("sWebPageRoot isn't initialized yet - include the defaultheader.aspx.inc and don't use gsGetWebPageRoot for public consts.");
 
 	return sWebPageRoot; //from defaultheader
 	

@@ -1,5 +1,5 @@
 <%@ Page Language="cs" AutoEventWireup="false" Src="optionDialog.aspx.cs" Inherits="easyFramework.Project.Default.optionDialog"%>
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 	<HEAD>
@@ -9,7 +9,7 @@
 		copied into a local div-->
 	<!--DIVMODALDIALOG BEGIN-->
 
-	<!--#include file="../defaultheader.aspx"-->
+	<!--#include file="../defaultheader.aspx.inc"-->
 	<body onload="OPTDIALOG_mOnLoad();">
 		<form id="OPTDIALOG_frmOptionDialog" method="post" runat="server">
 			<table class="borderTable" width="400px" height="200px">

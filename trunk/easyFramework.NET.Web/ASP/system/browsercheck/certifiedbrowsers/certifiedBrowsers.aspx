@@ -1,11 +1,11 @@
 <%@ Page Language="cs" AutoEventWireup="false" Src="certifiedBrowsers.aspx.cs" Inherits="easyFramework.Project.Default.certifiedBrowsers"%>
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <HTML>
 	<HEAD>
 		<ef:efPageHeader id="EfPageHeader1" runat="server"></ef:efPageHeader>
 	</HEAD>
 	<ef:efScriptLinks id="EfScriptLinks1" runat="server"></ef:efScriptLinks>
-	<!--#include file="../../defaultHeader.aspx"-->
+	<!--#include file="../../defaultheader.aspx.inc"-->
 	<body>
 		<table class="borderTable" width="100%" height="100%">
 			<tr>

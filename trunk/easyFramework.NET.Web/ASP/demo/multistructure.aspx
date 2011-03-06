@@ -27,7 +27,7 @@
 		
 							
 		</script>
-		<!--#include file="../system/defaultheader.aspx"-->
+		<!--#include file="../system/defaultheader.aspx.inc"-->
 		
 	</HEAD>
 	<BODY onload="mOnLoad()" onkeypress="gsStatus();">

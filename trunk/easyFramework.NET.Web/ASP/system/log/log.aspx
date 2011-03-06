@@ -1,4 +1,4 @@
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <%@ Page Language="cs" AutoEventWireup="false" Src="log.aspx.cs" Inherits="easyFramework.Project.Default.logEntries" %>
 <HTML>
 	<HEAD>
@@ -36,7 +36,7 @@
 		}
 							
 		</script>
-		<!--#include file="../defaultheader.aspx"-->
+		<!--#include file="../defaultheader.aspx.inc"-->
 	</HEAD>
 	<BODY onload="mOnLoad()">
 		<div>

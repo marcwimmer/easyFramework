@@ -21,7 +21,7 @@
 
 							
 		</script>
-		<!--#include file="../system/defaultheader.aspx"-->
+		<!--#include file="../system/defaultheader.aspx.inc"-->
 	</HEAD>
 	<body onload="mOnLoad()">
 		<table height="20" width="100%">
