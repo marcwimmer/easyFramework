@@ -6,7 +6,7 @@
   <property name="ef_addons_dir" value="${ef_dir}/addons"/>
   <property name="ef_tasks_dir" value="${ef_dir}/tasks"/>
   <property name="build.dir" value="./tmp"/>
-  <property name="nant.settings.currentframework" value="net-2.0" />
+  <property name="nant.settings.currentframework" value="net-3.5" />
   <target name="build_dlls">
     <mkdir dir="${build.dir}" />
     <csc target="library" output="${build.dir}\efSys.dll">
