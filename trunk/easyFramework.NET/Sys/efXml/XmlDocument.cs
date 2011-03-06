@@ -1,6 +1,6 @@
 using System;
 using System.Xml;
-using Microsoft.VisualBasic;
+using easyFramework.Sys.ToolLib;
 
 namespace easyFramework.Sys.Xml
 {
@@ -103,7 +103,7 @@ namespace easyFramework.Sys.Xml
 		public XmlDocument(string sXml) 
 		{
 	
-			if (Strings.InStr(Strings.LCase(Strings.Left(sXml, 100)), "encoding=\"", 0) == 0)
+			if (Functions.InStr2(Functions.LCase(Functions.Left(sXml, 100)), "encoding=\"") == -1)
 			{
 				sXml = "<?xml version=\"1.0\" encoding=\"" + efDefaultEncoding + "\" ?>" + sXml;
 		

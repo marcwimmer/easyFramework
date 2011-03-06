@@ -2,18 +2,39 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efXml", "efXml.csproj", "{01006A9C-384E-4A86-A2A1-24D798B3F02E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{0690D23B-85EB-45D5-B1C0-803B540E2BF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efToolLib", "..\efToolLib\efToolLib.csproj", "{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Adoptionlist|Any CPU = Adoptionlist|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		SurveymanagerNET|Any CPU = SurveymanagerNET|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01006A9C-384E-4A86-A2A1-24D798B3F02E}.Adoptionlist|Any CPU.ActiveCfg = Release|Any CPU
+		{01006A9C-384E-4A86-A2A1-24D798B3F02E}.Adoptionlist|Any CPU.Build.0 = Release|Any CPU
 		{01006A9C-384E-4A86-A2A1-24D798B3F02E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{01006A9C-384E-4A86-A2A1-24D798B3F02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01006A9C-384E-4A86-A2A1-24D798B3F02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01006A9C-384E-4A86-A2A1-24D798B3F02E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01006A9C-384E-4A86-A2A1-24D798B3F02E}.SurveymanagerNET|Any CPU.ActiveCfg = Release|Any CPU
+		{01006A9C-384E-4A86-A2A1-24D798B3F02E}.SurveymanagerNET|Any CPU.Build.0 = Release|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Adoptionlist|Any CPU.ActiveCfg = Adoptionlist|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Adoptionlist|Any CPU.Build.0 = Adoptionlist|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.SurveymanagerNET|Any CPU.ActiveCfg = SurveymanagerNET|Any CPU
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}.SurveymanagerNET|Any CPU.Build.0 = SurveymanagerNET|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1} = {0690D23B-85EB-45D5-B1C0-803B540E2BF0}
 	EndGlobalSection
 EndGlobal

@@ -101,6 +101,12 @@
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\efToolLib\efToolLib.csproj">
+      <Project>{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}</Project>
+      <Name>efToolLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent />

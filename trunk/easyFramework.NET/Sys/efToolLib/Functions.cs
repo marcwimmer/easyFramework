@@ -106,9 +106,7 @@ namespace easyFramework.Sys.ToolLib
         }
         public static string LCase(char vnt)
         {
-            if (vnt == null)
-                return null;
-            else return Convert.ToString(vnt).ToLower();
+            return Convert.ToString(vnt).ToLower();
         }
 
         public static int Len(object vnt)
@@ -269,11 +267,12 @@ namespace easyFramework.Sys.ToolLib
             }
             catch
             {
-                return false;
+               
             }
             finally
             {
             }
+
             try
             {
                 decimal d = Convert.ToDecimal(Expression);
