@@ -17,14 +17,14 @@
     <copy todir="${build.dir}" file="${ef_addons_dir}/MathML/sourceforge_gnumeratorSource/src/bin/MathML.dll" />
     <copy todir="${build.dir}" file="${ef_addons_dir}/MathML/sourceforge_gnumeratorSource/src/bin/MathML.Rendering.dll" />
 
-    <csc target="library" output="${build.dir}\efSys.dll">
+    <csc target="library" output="${build.dir}\efSys.dll" warninglevel="3">
       <sources>
         <include name="${ef_sys_dir}/**/*.cs"/>
         <exclude name="${ef_sys_dir}/**/assemblyinfo.cs" />
         <include name="${ef_sys_dir}/assemblyinfo.cs" />
       </sources>
     </csc>
-    <csc target="library" output="${build.dir}\efFrontend.dll">
+    <csc target="library" output="${build.dir}\efFrontend.dll" warninglevel="3">
       <sources>
         <include name="${ef_frontend_dir}/**/*.cs" />
         <exclude name="${ef_frontend_dir}/**/assemblyinfo.cs" />
@@ -34,23 +34,24 @@
         <include name="${build.dir}/*.dll" />
       </references>
     </csc>
-    <csc target="library" output="${build.dir}\efTasks.dll">
-      <sources>
-        <include name="${ef_tasks_dir}/**/*.cs" />
-        <exclude name="${ef_tasks_dir}/**/assemblyinfo.cs" />
-        <include name="${ef_tasks_dir}/assemblyinfo.cs" />
-      </sources>
-    </csc>
-    <csc target="library" output="${build.dir}\efAddons.dll">
+    <csc target="library" output="${build.dir}\efAddons.dll" warninglevel="3">
       <sources>
         <include name="${ef_addons_dir}/**/*.cs" />
         <exclude name="${ef_addons_dir}/**/assemblyinfo.cs" />
         <include name="${ef_addons_dir}/assemblyinfo.cs" />
       </sources>
       <references>
-        <lib>
-          <include name="${build_dir}/*.dll" />
-        </lib>
+        <include name="${build.dir}/*.dll" />
+      </references>
+    </csc>
+    <csc target="library" output="${build.dir}\efTasks.dll" warninglevel="3">
+      <sources>
+        <include name="${ef_tasks_dir}/**/*.cs" />
+        <exclude name="${ef_tasks_dir}/**/assemblyinfo.cs" />
+        <include name="${ef_tasks_dir}/assemblyinfo.cs" />
+      </sources>
+      <references>
+        <include name="${build.dir}/*.dll" />
       </references>
     </csc>
   </target>

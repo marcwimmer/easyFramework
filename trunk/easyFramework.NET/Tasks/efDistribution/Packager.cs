@@ -48,7 +48,6 @@ namespace easyFramework.Tasks.Distribution
 
 			//---------create the package directory---------------
 			string sPackDir = Convert.ToString(oClientInfo.oHttpApp.oGet("distribution_made_package_folder"));
-			sPackDir = sPackDir;
 			if (!Directory.Exists(sPackDir)) 
 				Directory.CreateDirectory(sPackDir);
 
