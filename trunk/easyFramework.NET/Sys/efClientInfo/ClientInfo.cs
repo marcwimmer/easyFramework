@@ -501,7 +501,6 @@ namespace easyFramework.Sys
 				
 				//------create client-info
 				
-				Functions.Randomize();
 				Random r = new Random();
 				r.Next(0, 10000000);
 				
