@@ -23,9 +23,9 @@ namespace easyFramework.Sys.ToolLib
 		//================================================================================
 		//Public Consts:
 		//================================================================================
-		public const string VbCrLf = Microsoft.VisualBasic.Constants.vbCrLf;
-		public const string vbCr = Microsoft.VisualBasic.Constants.vbCr;
-		public const string VbTab = Microsoft.VisualBasic.Constants.vbTab;
+		public const string VbCrLf = "\r\n";
+		public const string vbCr = "\r";
+		public const string VbTab = "\t";
 		
 		public enum efEnumTriState
 		{
@@ -100,102 +100,119 @@ namespace easyFramework.Sys.ToolLib
 		
 		public static string LCase(string vnt)
 		{
-			return Microsoft.VisualBasic.Strings.LCase(vnt);
+            if (String.IsNullOrEmpty(vnt))
+                return null;
+            else return vnt.ToLower();
 		}
 		public static string LCase(char vnt)
 		{
-			return Microsoft.VisualBasic.Strings.LCase(vnt.ToString());
+            if (vnt == null)
+                return null;
+            else return Convert.ToString(vnt).ToLower();
 		}
 		
 		public static int Len(object vnt)
 		{
-			return Microsoft.VisualBasic.Strings.Len(vnt);
+            return Convert.ToString(vnt).Length;
 		}
 		
 		public static string UCase(string vnt)
 		{
-			return Microsoft.VisualBasic.Strings.UCase(vnt);
+            if (String.IsNullOrEmpty(vnt))
+                return null;
+            else return vnt.ToUpper();
 		}
 		public static string UCase(char vnt)
 		{
-			return Microsoft.VisualBasic.Strings.UCase(vnt.ToString());
+            return Convert.ToString(vnt).ToUpper();
 		}
 		public static int UBound(Array a)
 		{
-			return Microsoft.VisualBasic.Information.UBound(a, 1);
+            return a.Length - 1;
 		}
 		public static int LBound(Array a)
 		{
-			return Microsoft.VisualBasic.Information.LBound(a, 1);
+            if (a.Length == 0)
+                return -1;
+            else
+              return 0;
 		}
+
+        /*
 		public static string Replace(string ReplaceIn, string Find, string ReplaceWith, int Start, int Count)
 		{
-			return Microsoft.VisualBasic.Strings.Replace(ReplaceIn, Find, ReplaceWith, Start, Count, 0);
+            asdfasd
+            return ReplaceIn.Replace(Find, ReplaceWith);
 		}
 		public static string Replace(string ReplaceIn, string Find, string ReplaceWith, int Start)
 		{
-			return Microsoft.VisualBasic.Strings.Replace(ReplaceIn, Find, ReplaceWith, Start, -1, 0);
+
+			return Strings.Replace(ReplaceIn, Find, ReplaceWith, Start, -1, 0);
 		}
 		public static string Replace(string ReplaceIn, string Find, string ReplaceWith)
 		{
-			return Microsoft.VisualBasic.Strings.Replace(ReplaceIn, Find, ReplaceWith, 1, -1, 0);
+			return Strings.Replace(ReplaceIn, Find, ReplaceWith, 1, -1, 0);
 		}
 		public static char chr(int CharCode)
 		{
-			return Microsoft.VisualBasic.Strings.Chr(CharCode);
+			return Strings.Chr(CharCode);
 		}
 		public static int Hour(DateTime dt)
 		{
-			return Microsoft.VisualBasic.DateAndTime.Hour(dt);
+			return DateAndTime.Hour(dt);
 		}
 		public static int Minute(DateTime dt)
 		{
-			return Microsoft.VisualBasic.DateAndTime.Minute(dt);
+			return DateAndTime.Minute(dt);
 		}
 		public static int Second(DateTime dt)
 		{
-			return Microsoft.VisualBasic.DateAndTime.Second(dt);
+			return DateAndTime.Second(dt);
 		}
 		public static int Year(DateTime dt)
 		{
-			return Microsoft.VisualBasic.DateAndTime.Year(dt);
+			return DateAndTime.Year(dt);
 		}
 		public static int Month(DateTime dt)
 		{
-			return Microsoft.VisualBasic.DateAndTime.Month(dt);
+			return DateAndTime.Month(dt);
 		}
 		public static int Day(DateTime dt)
 		{
-			return Microsoft.VisualBasic.DateAndTime.Day(dt);
+			return DateAndTime.Day(dt);
 		}
+         * */
 		public static string Trim(string sValue)
 		{
-			return Microsoft.VisualBasic.Strings.Trim(sValue);
+            if (String.IsNullOrEmpty(sValue))
+                return "";
+            return sValue.Trim();
 		}
+         /* 
 		public static DateTime DateAdd(efEnumDateInterval Interval, double Number, DateTime dateValue)
 		{
 									
-			Microsoft.VisualBasic.DateInterval i;
+			DateInterval i;
 
 			switch (Interval) 
 			{
 				case efEnumDateInterval.Day:
-					i = Microsoft.VisualBasic.DateInterval.Day;
+					i = DateInterval.Day;
 					break;
 				case efEnumDateInterval.Month:
-					i = Microsoft.VisualBasic.DateInterval.Month;
+					i = DateInterval.Month;
 					break;
 				case efEnumDateInterval.Year:
-					i = Microsoft.VisualBasic.DateInterval.Year;
+					i = DateInterval.Year;
 					break;
 				case efEnumDateInterval.Hour:
-					i = Microsoft.VisualBasic.DateInterval.Hour;
+					i = DateInterval.Hour;
 					break;
 				case efEnumDateInterval.Minute:
-					i = Microsoft.VisualBasic.DateInterval.Minute;
+					i = DateInterval.Minute;
 					break;
 				case efEnumDateInterval.Second:
-					i = Microsoft.VisualBasic.DateInterval.Second;
+					i = DateInterval.Second;
 					break;
 				default:
 					throw new efException("Ungültiges Datumsinterval \"" +	Interval.ToString() + "\".");
@@ -204,13 +221,13 @@ namespace easyFramework.Sys.ToolLib
 			
 						
 
-			return Microsoft.VisualBasic.DateAndTime.DateAdd(i, Number, dateValue);
+			return DateAndTime.DateAdd(i, Number, dateValue);
 			
 		}
 		public static DateTime DateAdd(string Interval, double Number, DateTime dateValue)
 		{
 			
-			return Microsoft.VisualBasic.DateAndTime.DateAdd(Interval, Number, dateValue);
+			return DateAndTime.DateAdd(Interval, Number, dateValue);
 			
 		}
 		public static long DateDiff(String Interval, DateTime Date1, DateTime Date2, 
@@ -218,246 +235,265 @@ namespace easyFramework.Sys.ToolLib
 		{
 			
 			
-			Microsoft.VisualBasic.FirstDayOfWeek fdow = Convert_FirstDayOfWeek(FirstDayOfWeek);
-			Microsoft.VisualBasic.FirstWeekOfYear fwoy =Convert_FirstWeekOfYear(WeekOfYear);
+			FirstDayOfWeek fdow = Convert_FirstDayOfWeek(FirstDayOfWeek);
+			FirstWeekOfYear fwoy =Convert_FirstWeekOfYear(WeekOfYear);
 
 
-			return Microsoft.VisualBasic.DateAndTime.DateDiff(Interval, Date1, Date2, 
+			return DateAndTime.DateDiff(Interval, Date1, Date2, 
 				fdow, fwoy);
 		}
+          * */
 		public static bool IsNumeric(object Expression)
 		{
-			return Microsoft.VisualBasic.Information.IsNumeric(Expression);
+            try
+            {
+                long i = Convert.ToInt64(Expression);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+            }
+            try
+            {
+                decimal d = Convert.ToDecimal(Expression);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+            }
 		}
+        /*
 		public static DateTime Now()
 		{
-			return Microsoft.VisualBasic.DateAndTime.Now;
+			return DateAndTime.Now;
 		}
-		
+		*/
 		public static bool IsDate(object Expression)
 		{
-			return Microsoft.VisualBasic.Information.IsDate(Expression);
+            DateTime dt = DateTime.Now;
+            try
+            {
+                dt = Convert.ToDateTime(Expression);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+            }
 		}
-		
+		/*
 		public static void Randomize ()
 		{
-			Microsoft.VisualBasic.VBMath.Randomize();
+			VBMath.Randomize();
 		}
 		public static int InStr(string String1, string String2)
 		{
-			return Microsoft.VisualBasic.Strings.InStr(String1, String2, 0);
+			return Strings.InStr(String1, String2, 0);
 		}
 		public static int InStr(int StartPos, string String1, string String2)
 		{
-			return Microsoft.VisualBasic.Strings.InStr(StartPos, String1, String2, 0);
+			return Strings.InStr(StartPos, String1, String2, 0);
 		}
 		
 		public static object IIf(bool Expression, object TruePart, object FalsePart)
 		{
-			return Microsoft.VisualBasic.Interaction.IIf(Expression, TruePart, FalsePart);
+			return Interaction.IIf(Expression, TruePart, FalsePart);
 		}
 		
 		public static string[] Split(string Expression, string Delimiter)
 		{
-			return Microsoft.VisualBasic.Strings.Split(Expression, Delimiter, -1, 0);
+			return Strings.Split(Expression, Delimiter, -1, 0);
 		}
 		public static string[] Split(string Expression, string Delimiter, int Limit)
 		{
-			return Microsoft.VisualBasic.Strings.Split(Expression, Delimiter, Limit, 0);
+			return Strings.Split(Expression, Delimiter, Limit, 0);
 		}
-		
+		*/
 		public static string Left(string sString, int lCount)
 		{
-			return Microsoft.VisualBasic.Strings.Left(sString, lCount);
+            if (String.IsNullOrEmpty(sString))
+                return "";
+            else return sString.Substring(0, lCount);
 		}
+       
 		public static string Right(string sString, int lCount)
 		{
-			return Microsoft.VisualBasic.Strings.Right(sString, lCount);
+            if (String.IsNullOrEmpty(sString))
+                return null;
+            else return sString.Substring(sString.Length - lCount);
 		}
 		public static string Mid(string sString, int lPos)
 		{
 			return Mid(sString, lPos, -1);
-			}
+
+		}
 		public static string Mid(string sString, int lPos, int lCount)
 		{
-			
+            if (String.IsNullOrEmpty(sString))
+                return "";
+
 			if (lCount == -1)
 			{
-				return Microsoft.VisualBasic.Strings.Mid(sString, lPos);
+                return sString.Substring(lPos);
 			}
 			else
 			{
-				return Microsoft.VisualBasic.Strings.Mid(sString, lPos, lCount);
+                return sString.Substring(lPos, lCount);
 			}
 			
 			
 		}
-		
-		public static string FormatNumber(object Expression, int NumDigitsAfterDecimal, efEnumTriState IncludeLeadingDigit, efEnumTriState UseParensForNegativeNumbers, efEnumTriState GroupDigits)
-		{
+        /*
+       public static string FormatNumber(object Expression, int NumDigitsAfterDecimal, efEnumTriState IncludeLeadingDigit, efEnumTriState UseParensForNegativeNumbers, efEnumTriState GroupDigits)
+       {
 			
-			return Microsoft.VisualBasic.Strings.FormatNumber(Expression, NumDigitsAfterDecimal, TristateToMicrosoftTristate(IncludeLeadingDigit), TristateToMicrosoftTristate(UseParensForNegativeNumbers), TristateToMicrosoftTristate(GroupDigits));
+           return Strings.FormatNumber(Expression, NumDigitsAfterDecimal, TristateToMicrosoftTristate(IncludeLeadingDigit), TristateToMicrosoftTristate(UseParensForNegativeNumbers), TristateToMicrosoftTristate(GroupDigits));
 			
-		}
+       }
 		
-		public static string FormatCurrency(object Expression, int NumDigitsAfterDecimal, efEnumTriState IncludeLeadingDigit, efEnumTriState UseParensForNegativeNumbers, efEnumTriState GroupDigits)
-		{
+       public static string FormatCurrency(object Expression, int NumDigitsAfterDecimal, efEnumTriState IncludeLeadingDigit, efEnumTriState UseParensForNegativeNumbers, efEnumTriState GroupDigits)
+       {
 			
-			return Microsoft.VisualBasic.Strings.FormatCurrency(Expression, NumDigitsAfterDecimal, TristateToMicrosoftTristate(IncludeLeadingDigit), TristateToMicrosoftTristate(UseParensForNegativeNumbers), TristateToMicrosoftTristate(GroupDigits));
-		}
+           return Strings.FormatCurrency(Expression, NumDigitsAfterDecimal, TristateToMicrosoftTristate(IncludeLeadingDigit), TristateToMicrosoftTristate(UseParensForNegativeNumbers), TristateToMicrosoftTristate(GroupDigits));
+       }
 		
-		public static string Format(object Expression, string Style)
-		{
-			return Microsoft.VisualBasic.Strings.Format(Expression, Style);
-		}
+       public static string Format(object Expression, string Style)
+       {
+           return Strings.Format(Expression, Style);
+       }
 		
-		public static string FormatDateTime(DateTime Expression, efEnumDateFormat NamedFormat)
-		{
-			switch (NamedFormat) 
-			{
+       public static string FormatDateTime(DateTime Expression, efEnumDateFormat NamedFormat)
+       {
+           switch (NamedFormat) 
+           {
 				
-				case efEnumDateFormat.GeneralDate:
-					return Microsoft.VisualBasic.Strings.FormatDateTime(Expression, Microsoft.VisualBasic.DateFormat.GeneralDate);
+               case efEnumDateFormat.GeneralDate:
+                   return Strings.FormatDateTime(Expression, DateFormat.GeneralDate);
 
-				case efEnumDateFormat.LongDate:
-					return Microsoft.VisualBasic.Strings.FormatDateTime(Expression, Microsoft.VisualBasic.DateFormat.LongDate);
+               case efEnumDateFormat.LongDate:
+                   return Strings.FormatDateTime(Expression, DateFormat.LongDate);
 
-				case efEnumDateFormat.LongTime:
-					return Microsoft.VisualBasic.Strings.FormatDateTime(Expression, Microsoft.VisualBasic.DateFormat.LongTime);
+               case efEnumDateFormat.LongTime:
+                   return Strings.FormatDateTime(Expression, DateFormat.LongTime);
 
-				case efEnumDateFormat.ShortDate:
-					return Microsoft.VisualBasic.Strings.FormatDateTime(Expression, Microsoft.VisualBasic.DateFormat.ShortDate);
+               case efEnumDateFormat.ShortDate:
+                   return Strings.FormatDateTime(Expression, DateFormat.ShortDate);
 
-				case efEnumDateFormat.ShortTime:
-					return Microsoft.VisualBasic.Strings.FormatDateTime(Expression, Microsoft.VisualBasic.DateFormat.ShortTime);
+               case efEnumDateFormat.ShortTime:
+                   return Strings.FormatDateTime(Expression, DateFormat.ShortTime);
 
-			}
+           }
 
-			throw new efException("Unknown Dateformat \"" + NamedFormat.ToString() + "\".");
+           throw new efException("Unknown Dateformat \"" + NamedFormat.ToString() + "\".");
 			
-		}
+       }
 		
-		public static string FormatPercent(object Expression, int NumDigitsAfterDecimal, efEnumTriState IncludeLeadingDigit, efEnumTriState UseParensForNegativeNumbers, efEnumTriState GroupDigits)
-		{
+       public static string FormatPercent(object Expression, int NumDigitsAfterDecimal, efEnumTriState IncludeLeadingDigit, efEnumTriState UseParensForNegativeNumbers, efEnumTriState GroupDigits)
+       {
 			
 
 
 		
-			return Microsoft.VisualBasic.Strings.FormatPercent(Expression, NumDigitsAfterDecimal, TristateToMicrosoftTristate(IncludeLeadingDigit), TristateToMicrosoftTristate(UseParensForNegativeNumbers), TristateToMicrosoftTristate(GroupDigits));
-		}
+           return Strings.FormatPercent(Expression, NumDigitsAfterDecimal, TristateToMicrosoftTristate(IncludeLeadingDigit), TristateToMicrosoftTristate(UseParensForNegativeNumbers), TristateToMicrosoftTristate(GroupDigits));
+       }
 		
-		private static Microsoft.VisualBasic.TriState TristateToMicrosoftTristate(efEnumTriState t)
-		{
-			if (t == efEnumTriState.isFalse)
-			{
-				return Microsoft.VisualBasic.TriState.False;
-			}
-			else if (t == efEnumTriState.isTrue)
-			{
-				return Microsoft.VisualBasic.TriState.True;
-			}
-			else
-			{
-				return Microsoft.VisualBasic.TriState.UseDefault;
-			}
-		}
-		
-		//================================================================================
-		//Function:  String2Array
-		//--------------------------------------------------------------------------------'
-		//Purpose:   makes an array out of a string
-		//--------------------------------------------------------------------------------'
-		//Params:
-		//           bDoNOTTrim - values are not trimmed
-		//--------------------------------------------------------------------------------'
-		//Returns:   array of strings
-		//--------------------------------------------------------------------------------'
-		//Created:   05.04.2004 17:01:02
-		//--------------------------------------------------------------------------------'
-		//Changed:
-		//--------------------------------------------------------------------------------'
-		public static string[] String2Array(string sString, string sSeperator)
-		{
-			return String2Array(sString, sSeperator, true, false);
-		}
-		public static string[] String2Array(string sString, string sSeperator, bool bAddEmptyLastElementIfExists, bool bDoNOTTrim)
-		{
+       //================================================================================
+       //Function:  String2Array
+       //--------------------------------------------------------------------------------'
+       //Purpose:   makes an array out of a string
+       //--------------------------------------------------------------------------------'
+       //Params:
+       //           bDoNOTTrim - values are not trimmed
+       //--------------------------------------------------------------------------------'
+       //Returns:   array of strings
+       //--------------------------------------------------------------------------------'
+       //Created:   05.04.2004 17:01:02
+       //--------------------------------------------------------------------------------'
+       //Changed:
+       //--------------------------------------------------------------------------------'
+       public static string[] String2Array(string sString, string sSeperator)
+       {
+           return String2Array(sString, sSeperator, true, false);
+       }
+       public static string[] String2Array(string sString, string sSeperator, bool bAddEmptyLastElementIfExists, bool bDoNOTTrim)
+       {
 
 			
-			if (sString == "")
-			{
-				return null;
-			}
-			else if (InStr(sString, sSeperator) == 0)
-			{
-				string[] asResult = ((string[])(Array.CreateInstance(typeof(string), 1)));
-				asResult[0] = sString;
-				return asResult;
-			}
-			else
-			{
+           if (sString == "")
+           {
+               return null;
+           }
+           else if (InStr(sString, sSeperator) == 0)
+           {
+               string[] asResult = ((string[])(Array.CreateInstance(typeof(string), 1)));
+               asResult[0] = sString;
+               return asResult;
+           }
+           else
+           {
 				
-				efArrayList asResult = new efArrayList();
-				string[] asSplitted = Split(sString, sSeperator, -1);
+               efArrayList asResult = new efArrayList();
+               string[] asSplitted = Split(sString, sSeperator, -1);
 				
-				for (int i = 0; i <= asSplitted.Length - 1; i++)
-				{
-					if (bDoNOTTrim)
-					{
-						asResult.Add(asSplitted[i]);
-					}
-					else
-					{
-						asResult.Add(Trim(asSplitted[i]));
-					}
+               for (int i = 0; i <= asSplitted.Length - 1; i++)
+               {
+                   if (bDoNOTTrim)
+                   {
+                       asResult.Add(asSplitted[i]);
+                   }
+                   else
+                   {
+                       asResult.Add(Trim(asSplitted[i]));
+                   }
 					
-				}
+               }
 				
-				//remove the last element if it is empty if if the parameters says so:
-				if (bAddEmptyLastElementIfExists == false)
-				{
-					asResult.RemoveAt(asResult.Count - 1);
-				}
-				string[] retValue = new string[asResult.Count-1 + 1];
-				asResult.CopyTo(retValue);
-				return retValue;
-			}
-		}
-		//================================================================================
-		//Function:  gs2Digit
-		//--------------------------------------------------------------------------------'
-		//Purpose:   makes "02" out of "2"; often used
-		//--------------------------------------------------------------------------------'
-		//Params:    the single-number
-		//--------------------------------------------------------------------------------'
-		//Returns:
-		//--------------------------------------------------------------------------------'
-		//Created:   21.03.2004 19:14:21
-		//--------------------------------------------------------------------------------'
-		//Changed:
-		//--------------------------------------------------------------------------------'
-		public static string gs2Digit(string sValue)
-		{
-			
-			if (Len(sValue) == 0)
-			{
-				return "00";
-			}
-			else if (Len(sValue) == 1)
-			{
-				return "0" + sValue;
-			}
-			else
-			{
-				return sValue;
-			}
-			
-		}
-		
-		
-		
-		
-		//================================================================================
+               //remove the last element if it is empty if if the parameters says so:
+               if (bAddEmptyLastElementIfExists == false)
+               {
+                   asResult.RemoveAt(asResult.Count - 1);
+               }
+               string[] retValue = new string[asResult.Count-1 + 1];
+               asResult.CopyTo(retValue);
+               return retValue;
+           }
+       }
+         */
+       //================================================================================
+       //Function:  gs2Digit
+       //--------------------------------------------------------------------------------'
+       //Purpose:   makes "02" out of "2"; often used
+       //--------------------------------------------------------------------------------'
+       //Params:    the single-number
+       //--------------------------------------------------------------------------------'
+       //Returns:
+       //--------------------------------------------------------------------------------'
+       //Created:   21.03.2004 19:14:21
+       //--------------------------------------------------------------------------------'
+       //Changed:
+       //--------------------------------------------------------------------------------'
+       public static string gs2Digit(string sValue)
+       {
+           if (String.IsNullOrEmpty(sValue))
+               return "";
+           else return String.Format("{0:00}", sValue);
+       }
+       /*
+
+
+
+        //================================================================================
 		//Function:  Array2String
 		//--------------------------------------------------------------------------------'
 		//Purpose:   makes a string out of an array
@@ -616,18 +652,19 @@ namespace easyFramework.Sys.ToolLib
 		//--------------------------------------------------------------------------------'
 		//Changed:
 		//--------------------------------------------------------------------------------'
-		private static Microsoft.VisualBasic.FirstWeekOfYear Convert_FirstWeekOfYear(efEnumFirstWeekOfYear value)
+        /*
+		private static FirstWeekOfYear Convert_FirstWeekOfYear(efEnumFirstWeekOfYear value)
 		{
 			switch (value)
 			{
 				case efEnumFirstWeekOfYear.FirstFullWeek:
-					return Microsoft.VisualBasic.FirstWeekOfYear.FirstFullWeek;
+					return FirstWeekOfYear.FirstFullWeek;
 					
 				case efEnumFirstWeekOfYear.Jan1:
-					return Microsoft.VisualBasic.FirstWeekOfYear.Jan1;
+					return FirstWeekOfYear.Jan1;
 					
 				case efEnumFirstWeekOfYear.System:
-					return Microsoft.VisualBasic.FirstWeekOfYear.System;
+					return FirstWeekOfYear.System;
 					
 				default:
 					throw new efException("Unknown WeekOfYear \"" + value.ToString()  + "\".");
@@ -635,7 +672,7 @@ namespace easyFramework.Sys.ToolLib
 
 
 		}
-
+        */
 		//================================================================================
 		//Function:  Convert_FirstDayOfWeek
 		//--------------------------------------------------------------------------------'
@@ -649,32 +686,32 @@ namespace easyFramework.Sys.ToolLib
 		//--------------------------------------------------------------------------------'
 		//Changed:
 		//--------------------------------------------------------------------------------'
-		private static Microsoft.VisualBasic.FirstDayOfWeek Convert_FirstDayOfWeek
+		/*private static FirstDayOfWeek Convert_FirstDayOfWeek
 			(efEnumFirstDayOfWeek value) 
 		{
 
 			switch (value)
 			{
 				case efEnumFirstDayOfWeek.Friday:
-					return  Microsoft.VisualBasic.FirstDayOfWeek.Friday;
+					return  FirstDayOfWeek.Friday;
 					 
 				case efEnumFirstDayOfWeek.Monday:
-					return Microsoft.VisualBasic.FirstDayOfWeek.Monday;
+					return FirstDayOfWeek.Monday;
 					
 				case efEnumFirstDayOfWeek.Saturday:
-					return Microsoft.VisualBasic.FirstDayOfWeek.Saturday;
+					return FirstDayOfWeek.Saturday;
 					
 				case efEnumFirstDayOfWeek.Sunday:
-					return Microsoft.VisualBasic.FirstDayOfWeek.Sunday;
+					return FirstDayOfWeek.Sunday;
 					
 				case efEnumFirstDayOfWeek.Thursday:
-					return Microsoft.VisualBasic.FirstDayOfWeek.Thursday;
+					return FirstDayOfWeek.Thursday;
 					
 				case efEnumFirstDayOfWeek.Tuesday:
-					return Microsoft.VisualBasic.FirstDayOfWeek.Tuesday;
+					return FirstDayOfWeek.Tuesday;
 					
 				case efEnumFirstDayOfWeek.Wednesday:
-					return Microsoft.VisualBasic.FirstDayOfWeek.Wednesday;
+					return FirstDayOfWeek.Wednesday;
 					
 				default:
 					throw new efException("Unknown DayOfWeek \"" + value.ToString() + "\".");
@@ -682,6 +719,7 @@ namespace easyFramework.Sys.ToolLib
 
 
 		}
+         * */
 	}
 	
 	
