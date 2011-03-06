@@ -223,8 +223,8 @@ namespace easyFramework.Frontend.ASP.WebComponents
 		{
 			get
 			{
-				string sReplaced = Strings.Replace(Strings.LCase(this.oTabHeight.ToString()), "px", "", 1, -1, 0);
-				if (! Information.IsNumeric(sReplaced) & !Functions.IsEmptyString(sReplaced))
+				string sReplaced = Functions.Replace(Functions.LCase(this.oTabHeight.ToString()), "px", "");
+				if (! Functions.IsNumeric(sReplaced) & !Functions.IsEmptyString(sReplaced))
 				{
 					throw (new Exception("Cannot get pixel-height, because height-value of " + "tab is not pixel: " + this.oTabHeight.ToString()));
 				}

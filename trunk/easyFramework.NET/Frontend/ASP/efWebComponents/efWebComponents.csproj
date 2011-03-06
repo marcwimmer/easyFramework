@@ -110,9 +110,6 @@
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Microsoft.VisualBasic">
-      <Name>Microsoft.VisualBasic</Name>
-    </Reference>
     <Reference Include="mscorlib">
       <Name>mscorlib</Name>
     </Reference>
@@ -190,9 +187,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Sys\efDomains\efDomains.csproj">
+      <Project>{21C2CC4E-E53E-4B64-BF19-0E5B332B1356}</Project>
+      <Name>efDomains</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Sys\efEntities\efEntities.csproj">
       <Project>{A4D83A04-35B0-488E-83EC-4460047ACCE5}</Project>
       <Name>efEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Sys\efSecurity\efSecurity.csproj">
+      <Project>{3B9CA648-02BA-44DC-869D-E16745831195}</Project>
+      <Name>efSecurity</Name>
     </ProjectReference>
     <ProjectReference Include="..\efAspTools\efAspTools.csproj">
       <Project>{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}</Project>

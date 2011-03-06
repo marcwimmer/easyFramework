@@ -176,8 +176,8 @@ namespace easyFramework.Frontend.ASP.WebComponents
 				maoTabs[i].oTabLeft = Unit.Pixel(iNextLeft);
 		
 				string sWidth = maoTabs[i].oTabWidth.ToString();
-				sWidth = Strings.Replace(Strings.LCase(sWidth), "px", "", 1, -1, 0);
-				if (! Information.IsNumeric(sWidth) & !Functions.IsEmptyString(sWidth))
+				sWidth = Functions.Replace(Functions.LCase(sWidth), "px", "");
+				if (! Functions.IsNumeric(sWidth) & !Functions.IsEmptyString(sWidth))
 				{
 					throw (new Exception("For widths of the tabs only \"px\"-values are allowed! " + "Invalid value: " + maoTabs[i].Width.ToString()));
 				}

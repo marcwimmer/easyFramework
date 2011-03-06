@@ -91,7 +91,7 @@
     </Reference>
     <Reference Include="efHelpSystem">
       <Name>efHelpSystem</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efHelpSystem.dll</HintPath>
+      <HintPath>..\..\..\Sys\efHelpSystem\obj\Debug\efHelpSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="efSecurity">

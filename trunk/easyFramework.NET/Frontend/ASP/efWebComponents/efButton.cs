@@ -141,10 +141,10 @@ namespace easyFramework.Frontend.ASP.WebComponents
 	
 			//-------if there is a $-sign, then replace it---------
 			string sAccessKey = "";
-			if (Strings.InStr(sText, "$", 0) > 0)
+			if (Functions.InStr(sText, "$") > 0)
 			{
-				sAccessKey = Strings.Mid(sText, Strings.InStr(sText, "$", 0) + 1, 1);
-				sText = Strings.Left(sText, Strings.InStr(sText, "$", 0) - 1) + "<u>" + sAccessKey + "</u>" + Strings.Right(sText, Strings.Len(sText) - Strings.InStr(sText, "$", 0) - 1);
+                sAccessKey = Functions.Mid(sText, Functions.InStr(sText, "$") + 1, 1);
+                sText = Functions.Left(sText, Functions.InStr(sText, "$") - 1) + "<u>" + sAccessKey + "</u>" + Functions.Right(sText, Functions.Len(sText) - Functions.InStr(sText, "$") - 1);
 			}
 	
 	

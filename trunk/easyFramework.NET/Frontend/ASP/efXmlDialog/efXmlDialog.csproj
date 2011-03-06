@@ -148,7 +148,7 @@
     </Reference>
     <Reference Include="efEntityPopupMenue">
       <Name>efEntityPopupMenue</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntityPopupMenue.dll</HintPath>
+      <HintPath>..\..\..\..\easyFramework.NET C# Web\bin\efEntityPopupMenue.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="efHTMLRenderer">
