@@ -333,8 +333,8 @@ var mouseX, mouseY;
 gAdd_DocumentMouseMove(getXY);
 
 function getXY(e) {
-	mouseX = (window.Event) ? e.pageX : event.clientX;  
-	mouseY = (window.Event) ? e.pageY : event.clientY;
+    mouseX = (window.Event) ? e.pageX : event.clientX;
+    mouseY = (window.Event) ? e.pageY : event.clientY;
 }
 
 //-----------own interval management------------------------------
