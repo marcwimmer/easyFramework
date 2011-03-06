@@ -89,11 +89,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="efAspTools">
-      <Name>efAspTools</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efAspTools.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efClientInfo">
       <Name>efClientInfo</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efClientInfo.dll</HintPath>
@@ -104,46 +99,6 @@
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="efEntities">
-      <Name>efEntities</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntities.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efEntityLoader">
-      <Name>efEntityLoader</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntityLoader.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efEntityPopupMenue">
-      <Name>efEntityPopupMenue</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEntityPopupMenue.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efEnvironment">
-      <Name>efEnvironment</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEnvironment.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efHTMLRenderer">
-      <Name>efHTMLRenderer</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efHTMLRenderer.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efImages">
-      <Name>efImages</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efImages.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efPage">
-      <Name>efPage</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efPage.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efPopupMenue">
-      <Name>efPopupMenue</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efPopupMenue.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efToolLib">
       <Name>efToolLib</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
@@ -152,11 +107,6 @@
     <Reference Include="efXml">
       <Name>efXml</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efXmlDialog">
-      <Name>efXmlDialog</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXmlDialog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.VisualBasic">
@@ -237,6 +187,48 @@
     <Compile Include="efXmlDialog.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Sys\efEntities\efEntities.csproj">
+      <Project>{A4D83A04-35B0-488E-83EC-4460047ACCE5}</Project>
+      <Name>efEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efAspTools\efAspTools.csproj">
+      <Project>{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}</Project>
+      <Name>efAspTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efDialog\efDialog.csproj">
+      <Project>{F8BDDE2D-AE94-4EA4-96CC-E2DD7DBB823E}</Project>
+      <Name>efDialog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efEntityLoader\efEntityLoader.csproj">
+      <Project>{1C0429D4-6497-47EC-9A67-2F8D57ECFBFF}</Project>
+      <Name>efEntityLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efEntityPopupMenue\efEntityPopupMenue.csproj">
+      <Project>{7E6E8943-2068-4980-87CE-E29579D54735}</Project>
+      <Name>efEntityPopupMenue</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efHTMLRenderer\efHTMLRenderer.csproj">
+      <Project>{06DB707B-394D-4C63-9B8A-524B6CC36DE1}</Project>
+      <Name>efHTMLRenderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efImages\efImages.csproj">
+      <Project>{879BA6F0-70E2-419D-9BCB-BBCC8552AEC5}</Project>
+      <Name>efImages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efPage\efPage.csproj">
+      <Project>{BEA0A97A-1B6A-4A54-9047-216FF30C7271}</Project>
+      <Name>efPage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efPopupMenue\efPopupMenue.csproj">
+      <Project>{818168CE-6CBF-445D-BD1E-7497E7CA7438}</Project>
+      <Name>efPopupMenue</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efXmlDialog\efXmlDialog.csproj">
+      <Project>{AF6467D8-502B-40B0-AFEE-460B773167A0}</Project>
+      <Name>efXmlDialog</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

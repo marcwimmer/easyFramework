@@ -83,11 +83,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="efAspTools">
-      <Name>efAspTools</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efAspTools.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efClientInfo">
       <Name>efClientInfo</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efClientInfo.dll</HintPath>
@@ -98,34 +93,9 @@
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="efEnvironment">
-      <Name>efEnvironment</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efEnvironment.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efLogging">
-      <Name>efLogging</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efLogging.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efMIME">
-      <Name>efMIME</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efMIME.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efPage">
-      <Name>efPage</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efPage.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efToolLib">
       <Name>efToolLib</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efWebComponents">
-      <Name>efWebComponents</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efWebComponents.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="efXml">
@@ -175,6 +145,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\efAspTools\efAspTools.csproj">
+      <Project>{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}</Project>
+      <Name>efAspTools</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

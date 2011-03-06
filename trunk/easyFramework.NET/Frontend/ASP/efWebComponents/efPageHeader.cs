@@ -9,7 +9,6 @@ using easyFramework.Frontend.ASP.ASPTools;
 using easyFramework.Frontend.ASP.Dialog;
 using easyFramework.Frontend.ASP;
 using easyFramework.Sys.ToolLib;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace easyFramework.Frontend.ASP.WebComponents
 {

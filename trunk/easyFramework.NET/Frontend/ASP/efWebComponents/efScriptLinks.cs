@@ -7,8 +7,6 @@ using System.ComponentModel;
 using System.Web.UI;
 using easyFramework.Frontend.ASP.ASPTools;
 using easyFramework.Frontend.ASP.HTMLRenderer;
-//using easyFramework.sys.ToolLib.Functions;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace easyFramework.Frontend.ASP.WebComponents
 {
