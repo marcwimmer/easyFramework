@@ -19,12 +19,13 @@
     <StartupObject>easyFramework.Interfaces.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\</OutputPath>
+    <OutputPath>..\..\..\easyFramework.NET.Web\bin\</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverFlowUnderFlow>false</CheckForOverFlowUnderFlow>
@@ -46,7 +47,7 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
+    <OutputPath>..\..\..\easyFramework.NET.Web\bin\</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverFlowUnderFlow>false</CheckForOverFlowUnderFlow>
@@ -68,9 +69,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualBasic">
-      <Name>Microsoft.VisualBasic</Name>
-    </Reference>
     <Reference Include="mscorlib">
       <Name>mscorlib</Name>
     </Reference>

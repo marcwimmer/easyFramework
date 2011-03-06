@@ -21,9 +21,10 @@
     <StartupObject>easyFramework.sys.Entities.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -99,11 +100,6 @@
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efSysEvents.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="efTableDef">
-      <Name>efTableDef</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efTableDef.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efToolLib">
       <Name>efToolLib</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
@@ -142,6 +138,12 @@
     <Compile Include="EntitySysEventEngine.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\efTableDef\efTableDef.csproj">
+      <Project>{A919EDC2-709E-4356-BF53-AC8B091087F7}</Project>
+      <Name>efTableDef</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

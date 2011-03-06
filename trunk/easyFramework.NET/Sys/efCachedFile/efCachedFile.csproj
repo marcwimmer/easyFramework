@@ -21,12 +21,13 @@
     <StartupObject>easyFramework.Frontend.ASP.ASPTools.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
+    <OutputPath>..\..\..\easyFramework.NET.Web\bin\</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
@@ -68,21 +69,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="efData">
-      <Name>efData</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efToolLib">
-      <Name>efToolLib</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efXml">
-      <Name>efXml</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Microsoft.VisualBasic">
       <Name>Microsoft.VisualBasic</Name>
     </Reference>
@@ -103,6 +89,20 @@
     <Compile Include="CachedFileException.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\efData\efData.csproj">
+      <Project>{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}</Project>
+      <Name>efData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efToolLib\efToolLib.csproj">
+      <Project>{E79C5AE2-8B9E-4781-98E7-6D8E4AC2C0E1}</Project>
+      <Name>efToolLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efXml\efXml.csproj">
+      <Project>{01006A9C-384E-4A86-A2A1-24D798B3F02E}</Project>
+      <Name>efXml</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

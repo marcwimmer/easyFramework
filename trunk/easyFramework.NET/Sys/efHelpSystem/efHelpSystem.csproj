@@ -21,9 +21,10 @@
     <StartupObject>easyFramework.OnlineHelp.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -68,11 +69,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="efCachedFile">
-      <Name>efCachedFile</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efCachedFile.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efClientInfo">
       <Name>efClientInfo</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efClientInfo.dll</HintPath>
@@ -86,11 +82,6 @@
     <Reference Include="efDataClientInfo">
       <Name>efDataClientInfo</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efDataClientInfo.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efDirectoryWatcher">
-      <Name>efDirectoryWatcher</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efDirectoryWatcher.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="efRecordset">
@@ -107,9 +98,6 @@
       <Name>efXml</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efXml.dll</HintPath>
       <Private>False</Private>
-    </Reference>
-    <Reference Include="Microsoft.VisualBasic">
-      <Name>Microsoft.VisualBasic</Name>
     </Reference>
     <Reference Include="mscorlib">
       <Name>mscorlib</Name>
@@ -131,6 +119,16 @@
     <Compile Include="Renderer.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\efCachedFile\efCachedFile.csproj">
+      <Project>{0543177B-BF4C-4206-A044-687D0464AEA0}</Project>
+      <Name>efCachedFile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efDirectoryWatcher\efDirectoryWatcher.csproj">
+      <Project>{313ED8A5-44C1-422C-8876-760976C0ABFC}</Project>
+      <Name>efDirectoryWatcher</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

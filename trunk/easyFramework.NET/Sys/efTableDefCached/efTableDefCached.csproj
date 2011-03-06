@@ -19,9 +19,10 @@
     <StartupObject>easyFramework.Sys.Data.Table.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>0.0</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\..\easyFramework.NET C# Web\bin\</OutputPath>
@@ -73,21 +74,6 @@
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efCachedFile.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="efData">
-      <Name>efData</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efInterfaces">
-      <Name>efInterfaces</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efInterfaces.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efTableDef">
-      <Name>efTableDef</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efTableDef.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efToolLib">
       <Name>efToolLib</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
@@ -115,6 +101,28 @@
     <Compile Include="efTableDefCached.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\efClientInfo\efClientInfo.csproj">
+      <Project>{B454AA9F-9B37-431D-8665-5F8B5146FDCB}</Project>
+      <Name>efClientInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efData\efData.csproj">
+      <Project>{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}</Project>
+      <Name>efData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efInterfaces\efInterfaces.csproj">
+      <Project>{18A2A3BE-684D-4480-AE65-471BA211A582}</Project>
+      <Name>efInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efRecordset\efRecordset.csproj">
+      <Project>{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}</Project>
+      <Name>efRecordset</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efTableDef\efTableDef.csproj">
+      <Project>{A919EDC2-709E-4356-BF53-AC8B091087F7}</Project>
+      <Name>efTableDef</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
