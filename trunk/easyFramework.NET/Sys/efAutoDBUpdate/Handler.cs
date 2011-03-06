@@ -177,7 +177,7 @@ namespace easyFramework.Sys.AutoDBUpdate
 		
 				string sFileName = easyFramework.Sys.ToolLib.DataConversion.gsCStr(oSorted[i]);
 		
-				if (Functions.InStr(sFileName, "\\") > 0)
+				if (Functions.InStr2(sFileName, "\\") > -1)
 				{
 					sFileName = Functions.Split(sFileName, "\\") [Functions.UBound (Functions.Split (sFileName ,  "\\"))];
 				}

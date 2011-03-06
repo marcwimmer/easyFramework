@@ -67,11 +67,11 @@ namespace easyFramework.Sys.Entities
 				bool bHasAllowed = false;
 				bool bHasForbidden = false;
 				
-				if (Functions.InStr(Functions.LCase(sQry), " as allowed") > 0)
+				if (Functions.InStr2(Functions.LCase(sQry), " as allowed") > -1)
 				{
 					bHasAllowed = true;
 				}
-				if (Functions.InStr(Functions.LCase(sQry), " as forbidden") > 0)
+				if (Functions.InStr2(Functions.LCase(sQry), " as forbidden") > -1)
 				{
 					bHasForbidden = true;
 				}

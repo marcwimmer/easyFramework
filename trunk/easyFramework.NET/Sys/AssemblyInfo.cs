@@ -10,8 +10,8 @@ using easyFramework.Sys.ToolLib;
 
 // Die Werte der Assemblyattribute berprfen
 
-[assembly:AssemblyTitle("efToolLib")]
-[assembly:AssemblyDescription("Functions of easyFramework")]
+[assembly:AssemblyTitle("efSys")]
+[assembly:AssemblyDescription("System-Functions of easyFramework")]
 [assembly:AssemblyCompany("Promain Software-Betreuung GmbH")]
 [assembly:AssemblyProduct("easyFramework")]
 [assembly:AssemblyCopyright("Promain Software-Betreuung GmbH")]
