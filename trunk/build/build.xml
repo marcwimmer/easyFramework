@@ -7,7 +7,8 @@
   <property name="ef_tasks_dir" value="${ef_dir}/tasks"/>
   <property name="build.dir" value="./tmp"/>
   <property name="nant.settings.currentframework" value="net-3.5" />
-  <target name="build_dlls">
+  <property name="build.web.bin" value="easyFramework.NET.Web/bin"/>
+  <target name="build_dlls" depends="clean">
     <mkdir dir="${build.dir}" />
     <copy todir="${build.dir}" file="${ef_addons_dir}/ICSharpNet/081SharpZipLib/ICSharpCode.SharpZipLib.dll" />
     <copy todir="${build.dir}" file="${ef_addons_dir}/InteropFreetextbox/FreeTextBox.dll" />
@@ -54,6 +55,17 @@
         <include name="${build.dir}/*.dll" />
       </references>
     </csc>
+
+    <delete>
+      <fileset>
+        <include name="${build.web.bin}/*.*" />
+      </fileset>
+    </delete>
+    <copy todir="${build.web.bin}">
+      <fileset basedir="${build.dir}">
+        <include name="*.dll" />
+      </fileset>
+    </copy>
   </target>
   <target name="clean">
     <delete dir="${build.dir}" failonerror="true"/>
