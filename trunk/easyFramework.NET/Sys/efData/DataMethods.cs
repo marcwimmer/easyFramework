@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using Microsoft.VisualBasic;
 using System;
 using System.Data;
 using System.Collections;
@@ -251,23 +250,23 @@ namespace easyFramework.Sys.Data
 			
 			if (Functions.IsEmptyString(sFieldList)) sFieldList = "*";
 			
-			sQry = Strings.Replace(sQry, "$1", sFieldList, 1, -1, 0);
-			sQry = Strings.Replace(sQry, "$2", sTableName, 1, -1, 0);
+			sQry = Functions.Replace(sQry, "$1", sFieldList);
+            sQry = Functions.Replace(sQry, "$2", sTableName);
 			if (!Functions.IsEmptyString(sWhereClause))
 			{
-				sQry = Strings.Replace(sQry, "$3", " WHERE " + sWhereClause, 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$3", " WHERE " + sWhereClause);
 			}
 			else
 			{
-				sQry = Strings.Replace(sQry, "$3", "", 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$3", "");
 			}
 			if (!Functions.IsEmptyString(sGroupClause))
 			{
-				sQry = Strings.Replace(sQry, "$4", " GROUP BY  " + sGroupClause, 1, -1, 0);
+				sQry = Functions.Replace(sQry, "$4", " GROUP BY  " + sGroupClause);
 			}
 			else
 			{
-				sQry = Strings.Replace(sQry, "$4", "", 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$4", "");
 			}
 			
 			
@@ -313,41 +312,41 @@ namespace easyFramework.Sys.Data
 			
 			string sQry;
 			sQry = "SELECT $1 FROM $2  " + "$3 " + "$4 " + "$5 " + "$6 ";
-			
-			
-			sQry = Strings.Replace(sQry, "$1", sFieldList, 1, -1, 0);
-			sQry = Strings.Replace(sQry, "$2", sTableName, 1, -1, 0);
+
+
+            sQry = Functions.Replace(sQry, "$1", sFieldList);
+            sQry = Functions.Replace(sQry, "$2", sTableName);
 			if (!Functions.IsEmptyString(sWhereClause))
 			{
-				sQry = Strings.Replace(sQry, "$3", " WHERE " + sWhereClause, 1, -1, 0);
+				sQry = Functions.Replace(sQry, "$3", " WHERE " + sWhereClause);
 			}
 			else
 			{
-				sQry = Strings.Replace(sQry, "$3", "", 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$3", "");
 			}
 			if (!Functions.IsEmptyString(sGroupClause))
 			{
-				sQry = Strings.Replace(sQry, "$4", " GROUP BY  " + sGroupClause, 1, -1, 0);
+				sQry = Functions.Replace(sQry, "$4", " GROUP BY  " + sGroupClause);
 			}
 			else
 			{
-				sQry = Strings.Replace(sQry, "$4", "", 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$4", "");
 			}
 			if (!Functions.IsEmptyString(sHavingClause))
 			{
-				sQry = Strings.Replace(sQry, "$5", " HAVING  " + sHavingClause, 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$5", " HAVING  " + sHavingClause);
 			}
 			else
 			{
-				sQry = Strings.Replace(sQry, "$5", "", 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$5", "");
 			}
 			if (!Functions.IsEmptyString(sOrderByClause))
 			{
-				sQry = Strings.Replace(sQry, "$6", " ORDER BY  " + sOrderByClause, 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$6", " ORDER BY  " + sOrderByClause);
 			}
 			else
 			{
-				sQry = Strings.Replace(sQry, "$6", "", 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$6", "");
 			}
 			
 			
@@ -424,40 +423,40 @@ namespace easyFramework.Sys.Data
 			
 			string sQry;
 			sQry = "SELECT $1 FROM $2  " + "$3 " + "$4 " + "$5 " + "$6 ";
-			
-			sQry = Strings.Replace(sQry, "$1", sFieldList, 1, -1, 0);
-			sQry = Strings.Replace(sQry, "$2", sTableName, 1, -1, 0);
+
+            sQry = Functions.Replace(sQry, "$1", sFieldList);
+			sQry = Functions.Replace(sQry, "$2", sTableName);
 			if (!Functions.IsEmptyString(sWhereClause))
 			{
-				sQry = Strings.Replace(sQry, "$3", " WHERE " + sWhereClause, 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$3", " WHERE " + sWhereClause);
 			}
 			else
 			{
-				sQry = Strings.Replace(sQry, "$3", "", 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$3", "");
 			}
 			if (!Functions.IsEmptyString(sGroupClause))
 			{
-				sQry = Strings.Replace(sQry, "$4", " GROUP BY  " + sGroupClause, 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$4", " GROUP BY  " + sGroupClause);
 			}
 			else
 			{
-				sQry = Strings.Replace(sQry, "$4", "", 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$4", "");
 			}
 			if (!Functions.IsEmptyString(sHavingClause))
 			{
-				sQry = Strings.Replace(sQry, "$5", " HAVING  " + sHavingClause, 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$5", " HAVING  " + sHavingClause);
 			}
 			else
 			{
-				sQry = Strings.Replace(sQry, "$5", "", 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$5", "");
 			}
 			if (!Functions.IsEmptyString(sOrderByClause))
 			{
-				sQry = Strings.Replace(sQry, "$6", " ORDER BY  " + sOrderByClause, 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$6", " ORDER BY  " + sOrderByClause);
 			}
 			else
 			{
-				sQry = Strings.Replace(sQry, "$6", "", 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$6", "");
 			}
 			
 				 
@@ -631,7 +630,7 @@ namespace easyFramework.Sys.Data
 				sQryForCount = sQryForCount.Substring(0, sQryForCount.ToLower().IndexOf("order by"));
 			}
 			string sSqlCount = "SELECT COUNT(*) AS Count FROM ($1) AS queryresult";
-			sSqlCount = Strings.Replace(sSqlCount, "$1", sQryForCount, 1, -1, 0);
+            sSqlCount = Functions.Replace(sSqlCount, "$1", sQryForCount);
 			lTotalRecordcount = glDBValue(oTransaction, sSqlCount, 0, 0);
 			
 			
@@ -787,12 +786,12 @@ namespace easyFramework.Sys.Data
 			
 			string sQry;
 			sQry = "UPDATE [$1] " + "SET $2 " + "$3";
-			
-			sQry = Strings.Replace(sQry, "$1", sTableName, 1, -1, 0);
-			sQry = Strings.Replace(sQry, "$2", sSetClause, 1, -1, 0);
+
+            sQry = Functions.Replace(sQry, "$1", sTableName);
+            sQry = Functions.Replace(sQry, "$2", sSetClause);
 			if (!Functions.IsEmptyString(sWhereClause))
 			{
-				sQry = Strings.Replace(sQry, "$3", " WHERE " + sWhereClause, 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$3", " WHERE " + sWhereClause);
 			}
 			
 			
@@ -849,9 +848,9 @@ namespace easyFramework.Sys.Data
 			string sQry;
 			sQry = "INSERT INTO [$1]($2) VALUES($3) ";
 			
-			sQry = Strings.Replace(sQry, "$1", sTableName, 1, -1, 0);
-			sQry = Strings.Replace(sQry, "$2", sFieldList, 1, -1, 0);
-			sQry = Strings.Replace(sQry, "$3", sValueList, 1, -1, 0);
+			sQry = Functions.Replace(sQry, "$1", sTableName);
+            sQry = Functions.Replace(sQry, "$2", sFieldList);
+            sQry = Functions.Replace(sQry, "$3", sValueList);
 			
 			
 			
@@ -906,11 +905,11 @@ namespace easyFramework.Sys.Data
 			
 			string sQry;
 			sQry = "DELETE FROM [$1] " + "$2";
-			
-			sQry = Strings.Replace(sQry, "$1", sTableName, 1, -1, 0);
+
+            sQry = Functions.Replace(sQry, "$1", sTableName);
 			if (!Functions.IsEmptyString(sWhereClause))
 			{
-				sQry = Strings.Replace(sQry, "$2", " WHERE " + sWhereClause, 1, -1, 0);
+                sQry = Functions.Replace(sQry, "$2", " WHERE " + sWhereClause);
 			}
 			
 			
@@ -951,8 +950,8 @@ namespace easyFramework.Sys.Data
 			
 			string sQry;
 			sQry = "TRUNCATE TABLE [$1] ";
-			
-			sQry = Strings.Replace(sQry, "$1", sTableName, 1, -1, 0);
+
+            sQry = Functions.Replace(sQry, "$1", sTableName);
 			
 			SqlCommand cmd = new SqlCommand(sQry, c, oTransaction.oTransaction);
 			cmd.ExecuteNonQuery();
@@ -1009,10 +1008,10 @@ namespace easyFramework.Sys.Data
 			
 			string sQry;
 			sQry = "UPDATE $1 SET $2 = @memocontent WHERE $3 = '$4'";
-			sQry = Strings.Replace(sQry, "$1", sTable, 1, -1, 0);
-			sQry = Strings.Replace(sQry, "$2", sMemoField, 1, -1, 0);
-			sQry = Strings.Replace(sQry, "$3", sIDField, 1, -1, 0);
-			sQry = Strings.Replace(sQry, "$4", sIDValue, 1, -1, 0);
+            sQry = Functions.Replace(sQry, "$1", sTable);
+            sQry = Functions.Replace(sQry, "$2", sMemoField);
+            sQry = Functions.Replace(sQry, "$3", sIDField);
+            sQry = Functions.Replace(sQry, "$4", sIDValue);
 			
 			SqlCommand oCommand = new SqlCommand(sQry, c, oTransaction.oTransaction);
 			oCommand.Parameters.Add("@memocontent", SqlDbType.NText);
@@ -1103,10 +1102,10 @@ namespace easyFramework.Sys.Data
 			
 			string sQry;
 			sQry = "SELECT CASE WHEN EXISTS(SELECT $1 FROM $2 WHERE $3) THEN 1 ELSE 0 END AS bExists";
-			
-			sQry = Strings.Replace(sQry, "$1", sFields, 1, -1, 0);
-			sQry = Strings.Replace(sQry, "$2", sFromClause, 1, -1, 0);
-			sQry = Strings.Replace(sQry, "$3", sWhereClause, 1, -1, 0);
+
+            sQry = Functions.Replace(sQry, "$1", sFields);
+            sQry = Functions.Replace(sQry, "$2", sFromClause);
+            sQry = Functions.Replace(sQry, "$3", sWhereClause);
 			
 			int lValue = glDBValue(oTransaction, sQry, 0, 0);
 			
