@@ -332,7 +332,7 @@ function gShowDiv(oDiv) {
 var mouseX, mouseY;
 gAdd_DocumentMouseMove(getXY);
 
-function getXY(e) {  
+function getXY(e) {
 	mouseX = (window.Event) ? e.pageX : event.clientX;  
 	mouseY = (window.Event) ? e.pageY : event.clientY;
 }
