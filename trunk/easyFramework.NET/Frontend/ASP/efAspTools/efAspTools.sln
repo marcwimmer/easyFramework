@@ -1,27 +1,25 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "efAspTools", "efAspTools.csproj", "{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Adoptionlist = Adoptionlist
-		Debug = Debug
-		Release = Release
-		Surveymanager = Surveymanager
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Adoptionlist|Any CPU = Adoptionlist|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Surveymanager|Any CPU = Surveymanager|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Adoptionlist.ActiveCfg = Adoptionlist|.NET
-		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Adoptionlist.Build.0 = Adoptionlist|.NET
-		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Debug.ActiveCfg = Debug|.NET
-		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Debug.Build.0 = Debug|.NET
-		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Release.ActiveCfg = Release|.NET
-		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Release.Build.0 = Release|.NET
-		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Surveymanager.ActiveCfg = Surveymanager|.NET
-		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Surveymanager.Build.0 = Surveymanager|.NET
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Adoptionlist|Any CPU.ActiveCfg = Adoptionlist|Any CPU
+		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Adoptionlist|Any CPU.Build.0 = Adoptionlist|Any CPU
+		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Surveymanager|Any CPU.ActiveCfg = Surveymanager|Any CPU
+		{08EB78AF-0E23-466D-A5D8-2DDF635CF79C}.Surveymanager|Any CPU.Build.0 = Surveymanager|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
