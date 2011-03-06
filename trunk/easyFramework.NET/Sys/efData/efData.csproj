@@ -111,11 +111,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="efRecordset">
-      <Name>efRecordset</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efRecordset.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efToolLib">
       <Name>efToolLib</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
@@ -158,6 +153,12 @@
     <Compile Include="Internal.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\efRecordset\efRecordset.csproj">
+      <Project>{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}</Project>
+      <Name>efRecordset</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

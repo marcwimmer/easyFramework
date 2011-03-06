@@ -90,21 +90,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="efClientInfo">
-      <Name>efClientInfo</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efClientInfo.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efData">
-      <Name>efData</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efData.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efRecordset">
-      <Name>efRecordset</Name>
-      <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efRecordset.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="efToolLib">
       <Name>efToolLib</Name>
       <HintPath>D:\Projects\easyFramework\easyFramework.NET C# Web\bin\efToolLib.dll</HintPath>
@@ -143,6 +128,20 @@
     <Compile Include="TransactionClientInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\efClientInfo\efClientInfo.csproj">
+      <Project>{B454AA9F-9B37-431D-8665-5F8B5146FDCB}</Project>
+      <Name>efClientInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efData\efData.csproj">
+      <Project>{65C8E88A-BF30-47AA-A077-41BDF7B94CA7}</Project>
+      <Name>efData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\efRecordset\efRecordset.csproj">
+      <Project>{A0B3AAE6-E1CD-4866-B8DB-AF7C61B0F517}</Project>
+      <Name>efRecordset</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

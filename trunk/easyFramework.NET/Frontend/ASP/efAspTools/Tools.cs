@@ -80,7 +80,7 @@ namespace easyFramework.Frontend.ASP.ASPTools
 			}
 			else
 			{
-				if (!(Strings.InStr(sParams, "?ClientID=", 0) > 0 | Strings.InStr(sParams, "&ClientID=", 0) > 0))
+				if (!(Functions.InStr(sParams, "?ClientID=", 0) > 0 | Functions.InStr(sParams, "&ClientID=", 0) > 0))
 				{
 					sParams += "&ClientID=" + oClientInfo.sClientID;
 				}
