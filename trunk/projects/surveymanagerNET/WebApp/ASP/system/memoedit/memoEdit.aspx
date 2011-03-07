@@ -1,4 +1,4 @@
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <%@ Page Language="cs" AutoEventWireup="false" Src="memoEdit.aspx.cs" Inherits="easyFramework.Project.Default.memoEdit" %>
 <%@ Register TagPrefix="ftb" Namespace="FreeTextBoxControls" Assembly="FreeTextBox" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
@@ -35,7 +35,7 @@
 	
 	
 	</script>
-	<!--#include file="../defaultheader.aspx"-->
+	<!--#include file="../defaultheader.aspx.inc"-->
 	<body onload="mOnLoad();">
 		<form id="frmMain" method="post" runat="server">
 			<ef:efXmlDialog id="EfXmlDialog1" runat="server" sDefinitionFile="memoDialog.xml"></ef:efXmlDialog>

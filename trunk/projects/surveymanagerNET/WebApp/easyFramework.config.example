@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <easyFramework>
-	<!--
+
+  <!--
 	Webpage-Root; needed for global.asax
 	 -->
-	<webpageRoot>/svm</webpageRoot>
-	<!--
+  <webpageRoot>/psvm</webpageRoot>
+
+  <!--
 	DATABASE-Connection
 	Achtung: als Provider wird aktuell nur SQLOLEDB.1 unterstütz
 	
@@ -13,70 +15,72 @@
 		- für SQL-Authentifizierung: UID=sa;PWD=swordfish
 	ein:
 	 -->
-	<dbconn>
-		<provider>SQLOLEDB.1</provider>
-		<datasource>127.0.0.1</datasource>
-		<initialCatalog>efSurveymanagerNET</initialCatalog>
-		<securityinfo>pwd=logitech;uid=sa</securityinfo>
-	</dbconn>
+  <dbconn>
+    <provider>SQLOLEDB.1</provider>
+    <datasource>192.168.2.193</datasource>
+    <initialCatalog>SurveyManagerNET</initialCatalog>
+    <securityinfo>pwd=glas_schrank;uid=sa</securityinfo>
+  </dbconn>
 
-	<!--
+  <!--
 	MAILSERVER, MAILSENDER
 	Tragen Sie hier den SMTP-Server ein; ebenso die eMail-Adresse des Absenders
 	 -->
-	<mail>
-		<mailserver>192.168.0.1</mailserver>
-		<mailsender>info@easyFramework.de</mailsender>
-	</mail>
-	<!--
+  <mail>
+    <mailserver>192.168.0.1</mailserver>
+    <mailsender>info@easyFramework.de</mailsender>
+  </mail>
+
+
+
+  <!--
 	STARTUP-PAGE
 	Tragen Sie hier die Seite an, die als erstes aufgerufen werden soll:
 	 -->
-	<startupPage modal="1">/ASP/system/login/login.aspx</startupPage>
-	<!--
+  <startupPage modal="1">/ASP/system/login/login.aspx</startupPage>
+
+  <!--
 	STARTUP-Logo
 	Tragen Sie hier den Namen des Images an, das im Login gezeigt wird:
 	 -->
-	<startupLogo>/ASP/images/startup/startscreen.jpg</startupLogo>
-	<!--
+  <startupLogo>/ASP/images/startup/startscreen_psvm.jpg</startupLogo>
+
+  <!--
 	MAIN WINDOW
 	Tragen Sie hier die Seite an, die nach erfolgreichem Login angezeigt werden soll:
 	 -->
-	<mainPage>/ASP/Project/SurveyManager/Workplace/Workplace.aspx</mainPage>
-	<!--
+  <mainPage>/ASP/Project/SurveyManager/Workplace/Workplace.aspx</mainPage>
+
+  <!--
 	Project Title
 	 -->
-	<projectName>easyFramework</projectName>
-	<!--
-	temporary path, where files could be created (e.g. for MS Excel):
+  <projectName>SurveyManager.NET</projectName>
+
+
+  <!--
+	temp folder
 	 -->
-	<tempFolder>/tempFolder</tempFolder>
-	<!--
+  <tempFolder>/tempFolder</tempFolder>
+
+  <!--
 	relative Path to the directory, where the help-files lie:
 	 -->
-	<HelpFolder>/Help</HelpFolder>
-	<!--
+  <HelpFolder>/Help</HelpFolder>
+
+
+  <!--
 	path to the database-update scripts:
 	 -->
-	<DBUpdateScriptsFolder>/DB</DBUpdateScriptsFolder>
-	<!--
+  <DBUpdateScriptsFolder>/DB</DBUpdateScriptsFolder>
+
+  <!--
 	distribution settings
 	-->
-	<distribution>
-		<made_package_folder>/Distribution/madePackages</made_package_folder>
-		<received_package_folder>/Distribution/received</received_package_folder>
-		<filelist_xml>/ASP/tasks/distribution/filelist.xml</filelist_xml>
-		<!-- the receiving asp-file, which gets the package file -->
-		<receiving_asp>/ASP/tasks/distribution/receiveProcess.aspx</receiving_asp>
-		<asptimeout_to_wait>300</asptimeout_to_wait>
-	</distribution>
-	<!--
-	needs login - 
-	if no login is needed, then the super-user is always logged-in; default is true;
-	values: true/false
-	-->
-	<autologin>
-		<username>sa</username>
-		<password>glas_schrank</password>
-	</autologin>
+  <distribution>
+    <made_package_folder>/Distribution/madePackages</made_package_folder>
+    <received_package_folder>/Distribution/received</received_package_folder>
+    <filelist_xml>/ASP/tasks/distribution/filelist.xml</filelist_xml>
+    <!-- the receiving asp-file, which gets the package file -->
+    <receiving_asp>/ASP/tasks/distribution/receiveProcess.aspx</receiving_asp>
+  </distribution>
 </easyFramework>

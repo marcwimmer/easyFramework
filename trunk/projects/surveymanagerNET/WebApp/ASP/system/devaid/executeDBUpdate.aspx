@@ -1,4 +1,4 @@
-<%@ Page language="c#" Src="restartProcess.aspx.cs" AutoEventWireup="false" Inherits="easyFramework.Project.Default.ASP.system.restartProcess" CodeBehind="executeDBUpdate.aspx.cs" %>
+<%@ Page language="c#" Src="executeDBUpdate.aspx.cs" AutoEventWireup="false" Inherits="easyFramework.Project.Default.executeDBUpdate" CodeBehind="executeDBUpdate.aspx.cs" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
 <HTML>
 	<HEAD>

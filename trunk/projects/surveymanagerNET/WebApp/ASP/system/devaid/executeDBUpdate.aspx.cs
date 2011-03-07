@@ -9,12 +9,12 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 
-namespace easyFramework.Project.Default.ASP.system
+namespace easyFramework.Project.Default
 {
 	/// <summary>
 	/// restarts the application
 	/// </summary>
-	public class restartProcess : System.Web.UI.Page
+    public class executeDBUpdate : System.Web.UI.Page
 	{
 		protected System.Web.UI.WebControls.Label Label1;
 	
