@@ -20,6 +20,9 @@ namespace Tests
             Assert.That(Functions.Mid("ABC", 2), Is.EqualTo("BC"));
             Assert.That(Functions.Mid("ABC", 2, 1), Is.EqualTo("B"));
             Assert.That(Functions.Mid("ABC", 4), Is.EqualTo(""));
+            Assert.That(Functions.Replace("ABCC", "C", "D", 3, 1), Is.EqualTo("ABDC"));
+            Assert.That(Functions.Replace("ABCCCC", "C", "D", 3, 2), Is.EqualTo("ABDDCC"));
+            Assert.That(Functions.Replace("ABCCCC", "C", "D", 4, 2), Is.EqualTo("ABCDDC"));
         }
     }
 }

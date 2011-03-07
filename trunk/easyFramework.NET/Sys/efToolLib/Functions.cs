@@ -148,15 +148,35 @@ namespace easyFramework.Sys.ToolLib
 
             string workpart = ReplaceIn;
             if (Start > 0)
-                workpart = workpart.Substring(Start);
+                workpart = workpart.Substring(Start - 1);
 
             if (Count > -1)
-                throw new NotImplementedException("Count not implemented yet for replace");
-
-            workpart = workpart.Replace(Find, ReplaceWith);
+            {
+                string[] splitted = workpart.Split(new string[] { Find }, StringSplitOptions.None);
+                if (splitted.Length == 0)
+                    return ReplaceIn;
+                else
+                {
+                    string result = "";
+                    for (int i = 0; i < splitted.Length; i++)
+                    {
+                        result += splitted[i];
+                        if (i < splitted.Length - 1)
+                        {
+                            if (i < Count)
+                                result += ReplaceWith;
+                            else
+                                result += Find;
+                        }
+                    }
+                    workpart = result;
+                }
+            }
+            else
+                workpart = workpart.Replace(Find, ReplaceWith);
 
             if (Start > 0)
-                workpart = ReplaceIn.Substring(0, Start) + workpart;
+                workpart = ReplaceIn.Substring(0, Start - 1) + workpart;
             return workpart;
         }
         public static string Replace(string ReplaceIn, string Find, string ReplaceWith, int Start)
@@ -203,41 +223,41 @@ namespace easyFramework.Sys.ToolLib
                 return "";
             return sValue.Trim();
         }
-       
-       public static DateTime DateAdd(efEnumDateInterval Interval, double Number, DateTime dateValue)
-       {
-									
-           switch (Interval) 
-           {
-               case efEnumDateInterval.Day:
-                   return dateValue.AddDays(Number);
-                   break;
-               case efEnumDateInterval.Month:
-                   if (Math.Round(Convert.ToDecimal(Number)) != Convert.ToDecimal(Number))
-                       throw new Exception("For months only integers are allowed!");
-                   return dateValue.AddMonths(Convert.ToInt32(Number));
-               case efEnumDateInterval.Year:
-                   if (Math.Round(Convert.ToDecimal(Number)) != Convert.ToDecimal(Number))
-                       throw new Exception("For years only integers are allowed!");
 
-                   return dateValue.AddYears(Convert.ToInt32(Number));
-               case efEnumDateInterval.Hour:
-                   return dateValue.AddHours(Number);
-               case efEnumDateInterval.Minute:
-                   return dateValue.AddMinutes(Number);
-               case efEnumDateInterval.Second:
-                   return dateValue.AddSeconds(Number);
-               default:
-                   throw new efException("Ungültiges Datumsinterval \"" +	Interval.ToString() + "\".");
+        public static DateTime DateAdd(efEnumDateInterval Interval, double Number, DateTime dateValue)
+        {
 
-           }   
-       }
-        
-       public static DateTime DateAdd(string Interval, double Number, DateTime dateValue)
-       {
-           throw new NotImplementedException();
-			
-       }
+            switch (Interval)
+            {
+                case efEnumDateInterval.Day:
+                    return dateValue.AddDays(Number);
+                    break;
+                case efEnumDateInterval.Month:
+                    if (Math.Round(Convert.ToDecimal(Number)) != Convert.ToDecimal(Number))
+                        throw new Exception("For months only integers are allowed!");
+                    return dateValue.AddMonths(Convert.ToInt32(Number));
+                case efEnumDateInterval.Year:
+                    if (Math.Round(Convert.ToDecimal(Number)) != Convert.ToDecimal(Number))
+                        throw new Exception("For years only integers are allowed!");
+
+                    return dateValue.AddYears(Convert.ToInt32(Number));
+                case efEnumDateInterval.Hour:
+                    return dateValue.AddHours(Number);
+                case efEnumDateInterval.Minute:
+                    return dateValue.AddMinutes(Number);
+                case efEnumDateInterval.Second:
+                    return dateValue.AddSeconds(Number);
+                default:
+                    throw new efException("Ungültiges Datumsinterval \"" + Interval.ToString() + "\".");
+
+            }
+        }
+
+        public static DateTime DateAdd(string Interval, double Number, DateTime dateValue)
+        {
+            throw new NotImplementedException();
+
+        }
 
         /*
        public static long DateDiff(String Interval, DateTime Date1, DateTime Date2, 
@@ -253,7 +273,7 @@ namespace easyFramework.Sys.ToolLib
                fdow, fwoy);
        }
          */
-         
+
         public static bool IsNumeric(object Expression)
         {
             try
@@ -263,7 +283,7 @@ namespace easyFramework.Sys.ToolLib
             }
             catch
             {
-               
+
             }
             finally
             {
@@ -556,86 +576,86 @@ namespace easyFramework.Sys.ToolLib
          }
 		
 		*/
-         //================================================================================
-         //Function:  gsGetRandomString
-         //--------------------------------------------------------------------------------'
-         //Purpose:   returns a randomstring
-         //--------------------------------------------------------------------------------'
-         //Params:
-         //--------------------------------------------------------------------------------'
-         //Returns:
-         //--------------------------------------------------------------------------------'
-         //Created:   11.05.2004 11:54:52
-         //--------------------------------------------------------------------------------'
-         //Changed:
-         //--------------------------------------------------------------------------------'
-         public static string gsGetRandomString(int lLength)
-         {
-			
-             string sResult = "";
-			
-             Random r = new Random();
-			
-             for (int i = 0; i <= lLength - 1; i++)
-             {
-				
-                 int iRandom = r.Next(87, 97 + 25); //97=a
-				
-                 if (iRandom >= 97)
-                 {
-                     sResult += chr(iRandom);
-                 }
-                 else
-                 {
-                     sResult += System.Convert.ToString(iRandom - 87);
-					
-                 }
-				
-             }
-			
-			
-             return sResult;
-			
-			
-			
-         }
-		
-		
-         //================================================================================
-         //Function:  gsGetTemporaryFile
-         //--------------------------------------------------------------------------------'
-         //Purpose:   returns something like "c:\temp\hak28gm5.xls"
-         //--------------------------------------------------------------------------------'
-         //Params:
-         //--------------------------------------------------------------------------------'
-         //Returns:
-         //--------------------------------------------------------------------------------'
-         //Created:   11.05.2004 11:53:41
-         //--------------------------------------------------------------------------------'
-         //Changed:
-         //--------------------------------------------------------------------------------'
-         public static string gsGetTemporaryFile(string sTempFolder, string sExtension, int lLength)
-         {
-			
-             string sRandomString = gsGetRandomString(lLength);
-			
-			
-             if (Right(sTempFolder, 1) != "\\")
-             {
-                 sTempFolder += "\\";
-             }
-			
-             if (Left(sExtension, 1) != ".")
-             {
-                 sExtension = "." + sExtension;
-             }
-			
-             return sTempFolder + sRandomString + sExtension;
-			
-			
-         }
-		
-		/*
+        //================================================================================
+        //Function:  gsGetRandomString
+        //--------------------------------------------------------------------------------'
+        //Purpose:   returns a randomstring
+        //--------------------------------------------------------------------------------'
+        //Params:
+        //--------------------------------------------------------------------------------'
+        //Returns:
+        //--------------------------------------------------------------------------------'
+        //Created:   11.05.2004 11:54:52
+        //--------------------------------------------------------------------------------'
+        //Changed:
+        //--------------------------------------------------------------------------------'
+        public static string gsGetRandomString(int lLength)
+        {
+
+            string sResult = "";
+
+            Random r = new Random();
+
+            for (int i = 0; i <= lLength - 1; i++)
+            {
+
+                int iRandom = r.Next(87, 97 + 25); //97=a
+
+                if (iRandom >= 97)
+                {
+                    sResult += chr(iRandom);
+                }
+                else
+                {
+                    sResult += System.Convert.ToString(iRandom - 87);
+
+                }
+
+            }
+
+
+            return sResult;
+
+
+
+        }
+
+
+        //================================================================================
+        //Function:  gsGetTemporaryFile
+        //--------------------------------------------------------------------------------'
+        //Purpose:   returns something like "c:\temp\hak28gm5.xls"
+        //--------------------------------------------------------------------------------'
+        //Params:
+        //--------------------------------------------------------------------------------'
+        //Returns:
+        //--------------------------------------------------------------------------------'
+        //Created:   11.05.2004 11:53:41
+        //--------------------------------------------------------------------------------'
+        //Changed:
+        //--------------------------------------------------------------------------------'
+        public static string gsGetTemporaryFile(string sTempFolder, string sExtension, int lLength)
+        {
+
+            string sRandomString = gsGetRandomString(lLength);
+
+
+            if (Right(sTempFolder, 1) != "\\")
+            {
+                sTempFolder += "\\";
+            }
+
+            if (Left(sExtension, 1) != ".")
+            {
+                sExtension = "." + sExtension;
+            }
+
+            return sTempFolder + sRandomString + sExtension;
+
+
+        }
+
+        /*
 		
          //================================================================================
          //Function:  gsValidFilename
