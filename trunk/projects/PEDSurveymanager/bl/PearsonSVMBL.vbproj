@@ -247,12 +247,6 @@
     <Compile Include="AssemblyInfo.vb">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CouponHandler.vb">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="OnApplicationStart.vb">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="OnSubmission.vb">
       <SubType>Code</SubType>
     </Compile>
