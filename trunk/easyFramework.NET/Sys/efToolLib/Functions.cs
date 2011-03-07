@@ -88,13 +88,19 @@ namespace easyFramework.Sys.ToolLib
 
         public static string Reverse(string sExpr)
         {
-
-            string sResult = "";
-            for (int i = Len(sExpr); i >= 1; i--)
+            try
             {
-                sResult += Mid(sExpr, i, 1);
+                string sResult = "";
+                for (int i = Len(sExpr); i >= 1; i--)
+                {
+                    sResult += Mid(sExpr, i, 1);
+                }
+                return sResult;
             }
-            return sResult;
+            catch (Exception ex)
+            {
+                throw new Exception(String.Format("Error reverting: {0}", sExpr));
+            }
         }
 
         public static string LCase(string vnt)
