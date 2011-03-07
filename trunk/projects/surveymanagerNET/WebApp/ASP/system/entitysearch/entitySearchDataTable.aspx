@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" Src="entitySearchDataTable.aspx.cs" Inherits="easyFramework.Project.Default.entitySearchDataTable"%>

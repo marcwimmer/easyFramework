@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" Src="searchData.aspx.cs" Inherits="easyFramework.Project.Default.searchData"%>

@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" Src="placeholderData.aspx.cs" Inherits="easyFramework.Project.SurveyManager.placeholderData"%>

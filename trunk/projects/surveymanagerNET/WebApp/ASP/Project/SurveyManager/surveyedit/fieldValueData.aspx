@@ -1,0 +1,1 @@
+<%@ Page language="cs" src="fieldValueData.aspx.cs" AutoEventWireup="false" Inherits="easyFramework.Project.SurveyManager.ASP.Project.SurveyManager.surveyedit.fieldValueData" %>

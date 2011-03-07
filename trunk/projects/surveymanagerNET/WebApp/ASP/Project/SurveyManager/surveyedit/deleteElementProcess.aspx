@@ -1,0 +1,1 @@
+<%@ Page language="cs" src="deleteElementProcess.aspx.cs" AutoEventWireup="false" Inherits="easyFramework.Project.SurveyManager.ASP.Project.SurveyManager.surveyedit.deleteElementProcess" %>

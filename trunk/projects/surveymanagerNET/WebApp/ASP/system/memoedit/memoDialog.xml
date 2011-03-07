@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="5">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>Table</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>PrimaryFieldName</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>PrimaryFieldValue</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<NAME>MemoFieldName</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		
+	</efDialogRow>
+</efDialogPage>

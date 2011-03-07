@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<table name="tsUserGroups" inserted="grp_inserted" updated="grp_updated" insertedby="grp_insertedby"
+	updatedby="grp_updatedby">
+	<field primarykey="1">
+		<name>grp_id</name>
+		<type>int</type>
+		<desc>Benutzergruppen-ID</desc>
+	</field>
+	<field>
+		<name>grp_name</name>
+		<type>string</type>
+		<desc>Name</desc>
+		<size>25</size>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>grp_inserted</name>
+		<type>date</type>
+		<desc>Eingefügt</desc>
+	</field>
+	<field>
+		<name>grp_updated</name>
+		<type>date</type>
+		<desc>Bearbeitet</desc>
+	</field>
+	<field>
+		<name>grp_insertedBy</name>
+		<type>string</type>
+		<desc>Eingefügt von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>grp_updatedBy</name>
+		<type>string</type>
+		<desc>Bearbeitet von</desc>
+		<size>255</size>
+	</field>
+</table>

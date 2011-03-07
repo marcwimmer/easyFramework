@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" src="EntityProcess.aspx.cs" Inherits="easyFramework.Project.Default.EntityProcess"%>

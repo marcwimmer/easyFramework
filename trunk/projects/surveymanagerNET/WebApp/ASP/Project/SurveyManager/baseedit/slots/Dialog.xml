@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="1">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>slt_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$Name</DESC>
+			<NAME>slt_name</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$aktives Projekt</DESC>
+			<NAME>slt_assigned_svy_id</NAME>
+			<TYPE>INPUT</TYPE>
+			<ENTITY>Surveys</ENTITY>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>e$xterne Web-ID</DESC>														 
+			<NAME>slt_externalid</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+
+	</efDialogRow>
+</efDialogPage>

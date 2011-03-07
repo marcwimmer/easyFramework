@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="5">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>svg_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$HOT$N$HOT$ame</DESC>
+			<NAME>svg_name</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$Obergruppe</DESC>
+			<NAME>svg_parentid</NAME>
+			<TYPE>INPUT</TYPE>
+			<ENTITY>SurveyGroups</ENTITY>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<NAME>svg_css</NAME>
+			<DESC>CSS-Datei (URI)</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

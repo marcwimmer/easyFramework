@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL.csproj", "{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		BackEnd|Any CPU = BackEnd|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		PSVM|Any CPU = PSVM|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Svm|Any CPU = Svm|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}.BackEnd|Any CPU.ActiveCfg = BackEnd|Any CPU
+		{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}.BackEnd|Any CPU.Build.0 = BackEnd|Any CPU
+		{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}.PSVM|Any CPU.ActiveCfg = PSVM|Any CPU
+		{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}.PSVM|Any CPU.Build.0 = PSVM|Any CPU
+		{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}.Svm|Any CPU.ActiveCfg = Svm|Any CPU
+		{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}.Svm|Any CPU.Build.0 = Svm|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

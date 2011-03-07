@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filelist>
+	<!--
+	enter here all the files, which are distributed to abonnents
+	
+	the tags <directory> or <file> may be used
+	-->
+	<directory>/ASP</directory>
+	<directory>/DB</directory>
+	<!--Hilfe nicht verteilen, da Hilfe pro Projekt unterschiedlich-->
+	<!--directory>/Help</directory-->
+	<directory>/bin</directory>
+	<file>/default.aspx</file>
+	<file>/global.asax</file>
+	<file>/global.asax.cs</file>
+</filelist>

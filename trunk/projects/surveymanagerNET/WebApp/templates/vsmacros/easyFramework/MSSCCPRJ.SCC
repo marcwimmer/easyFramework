@@ -1,0 +1,5 @@
+SCC = This is a source code control file
+
+[easyFramework.vsmacros]
+SCC_Aux_Path = http://127.0.0.1/VaultService|:14
+SCC_Project_Name = $/WebApp/templates/vsmacros/easyFramework

@@ -1,0 +1,1 @@
+<%@ Page Language="cs" AutoEventWireup="false" Src="storeDialogData.aspx.cs" Inherits="easyFramework.Project.Default.storeDialogData"%>

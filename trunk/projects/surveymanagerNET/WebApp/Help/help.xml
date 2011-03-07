@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<help>
+	<chapter>
+		<heading>Was ist SurveyManager?</heading>
+		<body>Mithilfe des Surveymanagers können 
+
+<ul>
+				<li>Umfragen / Abstimmungen</li>
+				<li>Gewinnspiele</li>
+				<li>Prüfungsaufgaben</li>
+			</ul>
+
+im Internet dargestellt werden.
+
+<br/>
+Surveymanager läuft als Webapplikation, kann also von jedem Computer mit einem Internetzugang aus gestartet werden. 
+
+Getestet wurde der Surveymanager unter Internet-Explorer 6 und Netscape Navigator 7.
+
+Für die Implementierung des Surveymanagers wurde das Programmier-Toolkit "easyFramework" der Promain Software-Betreuung GmbH (www.promain-software.de) verwendet.
+
+		</body>
+	</chapter>
+	<chapter>
+		<heading>Erstellen eines Tests</heading>
+		<body>
+			Wir gehen nun Schritt für Schritt durch, wie man einen Online-Test anlegt:<br/>
+			<hr/>
+			<font size="+4">1.</font>
+			<p>Wählen Sie aus dem Menübaum links "Neues Survey erstellen" aus:</p>
+			<img src="/Help/screen001.gif"/>
+			<hr/>
+			<font size="+4">2.</font>
+			<p>Geben Sie den Namen "Test DEMO" ein. Eine Vorlage brauchen Sie nicht auszuwählen. Wählen Sie eine Gruppe aus, indem Sie auf die Schaltfläche mit den 3 Punkten klicken. <br/>
+Als Art wählen Sie "Test / Prüfungsvorbereitung" aus. <br/>
+Mit OK bestätigen Sie Ihre Angaben:</p>
+			<img src="/Help/screen002.jpg"/>
+			<hr/>
+			<font size="+4">3.</font>
+			<p>Anschließend sehen Sie die Hauptbearbeitungsmaske des Tests:</p>
+			<img src="/Help/screen003.jpg"/>
+			<hr/>
+			<font size="+4">4.</font>
+			<p>Klicken Sie nun auf die Optionen. Um die Fragen des Tests zu bearbeiten, wählen Sie <b>Fragen bearbeiten</b>. Über <b>Preview</b> sehen Sie eine Voransicht des fertigen Tests.</p>
+			<img src="/Help/screen004.jpg"/>
+			<hr/>
+			<font size="+4">5.</font>
+			<p>Sie sehen nun die Einzelansicht des Tests.</p>
+			<p>Die Darstellung ist in vier Bereiche aufgeteilt:</p>
+			<table class="borderTable" border="1" cellpadding="5">
+				<tr>
+					<td class="dlgField">Fragen</td>
+					<td class="dlgField">Antworten</td>
+					<td class="dlgField">Antwortwerte</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center" class="dlgField">Bearbeitung</td>
+				</tr>
+			</table>
+			<ul>
+				<li>Benutzen Sie die jeweiligen <b>Neu</b>-Schaltflächen, um neue Elemente einzufügen</li>
+				<li>Klicken Sie im Baum auf ein beliebiges Element, z.B. Frage, Antwort, Antwortwert, um das Element im Bearbeitungsbereich zu bearbeiten.</li>
+				<li>Klicken Sie auf Speichern, um Änderungen am Bearbeitungsbereich zu speichern.</li>
+			</ul>
+			<img src="/Help/screen_surveyedit.jpg"/>
+		</body>
+	</chapter>
+	<chapter>
+		<heading>Welche Antworttypen gibt es?</heading>
+		<body>
+			<table class="borderTable">
+				<tr>
+					<td class="captionField">
+						<b>Antworttyp</b>
+					</td>
+					<td class="captionField">
+						<b>Bedeutung</b>
+					</td>
+				</tr>
+				<tr>
+					<td class="captionField">Multiple-Choice</td>
+					<td class="dlgField">Der Benutzer kann mehrere Werte auswählen</td>
+				</tr>
+				<tr>
+					<td class="captionField">Single-Choice</td>
+					<td class="dlgField">Der Benutzer kann nur einen Antwortwert auswählen</td>
+				</tr>
+				<tr>
+					<td class="captionField">Freetext</td>
+					<td class="dlgField">Der Benutzer kann Freitext eingeben.</td>
+				</tr>
+				<tr>
+					<td class="captionField">Checkbox</td>
+					<td class="dlgField">Der Benutzer kann eine Checkbox markieren.</td>
+				</tr>
+				<tr>
+					<td class="captionField">Gaptext</td>
+					<td class="dlgField">Der Benutzer kann einen Lückentext ausfüllen.</td>
+				</tr>
+			</table>
+		</body>
+	</chapter>
+	<chapter>
+		<heading>Einfügen eines Lückentexts</heading>
+		<body>
+			<p>Lückentexte sehen ungefähr so aus:</p>
+			<p>
+				<b>"Yesterday Marry ... (to go) to super-market. Suddenly she ... (to fall asleep)."</b>
+			</p>
+			<p>
+				<b>Zu beachten:</b>
+			</p>
+			<ul>
+				<li>Markieren Sie Platzhalter im Lückentext mit drei Punkten: "das ist ein Text ... und hier geht es weiter"</li>
+				<li>Fügen Sie genauso viele Antwortwerte, wie Platzhalter hinzu</li>
+			</ul>
+			<img src="/Help/gaptext_bearbeiten.gif"/>
+		</body>
+	</chapter>
+	<chapter>
+		<heading>Veröffentlichen</heading>
+		<body>
+			<p>Sie haben einen Test, Gewinnspiel oder Abstimmung fertig angelegt?</p>
+			<p>Sie haben die Möglichkeit mehrere Veröffentlichungen eines Projekts durchzuführen. Sie können dann z.B. die Ergebnisse aus den verschiedenen Zeiträumen miteinander vergleichen. Damit ein Projekt online gestellt werden ist jedoch zumindest eine Publikation erforderlich.</p>
+			<p>Gehen Sie in die Hauptbearbeitungsmaske des Projekts. Sie müssen eine eindeutige externe Web-ID vergeben. Diese sollte unter keinen Umständen irgendwelche Sonder- oder Leerzeichen enthalten, da diese Web-ID von Webbrowsern aufgerufen werden muss und viele davon Probleme mit Sonderzeichen haben. </p>
+			<img src="/Help/Screen100.jpg"/>
+			<hr/>
+			<p>Nachdem Sie eine ID vergeben haben, gehen Sie zum Reiter Publikationen</p>
+			<p>
+Klicken Sie dort auf <b>Neu Publizierung</b>. Es wird eine neue Publikation angelegt. Ab sofort ist das Projekt einsatzbereit und Sie können jederzeit die Daten durch Klick auf Download neben dem Excel-Symbol abrufen.</p>
+			<img src="/Help/Screen101.jpg"/>
+			<hr/>
+			<p>Wechseln Sie nun zum Reiter <b>Link</b>. Es handelt sich hierbei um den externen Link, den Sie z.B. per e-Mail an die Teilnehmer verschicken können. Oder Sie setzen diesen Link fest auf Ihre Home-page und leiten Ihre Besucher weiter zu diesem Projekt.
+</p>
+			<img src="/Help/Screen102.jpg"/>
+			<hr/>
+			<p>Klicken Sie Probe mal auf den Link, Sie bekommen in diesem Beispiel folgendes zu sehen:</p>
+			<img src="/Help/Screen103.jpg"/>
+		</body>
+	</chapter>
+	<chapter>
+		<heading>Beschreibung der Survey-Felder</heading>
+		<link>
+			<url>/asp/system/entityedit/entityedit.asp</url>
+			<entity>surveys</entity>
+		</link>
+		<body>
+			<table class="borderTable">
+				<tr>
+					<td class="captionField">
+						<b>Feld</b>
+					</td>
+					<td class="captionField">
+						<b>Bedeutung</b>
+					</td>
+					<td class="captionField">Tests</td>
+					<td class="captionField">Umfragen</td>
+					<td class="captionField">Gewinnspiele</td>
+				</tr>
+				<tr>
+					<td class="dlgField">
+						<b>Name</b>
+					</td>
+					<td class="dlgField">Bezeichnung des Surveys/Tests/Gewinnspiels</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+				</tr>
+				<tr>
+					<td class="dlgField">
+						<b>Gruppe</b>
+					</td>
+					<td class="dlgField">Gruppe, zu der das Survey gehört</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+				</tr>
+				<tr>
+					<td class="dlgField">
+						<b>externe Web-ID</b>
+					</td>
+					<td class="dlgField">eindeutige Bezeichnung bitte festlegen; wird benutzt, um den Link auf das Survey zu generieren (s. Reiter Link)</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+				</tr>
+				<tr>
+					<td class="dlgField">
+						<b>Vorlage</b>
+					</td>
+					<td class="dlgField">speichert ein Survey als Vorlage ab</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+				</tr>
+				<tr>
+					<td class="dlgField">
+						<b>Status</b>
+					</td>
+					<td class="dlgField">Status des Surveys</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+				</tr>
+				<tr>
+					<td class="dlgField">
+						<b>Art</b>
+					</td>
+					<td class="dlgField">
+						<ul>
+							<li>Gewinnspiel: alle Fragen erlaubt</li>
+							<li>Online-Test: nur Multiple-Choice oder Single-Choice Fragen oder Gap-Text</li>
+							<li>Abstimmung: nur eine Frage, Single-Choice erlaubt</li>
+						</ul>
+					</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+				</tr>
+				<tr>
+					<td class="dlgField">
+						<b>CSS-Datei (URI)</b>
+					</td>
+					<td class="dlgField">Link auf CSS-Datei; wird nur verwendet, falls kein Rahmen-HTML verwendet wird</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">x</td>
+				</tr>
+				<tr>
+					<td class="dlgField">
+						<b>Prozent bestanden</b>
+					</td>
+					<td class="dlgField">Prozentzahl, ab wann ein Test bestanden ist</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">-</td>
+					<td class="dlgField" align="center">-</td>
+				</tr>
+				<tr>
+					<td class="dlgField">
+						<b>Zufallsfragen Poolgröße</b>
+					</td>
+					<td class="dlgField">steht hier eine Zahl größer als 0, dann werden dem Benutzer n aus m Fragen, die zufällig ausgewählt werden, angezeigt</td>
+					<td class="dlgField" align="center">x</td>
+					<td class="dlgField" align="center">-</td>
+					<td class="dlgField" align="center">-</td>
+				</tr>
+			</table>
+		</body>
+	</chapter>
+	<chapter>
+		<heading>Einige Beispiele für Mathematikformeln</heading>
+		<body>Für die Ausgabe mathematischer Formeln wird die W3C-standardisierte Sprache "MathML" (Mathematics Markup Language) verwendet. Diese baut auf dem XML-Format auf.
+		<table class="borderTable">
+			<tr>
+				<td class="captionField"><pre>
+&lt;math&gt;
+	&lt;mfrac&gt;
+		&lt;mi&gt;5&lt;/mi&gt;
+		&lt;mi&gt;25&lt;/mi&gt;
+	&lt;/mfrac&gt;
+&lt;/math&gt;</pre></td>
+				<td class="dlgField"><img src="/Help/mformel_1.gif"></img></td>
+			</tr>
+			<tr>
+				<td class="captionField"><pre>
+&lt;math&gt;
+	&lt;mfrac&gt;
+		&lt;mi&gt;5&lt;/mi&gt;
+		&lt;mi&gt;25&lt;/mi&gt;
+	&lt;/mfrac&gt;
+&lt;/math&gt;</pre></td>
+				<td class="dlgField"><img src="/Help/mformel_1.gif"></img></td>
+			</tr>
+		
+		
+		
+		
+		</table>
+		
+		</body>
+	</chapter>
+</help>

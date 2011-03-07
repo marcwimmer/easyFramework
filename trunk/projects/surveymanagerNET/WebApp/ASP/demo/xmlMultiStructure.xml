@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<multistructure>
+	<topmostelement>
+		<entity>Users</entity>
+	</topmostelement>
+	<level>
+		<relation>
+			<thislevel>any_id1</thislevel>
+			<toplevel>any_id0</toplevel>
+		</relation>
+		<name>Multi1</name>
+		<xmldialog>/ASP/demo/xmlMulti1.xml</xmldialog>
+		<height>80</height>
+		<width>800</width>
+		<level>
+			<relation>
+				<thislevel>any_id2</thislevel>
+				<toplevel>any_id1</toplevel>
+			</relation>
+			<name>Multi2</name>
+			<xmldialog>/ASP/demo/xmlMulti2.xml</xmldialog>
+			<height>80</height>
+			<width>500</width>
+		</level>
+	</level>
+</multistructure>

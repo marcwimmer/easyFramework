@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="5">
+	<efDialogRow>
+		<efDialogField>
+			<DESC>$HOT$N$HOT$ame</DESC>
+			<NAME>svy_name</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$HOT$V$HOT$orlage</DESC>
+			<NAME>template_svy_id</NAME>
+			<TYPE>INPUT</TYPE>
+			<ENTITY>Surveys</ENTITY>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<DESC>$HOT$G$HOT$ruppe</DESC>
+			<NAME>svy_svg_id</NAME>
+			<TYPE>INPUT</TYPE>
+			<ENTITY>SurveyGroups</ENTITY>
+		</efDialogField>
+		<efDialogField>
+			<DESC>Art</DESC>
+			<NAME>svy_svt_id</NAME>
+			<TYPE>DATACOMBO</TYPE>
+			<SRC>SurveyTypes</SRC>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

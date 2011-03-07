@@ -1,0 +1,1 @@
+<%@ Page language="cs" src="insertElementProcess.aspx.cs" AutoEventWireup="false" Inherits="easyFramework.Project.SurveyManager.ASP.Project.SurveyManager.surveyedit.insertElementProcess" %>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<table name="tsUsers" inserted="usr_inserted" updated="usr_updated" insertedby="usr_insertedby"
+	updatedby="usr_updatedby">
+	<field primarykey="1">
+		<name>usr_id</name>
+		<type>int</type>
+		<desc>Benutzer-ID</desc>
+	</field>
+	<field>
+		<name>usr_login</name>
+		<type>string</type>
+		<desc>Login</desc>
+		<size>25</size>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>usr_password</name>
+		<type>string</type>
+		<desc>Passwort</desc>
+		<size>50</size>
+		<rules>
+			<mandatory></mandatory>
+		</rules>	
+	</field>
+	<field>
+		<name>usr_firstname</name>
+		<type>string</type>
+		<desc>Vorname</desc>
+		<size>80</size>
+	</field>
+	<field>
+		<name>usr_lastname</name>
+		<type>string</type>
+		<desc>Name</desc>
+		<size>80</size>
+		<rules>
+			<mandatory>
+				<value>1</value>
+			</mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>usr_inserted</name>
+		<type>date</type>
+		<desc>Eingefügt</desc>
+	</field>
+	<field>
+		<name>usr_updated</name>
+		<type>date</type>
+		<desc>Bearbeitet</desc>
+	</field>
+	<field>
+		<name>usr_insertedBy</name>
+		<type>string</type>
+		<desc>Eingefügt von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>usr_updatedBy</name>
+		<type>string</type>
+		<desc>Bearbeitet von</desc>
+		<size>255</size>
+	</field>
+</table>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<table name="tdSlots" inserted="slt_inserted" updated="slt_updated" insertedby="slt_insertedby"
+	updatedby="slt_updatedby">
+	<field primarykey="1">
+		<name>slt_id</name>
+		<type>int</type>
+		<desc>Slot-ID</desc>
+	</field>
+	<field>
+		<name>slt_assigned_svy_id</name>
+		<type>int</type>
+		<desc>Zugewiesenes Projekt</desc>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>slt_name</name>
+		<type>string</type>
+		<desc>Name</desc>
+		<size>255</size>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>slt_externalid</name>
+		<type>string</type>
+		<size>20</size>
+		<desc>Webaufruf-Id</desc>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>slt_inserted</name>
+		<type>date</type>
+		<desc>Eingefügt</desc>
+	</field>
+	<field>
+		<name>slt_updated</name>
+		<type>date</type>
+		<desc>Bearbeitet</desc>
+	</field>
+	<field>
+		<name>slt_insertedBy</name>
+		<type>string</type>
+		<desc>Eingefügt von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>slt_updatedBy</name>
+		<type>string</type>
+		<desc>Bearbeitet von</desc>
+		<size>255</size>
+	</field>
+</table>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="1" DIALOGSIZE="4">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>plc_id</NAME>
+			<TYPE>HIDDEN</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$Platzhalter (z.B. $$Werbung$$)</DESC>
+			<NAME>plc_name</NAME>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+		<efDialogField>
+			<DESC>$HTML</DESC>
+			<NAME>plc_value</NAME>
+			<TYPE>TEXTAREA</TYPE>
+			<COLS>70</COLS>
+			<ROWS>6</ROWS>
+		</efDialogField>
+	</efDialogRow>
+</efDialogPage>

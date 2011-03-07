@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<table name="tdSurveys" inserted="svy_inserted" updated="svy_updated" insertedby="svy_insertedby"
+	updatedby="svy_updatedby">
+	<field primarykey="1">
+		<name>svy_id</name>
+		<type>int</type>
+		<desc>Survey-ID</desc>
+	</field>
+	<field>
+		<name>svy_zufallsfragen_poolgroesse</name>
+		<type>int</type>
+		<desc>Zufallsfragen Poolgröße</desc>
+	</field>
+	<field>
+		<name>svy_svg_id</name>
+		<type>int</type>
+		<desc>Gruppe</desc>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>svy_css</name>
+		<type>string</type>
+		<size>255</size>
+		<desc>CSS-Datei (URI)</desc>
+		<rules>
+			<maxlen>
+				<value>255</value>
+			</maxlen>
+		</rules>
+	</field>
+	<field>
+		<name>svy_name</name>
+		<type>string</type>
+		<desc>Bezeichnung</desc>
+		<size>80</size>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>svy_svt_id</name>
+		<type>string</type>
+		<size>20</size>
+		<desc>Typ</desc>
+	</field>
+	<field>
+		<name>svy_sst_id</name>
+		<type>string</type>
+		<size>20</size>
+		<desc>Status</desc>
+	</field>
+	<field>
+		<name>svy_testpassed_percentage</name>
+		<type>int</type>
+		<desc>Prozent bestanden</desc>
+	</field>
+	<field>
+		<name>svy_externalid</name>
+		<type>string</type>
+		<size>20</size>
+		<desc>Webaufruf-Id</desc>
+	</field>
+	<field>
+		<name>svy_template</name>
+		<type>boolean</type>
+		<desc>Template</desc>
+	</field>
+	<field>
+		<name>svy_inserted</name>
+		<type>date</type>
+		<desc>Eingefügt</desc>
+	</field>
+	<field>
+		<name>svy_updated</name>
+		<type>date</type>
+		<desc>Bearbeitet</desc>
+	</field>
+	<field>
+		<name>svy_insertedBy</name>
+		<type>string</type>
+		<desc>Eingefügt von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>svy_updatedBy</name>
+		<type>string</type>
+		<desc>Bearbeitet von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>svy_layout_columns</name>
+		<type>int</type>
+		<desc>Anzahl Spalten</desc>
+	</field>
+	<field>
+		<name>svy_layout_description_on_the_left</name>
+		<type>boolean</type>
+		<desc>Beschreibung links</desc>
+	</field>
+</table>

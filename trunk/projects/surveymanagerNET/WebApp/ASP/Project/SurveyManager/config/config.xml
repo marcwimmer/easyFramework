@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<efDialogPage MULTIROW="0" DIALOGSIZE="1">
+	<efDialogRow>
+		<efDialogField>
+			<NAME>ResultDB_DataSource</NAME>
+			<DESC>Ergebnis DB Daten$HOT$q$HOT$uelle</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<NAME>ResultDB_CatalogName</NAME>
+			<DESC>Ergebnis DB $HOT$K$HOT$atalogname</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<NAME>ResultDB_UserName</NAME>
+			<DESC>Ergebnis DB $HOT$B$HOT$enutzer</DESC>
+			<TYPE>INPUT</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<efDialogRow>
+		<efDialogField>
+			<NAME>ResultDB_Password</NAME>
+			<DESC>Ergebnis DB $HOT$P$HOT$asswort</DESC>
+			<TYPE>PASSWORD</TYPE>
+		</efDialogField>
+	</efDialogRow>
+	<include file="/ASP/Project/SurveyManager/config/config_custom.xml" noerror_when_file_not_exists="1"></include>
+</efDialogPage>

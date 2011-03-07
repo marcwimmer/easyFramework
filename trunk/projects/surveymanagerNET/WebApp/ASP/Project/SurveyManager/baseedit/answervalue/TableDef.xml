@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<table name="tdAnswerValues" inserted="val_inserted" updated="val_updated" insertedby="val_insertedby"
+	updatedby="val_updatedby">
+	<field primarykey="1">
+		<name>val_id</name>
+		<type>int</type>
+		<desc>Antwortwert-ID</desc>
+	</field>
+	<field>
+		<name>val_text_on_correct</name>
+		<type>string</type>
+		<size>512</size>
+		<desc>Hinweistext wenn richtig</desc>
+	</field>
+	<field>
+		<name>val_text_on_false</name>
+		<type>string</type>
+		<size>512</size>
+		<desc>Hinweistext wenn falsch</desc>
+	</field>
+	<field>
+		<name>val_ans_id</name>
+		<type>int</type>
+		<desc>Antwort</desc>
+		<rules>
+			<mandatory>
+				<msg>Bitte geben Sie die zugehörige Antwort an!</msg>
+			</mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>val_mathml</name>
+		<type>string</type>
+		<size>4000</size>
+		<desc>Mathe-ML</desc>
+	</field>
+	<field>
+		<name>val_default</name>
+		<type>boolean</type>
+		<desc>Standard</desc>
+	</field>
+	<field>
+		<name>val_for_db</name>
+		<type>string</type>
+		<desc>Datenbankwert</desc>
+		<size>10</size>
+	</field>
+	<field>
+		<name>val_index</name>
+		<type>int</type>
+		<desc>Sortierindex</desc>
+	</field>
+	<field>
+		<name>val_text</name>
+		<type>string</type>
+		<size>1024</size>
+		<desc>Antwortwert</desc>
+		<rules>
+			<mandatory />
+		</rules>
+	</field>
+	<field>
+		<name>val_correct</name>
+		<type>boolean</type>
+		<desc>richtige Antwort</desc>
+		<rules>
+			<mandatory />
+		</rules>
+	</field>
+	<field>
+		<name>val_inserted</name>
+		<type>date</type>
+		<desc>Eingefügt</desc>
+	</field>
+	<field>
+		<name>val_updated</name>
+		<type>date</type>
+		<desc>Bearbeitet</desc>
+	</field>
+	<field>
+		<name>val_insertedBy</name>
+		<type>string</type>
+		<desc>Eingefügt von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>val_updatedBy</name>
+		<type>string</type>
+		<desc>Bearbeitet von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>val_html</name>
+		<type>string</type>
+		<desc>HTML</desc>
+		<size>255</size>
+	</field>
+</table>

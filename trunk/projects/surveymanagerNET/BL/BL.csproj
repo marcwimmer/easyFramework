@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{282F6BA2-E14A-4AB9-8790-1BACDEF5797B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>svmBusinessTasks</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>easyFramework.Project.SurveyManager</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>easyFramework.Project.Surveymanager.%28Keine%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\WebApp\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\WebApp\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'BackEnd|AnyCPU' ">
+    <OutputPath>..\WebApp\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'PSVM|AnyCPU' ">
+    <OutputPath>..\..\Pearson\PEDSurveymanager\webapp\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Svm|AnyCPU' ">
+    <OutputPath>..\WebApp\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="efAspTools">
+      <Name>efAspTools</Name>
+      <HintPath>..\..\WebApp\bin\efAspTools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efClientInfo">
+      <Name>efClientInfo</Name>
+      <HintPath>..\..\WebApp\bin\efClientInfo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efData">
+      <Name>efData</Name>
+      <HintPath>..\..\WebApp\bin\efData.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efDataClientInfo">
+      <Name>efDataClientInfo</Name>
+      <HintPath>..\..\WebApp\bin\efDataClientInfo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efEntities">
+      <Name>efEntities</Name>
+      <HintPath>..\..\WebApp\bin\efEntities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efEntityLoader">
+      <Name>efEntityLoader</Name>
+      <HintPath>..\..\WebApp\bin\efEntityLoader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efEnvironment">
+      <Name>efEnvironment</Name>
+      <HintPath>..\WebApp\bin\efEnvironment.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efHTMLRenderer">
+      <Name>efHTMLRenderer</Name>
+      <HintPath>..\..\WebApp\bin\efHTMLRenderer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efMathMLWrapper">
+      <Name>efMathMLWrapper</Name>
+      <HintPath>..\WebApp\bin\efMathMLWrapper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efRecordset">
+      <Name>efRecordset</Name>
+      <HintPath>..\..\WebApp\bin\efRecordset.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efSqlTools">
+      <Name>efSqlTools</Name>
+      <HintPath>..\..\WebApp\bin\efSqlTools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efSysEvents">
+      <Name>efSysEvents</Name>
+      <HintPath>..\..\WebApp\bin\efSysEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efTableDef">
+      <Name>efTableDef</Name>
+      <HintPath>..\..\WebApp\bin\efTableDef.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efToolLib">
+      <Name>efToolLib</Name>
+      <HintPath>..\..\WebApp\bin\efToolLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="efXml">
+      <Name>efXml</Name>
+      <HintPath>..\..\WebApp\bin\efXml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MathML">
+      <Name>MathML</Name>
+      <HintPath>..\WebApp\bin\MathML.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MathML.Rendering">
+      <Name>MathML.Rendering</Name>
+      <HintPath>..\WebApp\bin\MathML.Rendering.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\Analysis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventHandler\surveyRules.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventHandler\synchResultTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\Config.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\Publications.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\ResultTableHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\SurveyEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PublicEnums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\AnswerRenderer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\AnswerValueRenderer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\HTMLPlaceHolders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\PublicEnums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\QuestionRenderer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\SurveyRenderer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Submission\DBConn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Submission\Submissioner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

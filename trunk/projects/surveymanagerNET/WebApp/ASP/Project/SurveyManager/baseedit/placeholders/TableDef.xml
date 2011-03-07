@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<table name="tdPlaceHolders" inserted="plc_inserted" updated="plc_updated" insertedby="plc_insertedby"
+	updatedby="plc_updatedby">
+	<field primarykey="1">
+		<name>plc_id</name>
+		<type>int</type>
+		<desc>Platzhalter-ID</desc>
+	</field>
+	<field>
+		<name>plc_svg_id</name>
+		<type>int</type>
+		<desc>Gruppe</desc>
+	</field>
+	<field>
+		<name>plc_svy_id</name>
+		<type>int</type>
+		<desc>Gruppe</desc>
+	</field>
+	<field>
+		<name>plc_name</name>
+		<type>string</type>
+		<desc>Bezeichnung</desc>
+		<size>80</size>
+		<rules>
+			<mandatory></mandatory>
+		</rules>
+	</field>
+	<field>
+		<name>plc_value</name>
+		<type>string</type>
+		<size>3400</size>
+		<desc>Typ</desc>
+	</field>
+	<field>
+		<name>plc_inserted</name>
+		<type>date</type>
+		<desc>Eingefügt</desc>
+	</field>
+	<field>
+		<name>plc_updated</name>
+		<type>date</type>
+		<desc>Bearbeitet</desc>
+	</field>
+	<field>
+		<name>plc_insertedBy</name>
+		<type>string</type>
+		<desc>Eingefügt von</desc>
+		<size>255</size>
+	</field>
+	<field>
+		<name>plc_updatedBy</name>
+		<type>string</type>
+		<desc>Bearbeitet von</desc>
+		<size>255</size>
+	</field>
+</table>
