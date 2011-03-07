@@ -413,20 +413,29 @@ namespace easyFramework.Sys.ToolLib
 
 
         }
+
+        public static string FormatNumber(object Expression, int NumDigitsAfterDecimal, efEnumTriState IncludeLeadingDigit, efEnumTriState UseParensForNegativeNumbers, efEnumTriState GroupDigits)
+        {
+            string format = "{0:digits}";
+            string digits = "";
+            for (int i = 0; i < NumDigitsAfterDecimal; i++)
+            {
+                digits += "0";
+            }
+            format = format.Replace("digits", digits);
+
+            return String.Format(format, Expression);
+
+            //return Strings.FormatNumber(Expression, NumDigitsAfterDecimal, TristateToMicrosoftTristate(IncludeLeadingDigit), TristateToMicrosoftTristate(UseParensForNegativeNumbers), TristateToMicrosoftTristate(GroupDigits));
+        }
         /*
-         public static string FormatNumber(object Expression, int NumDigitsAfterDecimal, efEnumTriState IncludeLeadingDigit, efEnumTriState UseParensForNegativeNumbers, efEnumTriState GroupDigits)
-         {
-			
-             return Strings.FormatNumber(Expression, NumDigitsAfterDecimal, TristateToMicrosoftTristate(IncludeLeadingDigit), TristateToMicrosoftTristate(UseParensForNegativeNumbers), TristateToMicrosoftTristate(GroupDigits));
-			
-         }
-		
          public static string FormatCurrency(object Expression, int NumDigitsAfterDecimal, efEnumTriState IncludeLeadingDigit, efEnumTriState UseParensForNegativeNumbers, efEnumTriState GroupDigits)
          {
 			
              return Strings.FormatCurrency(Expression, NumDigitsAfterDecimal, TristateToMicrosoftTristate(IncludeLeadingDigit), TristateToMicrosoftTristate(UseParensForNegativeNumbers), TristateToMicrosoftTristate(GroupDigits));
          }
-          */
+         * */
+          
         public static string Format(object Expression, string Style)
         {
             throw new NotImplementedException("Format");
@@ -457,16 +466,20 @@ namespace easyFramework.Sys.ToolLib
            throw new efException("Unknown Dateformat \"" + NamedFormat.ToString() + "\".");
 			
        }
-		
+		*/
        public static string FormatPercent(object Expression, int NumDigitsAfterDecimal, efEnumTriState IncludeLeadingDigit, efEnumTriState UseParensForNegativeNumbers, efEnumTriState GroupDigits)
        {
-			
+           string format = "{0:digits}%";
+           string digits = "";
+           for (int i = 0; i < NumDigitsAfterDecimal; i++)
+           {
+               digits += "0";
+           }
+           format = format.Replace("digits", digits);
 
-
-		
-           return Strings.FormatPercent(Expression, NumDigitsAfterDecimal, TristateToMicrosoftTristate(IncludeLeadingDigit), TristateToMicrosoftTristate(UseParensForNegativeNumbers), TristateToMicrosoftTristate(GroupDigits));
+           return String.Format(format, Expression);
        }
-        */
+       
         //================================================================================
         //Function:  String2Array
         //--------------------------------------------------------------------------------'
