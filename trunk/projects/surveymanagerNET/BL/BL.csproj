@@ -9,7 +9,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ApplicationIcon />
     <AssemblyKeyContainerName />
-    <AssemblyName>svmBusinessTasks</AssemblyName>
+    <AssemblyName>surveymanagerNET</AssemblyName>
     <AssemblyOriginatorKeyFile />
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
@@ -21,13 +21,14 @@
     <StartupObject>easyFramework.Project.Surveymanager.%28Keine%29</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\WebApp\bin\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
@@ -132,96 +133,59 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="efAspTools">
-      <Name>efAspTools</Name>
-      <HintPath>..\..\WebApp\bin\efAspTools.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="efAddons, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebApp\bin\efAddons.dll</HintPath>
     </Reference>
-    <Reference Include="efClientInfo">
-      <Name>efClientInfo</Name>
-      <HintPath>..\..\WebApp\bin\efClientInfo.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="efASPFrontend, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebApp\bin\efASPFrontend.dll</HintPath>
     </Reference>
-    <Reference Include="efData">
-      <Name>efData</Name>
-      <HintPath>..\..\WebApp\bin\efData.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="efSys, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebApp\bin\efSys.dll</HintPath>
     </Reference>
-    <Reference Include="efDataClientInfo">
-      <Name>efDataClientInfo</Name>
-      <HintPath>..\..\WebApp\bin\efDataClientInfo.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="efTasks, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebApp\bin\efTasks.dll</HintPath>
     </Reference>
-    <Reference Include="efEntities">
-      <Name>efEntities</Name>
-      <HintPath>..\..\WebApp\bin\efEntities.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="FreeTextBox, Version=2.0.5000.4, Culture=neutral, PublicKeyToken=5962a4e684a48b87">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebApp\bin\FreeTextBox.dll</HintPath>
     </Reference>
-    <Reference Include="efEntityLoader">
-      <Name>efEntityLoader</Name>
-      <HintPath>..\..\WebApp\bin\efEntityLoader.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.81.0.1407, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebApp\bin\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="efEnvironment">
-      <Name>efEnvironment</Name>
-      <HintPath>..\WebApp\bin\efEnvironment.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Interop.MSXML2, Version=5.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\WebApp\bin\Interop.MSXML2.dll</HintPath>
     </Reference>
-    <Reference Include="efHTMLRenderer">
-      <Name>efHTMLRenderer</Name>
-      <HintPath>..\..\WebApp\bin\efHTMLRenderer.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efMathMLWrapper">
-      <Name>efMathMLWrapper</Name>
-      <HintPath>..\WebApp\bin\efMathMLWrapper.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efRecordset">
-      <Name>efRecordset</Name>
-      <HintPath>..\..\WebApp\bin\efRecordset.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efSqlTools">
-      <Name>efSqlTools</Name>
-      <HintPath>..\..\WebApp\bin\efSqlTools.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efSysEvents">
-      <Name>efSysEvents</Name>
-      <HintPath>..\..\WebApp\bin\efSysEvents.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efTableDef">
-      <Name>efTableDef</Name>
-      <HintPath>..\..\WebApp\bin\efTableDef.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efToolLib">
-      <Name>efToolLib</Name>
-      <HintPath>..\..\WebApp\bin\efToolLib.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="efXml">
-      <Name>efXml</Name>
-      <HintPath>..\..\WebApp\bin\efXml.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="MathML">
-      <Name>MathML</Name>
+    <Reference Include="MathML, Version=0.34.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\WebApp\bin\MathML.dll</HintPath>
-      <Private>False</Private>
     </Reference>
-    <Reference Include="MathML.Rendering">
-      <Name>MathML.Rendering</Name>
+    <Reference Include="MathML.Rendering, Version=0.34.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\WebApp\bin\MathML.Rendering.dll</HintPath>
-      <Private>False</Private>
     </Reference>
-    <Reference Include="Microsoft.VisualBasic">
-      <Name>Microsoft.VisualBasic</Name>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\WebApp\bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\WebApp\bin\Microsoft.Vbe.Interop.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="surveymanagerNET, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebApp\bin\surveymanagerNET.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
