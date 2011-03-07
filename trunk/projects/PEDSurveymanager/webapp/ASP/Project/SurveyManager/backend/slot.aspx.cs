@@ -57,10 +57,11 @@ namespace easyFramework.Project.SurveyManager
 			string sConnstr_Svm;
 			string sConnstr_Results;
 			sConnstr_Svm = efEnvironment.goGetEnvironment(Application).gsConnStr;
+            /* //TODO reactivate
 			sConnstr_Results = easyFramework.
 				Project.SurveyManager.
 				Submission.DBConn.gsGetConnStr_ResultDatabase(sConnstr_Svm);
-		
+		*/
 		
 			//----------get url-parameters----------
 			int lSlt_id;

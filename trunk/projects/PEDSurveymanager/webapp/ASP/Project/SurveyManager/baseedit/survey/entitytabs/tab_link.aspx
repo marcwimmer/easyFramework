@@ -1,4 +1,4 @@
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <%@ Page Language="cs" AutoEventWireup="false" Src="tab_link.aspx.cs" Inherits="easyFramework.Project.SurveyManager.tab_link"%>
 <%@ import namespace="easyFramework.Sys.ToolLib" %>
 <%@ import namespace="easyFramework.Frontend.ASP.ASPTools" %>

@@ -76,6 +76,8 @@ namespace easyFramework.Project.SurveyManager
 			svy_svg_id = rsDlgData["svy_svg_id"].lValue;
 			svy_svt_id = rsDlgData["svy_svt_id"].sValue;
 		
+            //TODO REACTICVATE:
+            /*
 			try
 			{
 				int lResult = easyFramework.Project.SurveyManager.Preparation.
@@ -92,6 +94,8 @@ namespace easyFramework.Project.SurveyManager
 				return ex.Message;
 			
 			}
+             */
+            return "";
 		
 		
 		}

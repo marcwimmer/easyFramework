@@ -6,7 +6,7 @@ using easyFramework.Frontend.ASP.Dialog;
 using easyFramework.Frontend.ASP.ASPTools;
 using easyFramework.Sys.Xml;
 using easyFramework.Sys.Entities;
-using easyFramework.Project.SurveyManager.Preparation;
+//using easyFramework.Project.SurveyManager.Preparation;
 
 namespace easyFramework.Project.SurveyManager
 {
@@ -62,7 +62,6 @@ namespace easyFramework.Project.SurveyManager
 	
 		private void Page_Load (XmlDocument oXmlRequest)
 		{
-		
 			string sSlot_id = oXmlRequest.sGetValue("slt_id", "");
 		
 			if (sSlot_id == "" | sSlot_id == "undefined")

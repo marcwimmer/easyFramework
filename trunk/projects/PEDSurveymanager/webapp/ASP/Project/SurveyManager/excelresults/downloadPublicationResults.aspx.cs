@@ -60,7 +60,9 @@ namespace easyFramework.Project.SurveyManager
 	
 		public override byte[] abGetData(ClientInfo oClientInfo, XmlDocument oRequest)
 		{
-		
+            return null;
+		//TODO Reactivate
+            /*
 			string sPub_id = oRequest.sGetValue("pub_id", "");
 			if (sPub_id == "")
 			{
@@ -105,6 +107,7 @@ namespace easyFramework.Project.SurveyManager
 			}
 		
 			return oResult;
+             * */
 		
 		}
 	

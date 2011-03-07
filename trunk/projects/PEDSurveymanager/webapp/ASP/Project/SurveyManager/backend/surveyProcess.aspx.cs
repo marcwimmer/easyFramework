@@ -91,7 +91,7 @@ namespace easyFramework.Project.SurveyManager
 		override protected void OnInit(EventArgs e)
 		{
 			base.OnInit(e);
-
+            /* //TODO reactivate
 			// Hier Benutzercode zur Seiteninitialisierung einfgen
 		
 			string sConnstr_Svm;
@@ -165,7 +165,7 @@ namespace easyFramework.Project.SurveyManager
 			{
 				sResultHtml += "<button type=\"button\" onclick=\"window.close()\">Schlie&szlig;en</button>";
 			}
-		
+		*/
 		
 		}
 	

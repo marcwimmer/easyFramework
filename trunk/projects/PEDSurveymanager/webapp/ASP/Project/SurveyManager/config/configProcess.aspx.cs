@@ -6,6 +6,7 @@ using easyFramework.Frontend.ASP.Dialog;
 using easyFramework.Sys.Xml;
 using easyFramework.Sys;
 using easyFramework.Project.SurveyManager;
+using easyFramework.Frontend.ASP;
 
 namespace easyFramework.Project.SurveyManager
 {
@@ -68,8 +69,9 @@ namespace easyFramework.Project.SurveyManager
 				
 					string sName;
 					sName = Functions.Right(oNodes[i].sName, Functions.Len(oNodes[i].sName) - 3);
-				
-					Config.gSetValue(oClientInfo, sName, oNodes[i].sText);
+
+                    //TODO reactivate
+					//Config.gSetValue(oClientInfo, sName, oNodes[i].sText);
 				
 				}
 			

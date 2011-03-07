@@ -6,7 +6,6 @@ using easyFramework.Sys.ToolLib;
 using easyFramework.Sys.Xml;
 using easyFramework.Sys.Data;
 using easyFramework.Sys;
-using easyFramework.Project.SurveyManager.Rendering;
 
 namespace easyFramework.Project.SurveyManager
 {

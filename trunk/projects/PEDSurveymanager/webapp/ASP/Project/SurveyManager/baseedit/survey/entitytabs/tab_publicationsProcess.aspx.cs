@@ -7,7 +7,6 @@ using easyFramework.Sys.ToolLib;
 using easyFramework.Sys.Xml;
 using easyFramework.Sys.Entities;
 using easyFramework.Project.SurveyManager;
-using easyFramework.Project.SurveyManager.Preparation;
 using easyFramework.Sys;
 
 namespace easyFramework.Project.SurveyManager
@@ -60,7 +59,8 @@ namespace easyFramework.Project.SurveyManager
 	
 		public override string sGetData(ClientInfo oClientInfo, XmlDocument oRequest)
 		{
-		
+            return "";
+		/* //TODO REACTIVATE
 			Publications oPublications = new Publications();
 		
 			string svy_id = oRequest.sGetValue("svy_id", "");
@@ -82,7 +82,7 @@ namespace easyFramework.Project.SurveyManager
 				return "SUCCESS";
 			}
 		
-		
+		*/
 		}
 	
 	}
