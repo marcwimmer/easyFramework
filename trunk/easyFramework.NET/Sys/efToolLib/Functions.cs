@@ -92,7 +92,6 @@ namespace easyFramework.Sys.ToolLib
             string sResult = "";
             for (int i = Len(sExpr); i >= 1; i--)
             {
-
                 sResult += Mid(sExpr, i, 1);
             }
             return sResult;
@@ -392,6 +391,11 @@ namespace easyFramework.Sys.ToolLib
             if (String.IsNullOrEmpty(sString))
                 return "";
 
+            if (lPos > sString.Length)
+            {
+                return "";
+            }
+
             if (lCount == -1)
             {
                 return sString.Substring(lPos - 1);
@@ -535,8 +539,24 @@ namespace easyFramework.Sys.ToolLib
         public static string gs2Digit(string sValue)
         {
             if (String.IsNullOrEmpty(sValue))
-                return "";
-            else return String.Format("{0:00}", sValue);
+                return "00";
+            else
+            {
+                try
+                {
+                    int i = Convert.ToInt32(sValue);
+                    return string.Format("{0:00}", i);
+                }
+                catch
+                {
+                    if (sValue.Length == 1)
+                        return "0" + sValue;
+                    return sValue;
+                }
+                finally
+                {
+                }
+            }
         }
         /*
 

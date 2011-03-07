@@ -23,6 +23,11 @@ namespace Tests
             Assert.That(Functions.Replace("ABCC", "C", "D", 3, 1), Is.EqualTo("ABDC"));
             Assert.That(Functions.Replace("ABCCCC", "C", "D", 3, 2), Is.EqualTo("ABDDCC"));
             Assert.That(Functions.Replace("ABCCCC", "C", "D", 4, 2), Is.EqualTo("ABCDDC"));
+            Assert.That(Functions.gs2Digit("2"), Is.EqualTo("02"));
+            Assert.That(Functions.gs2Digit(""), Is.EqualTo("00"));
+            Assert.That(Functions.gs2Digit("111"), Is.EqualTo("111"));
+            Assert.That(Functions.Reverse("ABC"), Is.EqualTo("CBA"));
+            Assert.That(Functions.Reverse(""), Is.EqualTo(""));
         }
     }
 }
