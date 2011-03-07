@@ -1,4 +1,4 @@
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <%@ Page Language="cs" AutoEventWireup="false" Src="placeholder.aspx.cs" Inherits="easyFramework.Project.SurveyManager.placeholder"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
@@ -37,7 +37,7 @@
 		
 
 		</script>
-		<!--#include file="../../../system/defaultheader.aspx"-->
+		<!--#include file="../../../system/defaultheader.aspx.inc"-->
 	</HEAD>
 	<body onload="mOnLoad();">
 		<form name="frmMain">

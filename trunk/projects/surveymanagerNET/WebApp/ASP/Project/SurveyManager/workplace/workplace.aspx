@@ -1,4 +1,4 @@
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <%@ Page Language="cs" AutoEventWireup="false" src="workplace.aspx.cs" Inherits="easyFramework.Project.SurveyManager.Workplace" %>
 <%@ import namespace="easyFramework.Frontend.ASP.ASPTools"%>
 <HTML>
@@ -30,7 +30,7 @@
 		}
 							
 		</script>
-		<!--#include file="../../../system/defaultheader.aspx"-->
+		<!--#include file="../../../system/defaultheader.aspx.inc"-->
 	</HEAD>
 	<body onload="mOnLoad()">
 		<table height="20" width="100%">

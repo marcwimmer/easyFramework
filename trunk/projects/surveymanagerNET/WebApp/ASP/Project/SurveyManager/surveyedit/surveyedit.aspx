@@ -1,6 +1,6 @@
 <%@ Page Language="cs" AutoEventWireup="false" src="surveyedit.aspx.cs" Inherits="easyFramework.Project.SurveyManager.surveyedit" %>
-<%@ Register TagPrefix="mul" Namespace="easyFramework.Frontend.ASP.ComplexObjects" Assembly="efMultiStructureHelper" %>
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="mul" Namespace="easyFramework.Frontend.ASP.ComplexObjects" Assembly="efASPFrontend" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <HTML>
 	<HEAD>
 		<ef:efpageheader id="EfPageHeader1" runat="server"></ef:efpageheader><ef:efscriptlinks id="EfScriptLinks1" runat="server"></ef:efscriptlinks>
@@ -293,7 +293,7 @@
 		}		
 	
 		</script>
-		<!--#include file="../../../system/defaultheader.aspx"-->
+		<!--#include file="../../../system/defaultheader.aspx.inc"-->
 	</HEAD>
 	<body onload="mOnLoad();">
 		

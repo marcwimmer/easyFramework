@@ -1,4 +1,4 @@
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <%@ Page Language="cs" AutoEventWireup="false" Src="users2surveygroups.aspx.cs" Inherits="easyFramework.Project.SurveyManager.users2surveygroups" %>
 <%@ Import namespace="easyFramework.Sys.Xml"%>
 <%@ Import namespace="easyFramework.Sys.ToolLib"%>
@@ -6,7 +6,7 @@
 	<HEAD>
 		<ef:efPageHeader id="EfPageHeader1" runat="server"></ef:efPageHeader>
 		<ef:efScriptLinks id="EfScriptLinks1" runat="server"></ef:efScriptLinks>
-		<!--#include file="../../../system/defaultheader.aspx"-->
+		<!--#include file="../../../system/defaultheader.aspx.inc"-->
 		<script language="javascript">
 		
 		function mOnLoad() {

@@ -1,4 +1,4 @@
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <%@ import namespace="easyFramework.Frontend.ASP.ASPTools"%>
 <%@ Page Language="cs" AutoEventWireup="false" src="newsurvey.aspx.cs" Inherits="easyFramework.Project.SurveyManager.newsurvey"%>
 <HTML>
@@ -49,7 +49,7 @@
 		}
 							
 		</script>
-		<!--#include file="../../../system/defaultheader.aspx"-->
+		<!--#include file="../../../system/defaultheader.aspx.inc"-->
 	</HEAD>
 	<body onload="mOnLoad()">
 		<form name="frmMain">
