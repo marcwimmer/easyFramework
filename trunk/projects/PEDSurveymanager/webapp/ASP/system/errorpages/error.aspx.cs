@@ -20,18 +20,9 @@ namespace easyFramework.Project.Default.ASP.system.errorpages
 			//
 			// CODEGEN: Dieser Aufruf ist für den ASP.NET Web Form-Designer erforderlich.
 			//
-			InitializeComponent();
 			base.OnInit(e);
 		}
 		
-		/// <summary>
-		/// Erforderliche Methode für die Designerunterstützung. 
-		/// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
-		/// </summary>
-		private void InitializeComponent()
-		{    
-			this.Load += new System.EventHandler(this.Page_Load);
-		}
 		#endregion
 
 		public override void CustomInit(XmlDocument oXmlRequest)

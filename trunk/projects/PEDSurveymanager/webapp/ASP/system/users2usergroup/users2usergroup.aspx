@@ -1,10 +1,10 @@
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <%@ Page Language="cs" AutoEventWireup="false" Src="users2usergroup.aspx.cs" Inherits="easyFramework.Project.Default.users2usergroup" %>
 <HTML>
 	<HEAD>
 		<ef:efPageHeader id="EfPageHeader1" runat="server"></ef:efPageHeader>
 		<ef:efScriptLinks id="EfScriptLinks1" runat="server"></ef:efScriptLinks>
-		<!--#include file="../defaultheader.aspx"-->
+		<!--#include file="../defaultheader.aspx.inc"-->
 		<script language="javascript">
 		
 		function mOnLoad() {

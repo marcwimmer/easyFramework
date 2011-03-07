@@ -9,7 +9,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 
-namespace easyFramework.Project.Default.ASP.system.devaid
+namespace easyFramework.Project.Default.ASP.system
 {
 	/// <summary>
 	/// Zusammenfassung für _default.

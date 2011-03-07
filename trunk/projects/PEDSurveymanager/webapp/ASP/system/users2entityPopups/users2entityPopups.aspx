@@ -1,11 +1,11 @@
-<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efWebComponents" %>
+<%@ Register TagPrefix="ef" Namespace="easyFramework.Frontend.ASP.WebComponents" Assembly="efASPFrontend" %>
 <%@ Page Language="cs" AutoEventWireup="false" Src="users2entityPopups.aspx.cs" Inherits="easyFramework.Project.Default.users2entityPopups" %>
 <%@ Import namespace="easyFramework.Sys.Xml"%>
 <HTML>
 	<HEAD>
 		<ef:efPageHeader id="EfPageHeader1" runat="server"></ef:efPageHeader>
 		<ef:efScriptLinks id="EfScriptLinks1" runat="server"></ef:efScriptLinks>
-		<!--#include file="../defaultheader.aspx"-->
+		<!--#include file="../defaultheader.aspx.inc"-->
 		<script language="javascript">
 		
 		function mOnLoad() {
@@ -60,22 +60,22 @@
 							</tr>
 							<%
 			
-			Do While Not rsPopups.Eof
+			while (!rsPopups.EOF) {
 		%>
 							<tr class="trBackground">
-								<td class="entryField"><%=rsPopups("epp_ety_name").sValue%></td>
-								<td class="entryField"><%=rsPopups("epp_caption").sValue%></td>
+								<td class="entryField"><%=rsPopups["epp_ety_name"].sValue%></td>
+								<td class="entryField"><%=rsPopups["epp_caption"].sValue%></td>
 								<td class="entryField">
-								<%=msGetGroupAccess(rsPopups("epp_id").lValue)%>
+								<%=msGetGroupAccess(rsPopups["epp_id"].lValue)%>
 								</td>
 								<td class="entryField">
-								<%=msGetSelectCombo(rsPopups("epp_id").lValue)%></td>
+								<%=msGetSelectCombo(rsPopups["epp_id"].lValue)%></td>
 
 							</tr>
 							<%
 		
-				rsPopups.MoveNext
-			Loop
+				rsPopups.MoveNext();
+			}
 		%>
 						</table>
 					</form>
