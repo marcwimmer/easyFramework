@@ -60,14 +60,14 @@ Public Class CouponHandler
         ByVal sLastname As String)
 
 
-       
-        Dim oGutschein As New Gutschein
-        Dim sGutscheinNr As String = _
-            oGutschein.gsNewGutschein(oClientInfo.oHttpApp.oHttpApplication, sCouponSource, dKontostand, sProduktReihe, bPrintable, sEmail)
+        '
+        'Dim oGutschein As New Gutschein
+        'Dim sGutscheinNr As String = _
+        ' oGutschein.gsNewGutschein(oClientInfo.oHttpApp.oHttpApplication, sCouponSource, dKontostand, sProduktReihe, bPrintable, sEmail)
 
-        oGutschein.gSendGutschein(oClientInfo.oHttpApp.oHttpApplication, sEmail, sGutscheinNr, _
-            sCustomText, sGutscheinDownloadURLName, sSender, _
-            sSpeakTo, sFirstname, sLastname)
+        '  oGutschein.gSendGutschein(oClientInfo.oHttpApp.oHttpApplication, sEmail, sGutscheinNr, _
+        '     sCustomText, sGutscheinDownloadURLName, sSender, _
+        '    sSpeakTo, sFirstname, sLastname)
 
     End Sub
 
