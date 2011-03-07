@@ -17,7 +17,8 @@ namespace Tests
             Assert.That(Functions.Replace("12345", "3", "2"), Is.EqualTo("12245"));
             Assert.That(Functions.Split("A B C D", " "), Is.EqualTo(new string[] { "A", "B", "C", "D" }));
             Assert.That(Functions.Split("A B C D", " ", 2 ), Is.EqualTo(new string[] { "A", "B C D" }));
-            Assert.That(Functions.Mid("ABC", 2), Is.EqualTo("B"));
+            Assert.That(Functions.Mid("ABC", 2), Is.EqualTo("BC"));
+            Assert.That(Functions.Mid("ABC", 2, 1), Is.EqualTo("B"));
             Assert.That(Functions.Mid("ABC", 4), Is.EqualTo(""));
         }
     }

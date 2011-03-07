@@ -374,11 +374,11 @@ namespace easyFramework.Sys.ToolLib
 
             if (lCount == -1)
             {
-                return sString.Substring(lPos + 1);
+                return sString.Substring(lPos - 1);
             }
             else
             {
-                return sString.Substring(lPos + 1, lCount);
+                return sString.Substring(lPos - 1, lCount);
             }
 
 
