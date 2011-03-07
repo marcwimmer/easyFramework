@@ -8,7 +8,8 @@
   <property name="build.dir" value="./tmp"/>
   <property name="nant.settings.currentframework" value="net-3.5" />
   <property name="build.web.bin" value="easyFramework.NET.Web/bin"/>
-  <target name="build_dlls" depends="clean">
+  <property name="build.web.root" value="easyFramework.NET.Web"/>
+  <target name="build_ez" depends="clean">
     <mkdir dir="${build.dir}" />
     <copy todir="${build.dir}" file="${ef_addons_dir}/ICSharpNet/081SharpZipLib/ICSharpCode.SharpZipLib.dll" />
     <copy todir="${build.dir}" file="${ef_addons_dir}/InteropFreetextbox/FreeTextBox.dll" />
@@ -69,6 +70,42 @@
   </target>
   <target name="clean">
     <delete dir="${build.dir}" failonerror="true"/>
+  </target>
+  <target name="Surveymanager_Pearson" depends="">
+    <property name="basedir" value="projects/PEDSurveyManager" />
+    <property name="local.web.root" value="${basedir}/webapp" />
+    <property name="bin.dir" value="${local.web.root}/bin"/>
+    <delete>
+      <fileset>
+        <include name="${local.web.root}/ASP/**"/>
+        <exclude name="${local.web.root}/ASP/Project/**" />
+        <include name="${local.web.root}/templates"/>
+      </fileset>
+    </delete>
+    <delete dir="${bin.dir}" />
+    <mkdir dir="${bin.dir}"/>
+    <copy todir="${bin.dir}" flatten="true">
+      <fileset>
+        <include name="${build.web.bin}/*.dll"/>
+      </fileset>
+    </copy>
+    <vbc  target="library" output="${bin.dir}/PED_SVM_BL.dll" >
+      <sources>
+        <include name="${basedir}/bl/*.vb"/>
+        <exclude name="${basedir}/bl/AssemblyInfo.vb" />
+      </sources>
+      <references>
+        <include name="${bin.dir}/*.dll" />
+      </references>
+    </vbc>
+    
+    <copy todir="${basedir}/webapp" overwrite="true">
+      <fileset>
+        <include name="${build.web.root}/**/*.*" />
+        <exclude name="${build.web.root}/easyframework.config" />
+        <exclude name="${build.web.root}/*.sln" />
+      </fileset>
+    </copy>
   </target>
 
 </project>
