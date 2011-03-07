@@ -29,10 +29,5 @@
 			<NAME>usr_password</NAME>
 			<TYPE>PASSWORD</TYPE>
 		</efDialogField>
-		<efDialogField>
-			<DESC>Zusatzasdsa</DESC>
-			<NAME>usr_zusatz</NAME>
-			<TYPE>INPUT</TYPE>
-		</efDialogField>
 	</efDialogRow>
 </efDialogPage>
