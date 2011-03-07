@@ -332,9 +332,9 @@ function gShowDiv(oDiv) {
 var mouseX, mouseY;
 gAdd_DocumentMouseMove(getXY);
 
-function getXY(e) {  
-	mouseX = (window.Event) ? e.pageX : event.clientX;  
-	mouseY = (window.Event) ? e.pageY : event.clientY;
+function getXY(e) {
+    mouseX = (window.Event) ? e.pageX : event.clientX;
+    mouseY = (window.Event) ? e.pageY : event.clientY;
 }
 
 //-----------own interval management------------------------------
@@ -476,7 +476,7 @@ var sWebPageRoot = "not initialized";
 function gsGetWebPageRoot() {
 
 	if (sWebPageRoot == "not initialized") 
-		alert("sWebPageRoot isn't initialized yet - include the defaultHeader.aspx and don't use gsGetWebPageRoot for public consts.");
+		alert("sWebPageRoot isn't initialized yet - include the defaultheader.aspx.inc and don't use gsGetWebPageRoot for public consts.");
 
 	return sWebPageRoot; //from defaultheader
 	
