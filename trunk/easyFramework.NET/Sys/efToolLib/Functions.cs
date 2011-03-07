@@ -339,6 +339,8 @@ namespace easyFramework.Sys.ToolLib
         public static string[] Split(string Expression, string Delimiter, int Limit)
         {
             string[] delimiters = new string[] { Delimiter };
+            if (Limit < 0)
+                return Expression.Split(delimiters, StringSplitOptions.None);
             return Expression.Split(delimiters, Limit, StringSplitOptions.None);
         }
 
