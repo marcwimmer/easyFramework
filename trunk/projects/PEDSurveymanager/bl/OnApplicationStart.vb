@@ -46,11 +46,11 @@ Public Class OnApplicationStart
             CType(oParam, System.Web.HttpApplicationState)
 
         '---------------init csapp-ini-------------
-        Dim oCSAppINI As CSAppIni
+        'Dim oCSAppINI As CSAppIni
 
-        oCSAppINI = New CSAppIni(oClientInfo.oHttpServer.oHttpServer.MapPath( _
-                gsCStr(oApplication("sWebPageRoot")) & "/csapp.ini"))
-        oApplication("CSAPPINI") = oCSAppINI
+        'oCSAppINI = New CSAppIni(oClientInfo.oHttpServer.oHttpServer.MapPath( _
+        '        gsCStr(oApplication("sWebPageRoot")) & "/csapp.ini"))
+        'oApplication("CSAPPINI") = oCSAppINI
 
 
 

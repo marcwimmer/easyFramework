@@ -81,6 +81,14 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="efAddons, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\webapp\bin\efAddons.dll</HintPath>
+    </Reference>
+    <Reference Include="efASPFrontend, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\webapp\bin\efASPFrontend.dll</HintPath>
+    </Reference>
     <Reference Include="efClientInfo">
       <Name>efClientInfo</Name>
       <HintPath>..\webapp\bin\efClientInfo.dll</HintPath>
@@ -146,6 +154,10 @@
       <HintPath>..\webapp\bin\efSqlTools.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="efSys, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\webapp\bin\efSys.dll</HintPath>
+    </Reference>
     <Reference Include="efSysEvents">
       <Name>efSysEvents</Name>
       <HintPath>..\webapp\bin\efSysEvents.dll</HintPath>
@@ -161,6 +173,10 @@
       <HintPath>..\webapp\bin\efTableDefCached.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="efTasks, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\webapp\bin\efTasks.dll</HintPath>
+    </Reference>
     <Reference Include="efToolLib">
       <Name>efToolLib</Name>
       <HintPath>..\webapp\bin\efToolLib.dll</HintPath>
@@ -171,10 +187,41 @@
       <HintPath>..\webapp\bin\efXml.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="FreeTextBox, Version=2.0.5000.4, Culture=neutral, PublicKeyToken=5962a4e684a48b87">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\webapp\bin\FreeTextBox.dll</HintPath>
+    </Reference>
     <Reference Include="Gutscheinlogik">
       <Name>Gutscheinlogik</Name>
       <HintPath>..\webapp\bin\Gutscheinlogik.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.81.0.1407, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\webapp\bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSXML2, Version=5.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\webapp\bin\Interop.MSXML2.dll</HintPath>
+    </Reference>
+    <Reference Include="MathML, Version=0.34.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\webapp\bin\MathML.dll</HintPath>
+    </Reference>
+    <Reference Include="MathML.Rendering, Version=0.34.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\webapp\bin\MathML.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\webapp\bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\webapp\bin\Microsoft.Vbe.Interop.dll</HintPath>
     </Reference>
     <Reference Include="svmBusinessTasks">
       <Name>svmBusinessTasks</Name>
