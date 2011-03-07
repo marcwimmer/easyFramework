@@ -8,7 +8,7 @@ using easyFramework.Sys.ToolLib;
 using easyFramework.Sys.Xml;
 using easyFramework.Frontend.ASP.WebComponents;
 
-namespace easyFramework.Frontend.ASP.WebComponents
+namespace easyFramework.Frontend.ASP.ComplexObjects
 {
     //================================================================================
     //Class:     efMultiStructure

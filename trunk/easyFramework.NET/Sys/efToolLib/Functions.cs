@@ -143,7 +143,7 @@ namespace easyFramework.Sys.ToolLib
                 return String.Empty;
             if (String.IsNullOrEmpty(Find))
                 return ReplaceIn;
-            if (String.IsNullOrEmpty(ReplaceWith))
+            if (ReplaceWith == null)
                 return ReplaceIn;
 
             string workpart = ReplaceIn;
@@ -346,7 +346,12 @@ namespace easyFramework.Sys.ToolLib
         {
             if (String.IsNullOrEmpty(sString))
                 return "";
-            else return sString.Substring(0, lCount);
+            else
+            {
+                if (sString.Length < lCount)
+                    return sString;
+                return sString.Substring(0, lCount);
+            }
         }
 
         public static string Right(string sString, int lCount)
