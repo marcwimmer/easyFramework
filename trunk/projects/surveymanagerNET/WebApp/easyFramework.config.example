@@ -4,7 +4,7 @@
   <!--
 	Webpage-Root; needed for global.asax
 	 -->
-  <webpageRoot>/psvm</webpageRoot>
+  <webpageRoot>/svm</webpageRoot>
 
   <!--
 	DATABASE-Connection
@@ -17,9 +17,9 @@
 	 -->
   <dbconn>
     <provider>SQLOLEDB.1</provider>
-    <datasource>192.168.2.193</datasource>
+    <datasource>127.0.0.1</datasource>
     <initialCatalog>SurveyManagerNET</initialCatalog>
-    <securityinfo>pwd=glas_schrank;uid=sa</securityinfo>
+    <securityinfo>pwd=yourpass;uid=sa</securityinfo>
   </dbconn>
 
   <!--
@@ -43,7 +43,7 @@
 	STARTUP-Logo
 	Tragen Sie hier den Namen des Images an, das im Login gezeigt wird:
 	 -->
-  <startupLogo>/ASP/images/startup/startscreen_psvm.jpg</startupLogo>
+  <startupLogo>/ASP/images/startup/startscreen.jpg</startupLogo>
 
   <!--
 	MAIN WINDOW
