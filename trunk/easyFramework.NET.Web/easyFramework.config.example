@@ -49,7 +49,7 @@
 	MAIN WINDOW
 	Tragen Sie hier die Seite an, die nach erfolgreichem Login angezeigt werden soll:
 	 -->
-  <mainPage>/ASP/Project/SurveyManager/Workplace/Workplace.aspx</mainPage>
+  <mainPage>/ASP/Main/Main.aspx</mainPage>
 
   <!--
 	Project Title
