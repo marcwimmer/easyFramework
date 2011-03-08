@@ -22,14 +22,14 @@ VALUES('ABONNENTS','ABONNENTS',	null,	'ASP/system/entityedit/entityedit.aspx?ent
 800,600,
 'abo_name;abo_host', 'abo_name',null,'abo_name + ISNULL('' '' + abo_host, ''N/A'')',	0	,'abo_name;abo_host','Name;Host','25%;75%')
 GO
-INSERT INTO tsMainMenue(mnu_id, mnu_command, mnu_title, mnu_parentid, mnu_isfolder, mnu_modalwindow, mnu_edition, mnu_icon_normal, mnu_icon_opened, mnu_index)
-VALUES('distribution','','Distribution',null,1,0, '*', 'treeview_folder','treeview_folder_open',0)
+INSERT INTO tsMainMenue(mnu_id, mnu_command, mnu_parentid, mnu_title, mnu_isfolder, mnu_modalwindow, mnu_edition, mnu_icon_normal, mnu_icon_opened, mnu_index)
+VALUES('distribution','',null,'Distribution',1,0, '*', 'treeview_folder','treeview_folder_open',0)
 
 GO
-INSERT INTO tsMainMenue(mnu_id, mnu_command, mnu_title, mnu_parentid, mnu_isfolder, mnu_modalwindow, mnu_edition, mnu_icon_normal, mnu_icon_opened, mnu_index)
+INSERT INTO tsMainMenue(mnu_id, mnu_command, mnu_parentid, mnu_title, mnu_isfolder, mnu_modalwindow, mnu_edition, mnu_icon_normal, mnu_icon_opened, mnu_index)
 VALUES('distribution_edit','/ASP/system/entityedit/entityedit.aspx?entity=ABONNENTS','distribution','Abonnenten bearbeiten',0,	0,'*','treeview_item','treeview_item',0)
 GO
-INSERT INTO tsMainMenue(mnu_id, mnu_command, mnu_parentid, mnu_title, mnu_isfolder, mnu_modalwindow, mnu_edition, mnu_icon_normal, mnu_icon_opened, mnu_index)
+INSERT INTO tsMainMenue(mnu_id, mnu_command, mnu_parentid, mnu_title,  mnu_isfolder, mnu_modalwindow, mnu_edition, mnu_icon_normal, mnu_icon_opened, mnu_index)
 VALUES('distribution_newpackage','/ASP/tasks/distribution/newPackageDlg.aspx','distribution','Neues Paket erstellen',0,	0,'*','treeview_item','treeview_item',1	)
 GO
 
