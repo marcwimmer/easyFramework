@@ -694,7 +694,7 @@ namespace easyFramework.Sys.ToolLib
 
         }
 
-        /*
+       
 		
          //================================================================================
          //Function:  gsValidFilename
@@ -723,7 +723,7 @@ namespace easyFramework.Sys.ToolLib
 			
              return sFilename;
          }
-
+        /*
 
          //================================================================================
          //Function:  Convert_FirstWeekOfYear

@@ -18,23 +18,8 @@ VALUES('admin_config', 'admin', 'Konfiguration', '/ASP/system/entityedit/entitye
 0, 0, '*', 'treeview_item', 'treeview_item', 
 0, null)
 GO
-DELETE FROM tsMainMenue WHERE mnu_id = 'distribution_edit'
-GO
-DELETE FROM tsMainMenue WHERE mnu_id = 'distribution'
-GO
 
-INSERT INTO [tsMainMenue]([mnu_id], [mnu_parentid], [mnu_title], [mnu_command], [mnu_isFolder], [mnu_modalwindow], [mnu_edition], [mnu_icon_normal], [mnu_icon_opened], [mnu_index], [Project])
-VALUES('distribution', null, 'Distribution', 
-'', 
-1, 0, '*', 'treeview_folder', 'treeview_folder_open', 
-0, null)
-GO
-INSERT INTO [tsMainMenue]([mnu_id], [mnu_parentid], [mnu_title], [mnu_command], [mnu_isFolder], [mnu_modalwindow], [mnu_edition], [mnu_icon_normal], [mnu_icon_opened], [mnu_index], [Project])
-VALUES('distribution_edit', 'distribution', 'Abonnenten bearbeiten', 
-'/ASP/system/entityedit/entityedit.aspx?entity=ABONNENTS', 
-0, 0, '*', 'treeview_item', 'treeview_item', 
-0, null)
-GO
+
 DELETE FROM tsEntities WHERE ety_name LIKE 'ABONNENTS'
 INSERT INTO [tsEntities]([ety_name], [ety_title], [ety_searchdialog], [ety_editdialog], [ety_editdialogxml], [ety_tableDefXml], [ety_windowwidth], [ety_windowheight], [ety_searchfields], [ety_primarySearchField], [ety_icon], [ety_tostringFields], [ety_concurrentUpdates], [ety_cols], [ety_colcaptions], [ety_colwidths])
 VALUES('ABONNENTS', 

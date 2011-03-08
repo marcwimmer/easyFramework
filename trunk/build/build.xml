@@ -71,15 +71,56 @@
   <target name="clean">
     <delete dir="${build.dir}" failonerror="true"/>
   </target>
+  <target name="SurveyManager" depends="">
+    <property name="basedir" value="projects/surveymanagerNET" />
+    <property name="local.web.root" value="${basedir}/webapp" />
+    <property name="bin.dir" value="${local.web.root}/bin"/>
+    <delete>
+      <fileset basedir="${local.web.root}">
+        <include name="ASP/**"/>
+        <exclude name="ASP/Project/**" />
+        <exclude name="ASP/images/**" />
+        <include name="templates"/>
+		<include name="DB/__efbase*.sql"/>
+      </fileset>
+    </delete>
+    <delete dir="${bin.dir}" />
+    <mkdir dir="${bin.dir}"/>
+    <copy todir="${bin.dir}" flatten="true">
+      <fileset>
+        <include name="${build.web.bin}/*.dll"/>
+      </fileset>
+    </copy>
+    <csc  target="library" output="${bin.dir}/svmBusinessTasks.dll" >
+      <sources>
+        <include name="${basedir}/bl/**/*.cs"/>
+        <exclude name="${basedir}/bl/AssemblyInfo.cs" />
+      </sources>
+      <references>
+        <include name="${bin.dir}/*.dll" />
+      </references>
+    </csc>
+    
+    <copy todir="${basedir}/webapp" overwrite="true">
+      <fileset basedir="${build.web.root}">
+        <include name="**/*.*" />
+        <exclude name="easyframework.config" />
+        <exclude name="*.sln" />
+      </fileset>
+    </copy>
+  </target>
+
+
   <target name="Surveymanager_Pearson" depends="">
     <property name="basedir" value="projects/PEDSurveyManager" />
     <property name="local.web.root" value="${basedir}/webapp" />
     <property name="bin.dir" value="${local.web.root}/bin"/>
     <delete>
-      <fileset>
-        <include name="${local.web.root}/ASP/**"/>
-        <exclude name="${local.web.root}/ASP/Project/**" />
-        <include name="${local.web.root}/templates"/>
+      <fileset basedir="${local.web.root}">
+        <include name="ASP/**"/>
+        <exclude name="ASP/Project/**" />
+        <exclude name="ASP/images/**" />
+        <include name="templates"/>
       </fileset>
     </delete>
     <delete dir="${bin.dir}" />
@@ -100,10 +141,10 @@
     </vbc>
     
     <copy todir="${basedir}/webapp" overwrite="true">
-      <fileset>
-        <include name="${build.web.root}/**/*.*" />
-        <exclude name="${build.web.root}/easyframework.config" />
-        <exclude name="${build.web.root}/*.sln" />
+      <fileset basedir="${build.web.root}">
+        <include name="**/*.*" />
+        <exclude name="easyframework.config" />
+        <exclude name="*.sln" />
       </fileset>
     </copy>
   </target>
